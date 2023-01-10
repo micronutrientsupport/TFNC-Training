@@ -9,6 +9,10 @@ n <- 100
 df <- tibble()
 food_entries <- tibble()
 
+# Output csv name
+
+csv_filename <- "demo_hces_survey_data.csv"
+
 # create a character vector with the provinces of Zimbabwe
 provinces <-
   c(
@@ -74,5 +78,8 @@ food_entries %>%
   left_join(., food_groups) %>% 
   left_join(., df) %>% 
   filter(consumed == "yes") %>%
-  write_csv("./Week 0/demo_hces_survey_data.csv", progress = show_progress())
+  write_csv(csv_filename, progress = show_progress())
+
+file.copy(paste0("./Week 0/",csv_filename),paste0("./Week 1/Materials/",csv_filename))
+
   
