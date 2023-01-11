@@ -1,5 +1,5 @@
 ---
-title: "Introduction to R resources and GitHub and data exercise"
+title: "R, Rstudio and GitHub"
 subtitle: "Tanzanian HCES Analysis and TFNC Training"
 author: "Liberty Mlambo"
 format: 
@@ -11,7 +11,7 @@ format:
         standalone: true
         embed-resources: true
         preview-links: false
-        # footer: "Using GIT and GitHub with R and Rstudio"
+        footer: "TFNC Training - R, Rstudio and GitHub"
         number-sections: true
         multiplex: true
         slide-tone: false
@@ -20,12 +20,13 @@ format:
         toc-depth: 1
         toc-title: "Contents"
         auto-stretch: true
-        # scrollable: true
-
-editor: source
+        #scrollable: true
+# editor: source
+#   markdown: 
+#     wrap: 72
 ---
 
-# R, RStudio and GitHub
+# R and RStudio
 
 ## R and Rstudio
 
@@ -72,7 +73,7 @@ editor: source
 :::
 
 ::: {.callout-tip icon="false"}
-## Branch based non-linear workflows (we can all work at the same time) 
+## Branch based non-linear workflows (we can all work at the same time)
 :::
 
 ::: {.callout-tip icon="false"}
@@ -162,87 +163,54 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 
 # Excercises
 
-## Excercise 1 : GitHub sign-up
-[GitHub signup](https://github.com/) -->
+## Excercise 1
 
-[![](data/github-signup.png)](https://github.com/)
+| Activity                              | Description                                           |
+|--------------------------|----------------------------------------------|
+| 1.1 GitHub sign-up                    | [GitHub signup](https://github.com/)                  |
+| 1.2 R download and installation       | [R download](https://cloud.r-project.org/)            |
+| 1.3 Rstudio download and installation | [Rstudio](https://posit.co/download/rstudio-desktop/) |
+| 1.4 Git download and installation     | [Git](https://git-scm.com/downloads)                  |
 
-<!-- ## [Github desktop download](https://desktop.github.com/) -->
+## Excercise 2 - RStudio and Git connection (optional) {.smaller}
 
-<!-- [![](data/git-desktop.png)](https://desktop.github.com/) -->
-
-## Excercise 2 : R download and installation
-[R download](https://cloud.r-project.org/)
-
-[![](data/R.png)](https://cloud.r-project.org/)
-
-## Excercise 3 : Rstudio download and installation
-[Rstudio](https://posit.co/download/rstudio-desktop/)
-
-[![](data/Rstudio.png)](https://posit.co/download/rstudio-desktop/)
-
-<!-- ## [Github desktop documentation](https://docs.github.com/en/desktop) -->
-
-<!-- [![](data/git-docs.png)](https://docs.github.com/en/desktop) -->
-
-## Excercise 4 : Git download and installation
-[Git](https://git-scm.com/downloads)
-
-[![](data/git-download.png)](https://git-scm.com/downloads)
-## Excercise 5 - RStudio and Git connection (bonus) 
-
--   In Rstudio console type :`usethis::create_github_token()`
--   In your github account: give your token a name,generate and copy it.
--   In Rstudio console type: `gitcreds::gitcreds_set()`
--   In Rstudio console paste the token
--   In Rstudio terminal: `git config user.name "YourGitHubUsername"`
--   In Rstudio terminal: `git config user.email "YourGitHubEmail@here.com"`
--   
-
-<!-- ## [Git glossary](https://docs.github.com/en/get-started/quickstart/github-glossary) {.scrollable} -->
-
-<!-- | command                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | -->
-<!-- |------------------------|------------------------------------------------| -->
-<!-- | `git init`                            | `git init` turns any directory into a Git repository. [^1]                                                                                                                                                                                                                                                                                                                                                                                                                                                     | -->
-<!-- | repository                            | A repository is the most basic element of GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.                                                                                                                                                                                                       | -->
-<!-- | `git add <path>`                      | The `git add` command adds new or changed files in your working directory to the Git staging area. [^2]                                                                                                                                                                                                                                                                                                                                                                                                        | -->
-<!-- | `git commit` and `git commit message` | `git commit -m "descriptive commit message"` creates a commit, which is like a snapshot of your repository. These commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.[^3] | -->
-<!-- | `git branch`                          | A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the main branch to publish your changes.                                                                                                                                                                           | -->
-<!-- | `git clone`                           | A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you're online.                                                       | -->
-<!-- | collaborator                          | A collaborator is a person with read and write access to a repository who has been invited to contribute by the repository owner.                                                                                                                                                                                                                                                                                                                                                                              | -->
-<!-- | `fetch`                               | When you use git fetch, you're adding changes from the remote repository to your local working branch without committing them. Unlike git pull, fetching allows you to review changes before committing them to your local branch.                                                                                                                                                                                                                                                                             | -->
-<!-- | `fork`                                | A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original upstream repository. You can also open a pull request in the upstream repository and keep your fork synced with the latest changes since both repositories are still connected.                                                                                                                                                          | -->
-<!-- | `main`                                | The default development branch. Whenever you create a Git repository, a branch named main is created, and becomes the active branch. In most cases, this contains the local development, though that is purely by convention and is not required.                                                                                                                                                                                                                                                              | -->
-<!-- | master                                | The default branch in many Git repositories. By default, when you create a new Git repository on the command line, a branch called master is created. Many tools now use an alternative name for the default branch. For example, when you create a new repository on GitHub, the default branch is called main.                                                                                                                                                                                               | -->
-<!-- | `merge`                               | Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a "pull request" (which can be thought of as a request to merge), or via the command line. A merge can be done through a pull request via the GitHub.com web interface if there are no conflicting changes, or can always be done via the command line.                                                                                                                | -->
-<!-- | `merge` conflict                      | A difference that occurs between merged branches. Merge conflicts happen when people make different changes to the same line of the same file, or when one person edits a file and another person deletes the same file. The merge conflict must be resolved before you can merge the branches.                                                                                                                                                                                                                | -->
-<!-- | `pull`                                | Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date. See also fetch.                                                                                                                                                                                                                                                                 | -->
-<!-- | `pull request`                        | Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum.                                                                                                                                                                                                                                                                                                              | -->
-<!-- | `pull request` review                 | Comments from collaborators on a pull request that approve the changes or request further changes before the pull request is merged.                                                                                                                                                                                                                                                                                                                                                                           | -->
-<!-- | `push`                                | To push means to send your committed changes to a remote repository on GitHub.com. For instance, if you change something locally, you can push those changes so that others may access them.                                                                                                                                                                                                                                                                                                                   | -->
-<!-- | `README`                              | A text file containing information about the files in a repository that is typically the first file a visitor to your repository will see. A README file, along with a repository license, contribution guidelines, and a code of conduct, helps you share expectations and manage contributions to your project.                                                                                                                                                                                              | -->
-<!-- |                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | -->
-
-<!-- [^1]: <https://github.com/git-guides/git-init#what-does-git-init-do> -->
-
-<!-- [^2]: <https://github.com/git-guides/git-add#git-add> -->
-
-<!-- [^3]: <https://github.com/git-guides/git-commit#git-commit> -->
-
-
+| Action                  | Command                                            |
+|----------------------|--------------------------------------|
+| In Rstudio console type | `usethis::create_github_token()`                   |
+| In your github account  | `generate and copy  token`                         |
+| In Rstudio console type | `gitcreds::gitcreds_set()`                         |
+| In Rstudio console      | `paste token`                                      |
+| In Rstudio terminal     | `git config user.name "YourGitHubUsername"`        |
+| In Rstudio terminal     | `git config user.email "YourGitHubEmail@here.com"` |
 
 # Additional Resources
 
 ## Additional Resources
--   [GitHub Docs](https://docs.github.com/en)
--   [GitHub glossary](https://docs.github.com/en/get-started/quickstart/github-glossary)
--   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
--   [Git, GitHub, & GitHub Desktop for beginners](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
--   [R package called “swirl” that teaches you R from within the R studio](https://swirlstats.com) 
--   [R for Data Science](https://r4ds.had.co.nz/index.html) 
--   [Crash Course in R.](https://kirstenmorehouse.wordpress.com/354-2/topic-1-crash-course-in-r/) 
--   [R Cheat Sheets](https://posit.co/resources/cheatsheets/)
--   [YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)
--   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
+
+-   ::: columns
+    ::: {.column width="50%"}
+    -   [GitHub Docs](https://docs.github.com/en)
+
+    -   [GitHub glossary](https://docs.github.com/en/get-started/quickstart/github-glossary)
+
+    -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+
+    -   [Git, GitHub, & GitHub Desktop for beginners](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+
+    -   [R package called "swirl" that teaches you R from within the R studio](https://swirlstats.com)
+    :::
+
+    ::: {.column width="50%"}
+    -   [R for Data Science](https://r4ds.had.co.nz/index.html)
+
+    -   [Crash Course in R.](https://kirstenmorehouse.wordpress.com/354-2/topic-1-crash-course-in-r/)
+
+    -   [R Cheat Sheets](https://posit.co/resources/cheatsheets/)
+
+    -   [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+    -   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
+    :::
+    :::
 
 # Questions?
