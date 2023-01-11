@@ -210,4 +210,6 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
     :::
     :::
 
-# Questions?
+# The Questions?
+
+Thank you!
