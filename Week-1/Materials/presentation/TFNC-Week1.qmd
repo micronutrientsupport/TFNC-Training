@@ -158,9 +158,9 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 -   Rstudio
 -   Git
 
-# Excercises
+# Exercises
 
-## Excercise 1
+## Exercises 1
 
 | Activity                              | Description                                           |
 |--------------------------|----------------------------------------------|
@@ -169,7 +169,7 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 | 1.3 Rstudio download and installation | [Rstudio](https://posit.co/download/rstudio-desktop/) |
 | 1.4 Git download and installation     | [Git](https://git-scm.com/downloads)                  |
 
-## Excercise 2 - RStudio and Git connection (optional) {.smaller}
+## Exercises 2 - RStudio and Git connection (optional) {.smaller}
 
 | Action                  | Command                                            |
 |----------------------|--------------------------------------|
@@ -210,6 +210,6 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
     :::
     :::
 
-# The Questions?
+# Questions?
 
 Thank you!
