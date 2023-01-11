@@ -147,19 +147,22 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 :::
 :::
 
+# Practical Demonstration
 
-# Practical Assumptions
+## Practical Assumptions
 
 -   Computer (Mac, Windows, Linux, etc..) with administrative privileges
 -   Software download and installation experience
 
-# Practical Requirements
+## Practical Requirements
 
 -   GitHub account
 -   Rstudio
 -   Git
 
-# Excercise 1 : GitHub sign-up
+# Excercises
+
+## Excercise 1 : GitHub sign-up
 [GitHub signup](https://github.com/) -->
 
 [![](data/github-signup.png)](https://github.com/)
@@ -168,12 +171,12 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 
 <!-- [![](data/git-desktop.png)](https://desktop.github.com/) -->
 
-# Excercise 2 : R download and installation
+## Excercise 2 : R download and installation
 [R download](https://cloud.r-project.org/)
 
 [![](data/R.png)](https://cloud.r-project.org/)
 
-# Excercise 3 : Rstudio download and installation
+## Excercise 3 : Rstudio download and installation
 [Rstudio](https://posit.co/download/rstudio-desktop/)
 
 [![](data/Rstudio.png)](https://posit.co/download/rstudio-desktop/)
@@ -182,11 +185,11 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 
 <!-- [![](data/git-docs.png)](https://docs.github.com/en/desktop) -->
 
-# Excercise 4 : Git download and installation
-## [Git](https://git-scm.com/downloads)
+## Excercise 4 : Git download and installation
+[Git](https://git-scm.com/downloads)
 
 [![](data/git-download.png)](https://git-scm.com/downloads)
-# Excercise 5 - RStudio and Git connection (bonus) 
+## Excercise 5 - RStudio and Git connection (bonus) 
 
 -   In Rstudio console type :`usethis::create_github_token()`
 -   In your github account: give your token a name,generate and copy it.
@@ -229,6 +232,8 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 
 
 # Additional Resources
+
+## Additional Resources
 -   [GitHub Docs](https://docs.github.com/en)
 -   [GitHub glossary](https://docs.github.com/en/get-started/quickstart/github-glossary)
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
