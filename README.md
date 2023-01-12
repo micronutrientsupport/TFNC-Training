@@ -4,7 +4,11 @@
 - [Github,R and Rstudio Setup Presentation](https://dzvoti.github.io/TFNC-Training/Week-1/Materials/presentation/TFNC-Week1.html)
 - [Other Materials](Week-1/Materials/)
 - [Homework Solutions](Week-1/Solutions/)
-- [recorded session](https://drive.google.com/file/d/1hXxtbJh-r5nDvHmAMsuuocEIZ7zjqyBE/view?usp=share_link)
+- [Session video 1](https://drive.google.com/file/d/1hXxtbJh-r5nDvHmAMsuuocEIZ7zjqyBE/view?usp=share_link)
+- [Session video 2](https://drive.google.com/file/d/1FYrgtluVn1A8SJHOmNW3MswKdb_BYv0K/view?usp=share_link)
+- [Session video 3](https://drive.google.com/file/d/1U2M0gf1TJ8UxbBmeut-_y2-MdMzzg23Q/view?usp=share_link)
+- [Session video 4](https://drive.google.com/file/d/1ko5_xQF1VWTCznKKXrZ54SZ1uCc1ucyu/view?usp=share_link)
+- [Session video 5](https://drive.google.com/file/d/10dopw59KEgFPV2KNtgi07h1BI_HvB5ED/view?usp=share_link)
 
 # Swahilli phrases
 | Swahilli | English |
