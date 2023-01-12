@@ -47,6 +47,7 @@
  # Announcement of next session
 
 Data exercise 2
+
 17 January 2023
 12.30-16.00 EAT 9.30-13.00 GMT (including two 15 mins break)
 
