@@ -18,7 +18,7 @@
 | Karibu | Welcome |
 | Hakuna matata | No problem |
 | Chakula | Food |
-| Poa |cool |
+| Poa |Cool |
 | Kwaheri | Bye |
 | Mambo  | Hi/Hello |
 
@@ -43,3 +43,15 @@
 -   [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
 
  -   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
+ 
+ # Announcement of next session
+
+Data exercise 2
+17 January 2023
+12.30-16.00 EAT 9.30-13.00 GMT (including two 15 mins break)
+
+- Review last session
+- Familiarizing R Studio interface 
+- Connecting GitHub with R 
+- R basics (creating a variable, reading in data…) 
+ 
