@@ -2,7 +2,7 @@
 
 ## Week 1 - 11 January 2023
 - [Github,R and Rstudio Setup Presentation](https://dzvoti.github.io/TFNC-Training/Week-1/Materials/presentation/TFNC-Week1.html)
-- [The tasks and timeline presentation](https://dzvoti.github.io/TFNC-Training/Week-1/TFNC_small_group_training_intro_11_Jan_2023_v2.pdf)
+- [The tasks and timeline presentation](https://dzvoti.github.io/TFNC-Training/Week-1/TFNC_small_group_training_intro_20230112.pdf)
 - [Other Materials](Week-1/Materials/)
 - [Homework Solutions](Week-1/Solutions/)
 - [Session video 1](https://drive.google.com/file/d/1hXxtbJh-r5nDvHmAMsuuocEIZ7zjqyBE/view?usp=share_link)
