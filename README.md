@@ -1,28 +1,58 @@
 # Tanzania HCES Analysis and TFNC training Resources
 
-## Week 1 - 11 January 2023
-- [Github, R and Rstudio Setup Presentation](https://dzvoti.github.io/TFNC-Training/Week-1/Materials/presentation/TFNC-Week1.html)
-- [The Tasks and The Timeline](https://dzvoti.github.io/TFNC-Training/Week-1/TFNC_small_group_training_intro_20230112.pdf)
-- [Use of HCES Data in Malawi](https://dzvoti.github.io/TFNC-Training/Week-1/20230111_Use_of_HCES_data.pdf)
-- [Motivations and Aspirations](https://dzvoti.github.io/TFNC-Training/Week-0/Motivations_and_aspirations.pdf)
-- [Other Materials](Week-1/Materials/)
-- [Homework Solutions](Week-1/Solutions/)
-- [Session video 1](https://drive.google.com/file/d/1hXxtbJh-r5nDvHmAMsuuocEIZ7zjqyBE/view?usp=share_link)
-- [Session video 2](https://drive.google.com/file/d/1FYrgtluVn1A8SJHOmNW3MswKdb_BYv0K/view?usp=share_link)
-- [Session video 3](https://drive.google.com/file/d/1U2M0gf1TJ8UxbBmeut-_y2-MdMzzg23Q/view?usp=share_link)
-- [Session video 4](https://drive.google.com/file/d/1ko5_xQF1VWTCznKKXrZ54SZ1uCc1ucyu/view?usp=share_link)
-- [Session video 5](https://drive.google.com/file/d/10dopw59KEgFPV2KNtgi07h1BI_HvB5ED/view?usp=share_link)
+## Activities Schedule
+
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
+| Date         | Week             | Topics                                                                                                                               | Assignments                                                        |
++==============+==================+======================================================================================================================================+====================================================================+
+| Pre-training | [Week 0](Week-0) | -   [Sample HCES data generator](Week-0/random_hces_generator.R)                                                                     |                                                                    |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
+| 11 Jan 2023  | [Week 1](Week-1) | -   [Github, R and Rstudio Setup Presentation](https://dzvoti.github.io/TFNC-Training/Week-1/Materials/presentation/TFNC-Week1.html) | -   [Exercise 1](https://github.com/dzvoti/TFNC-Training/issues/1) |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [The Tasks and The Timeline](https://dzvoti.github.io/TFNC-Training/Week-1/TFNC_small_group_training_intro_20230112.pdf)         | -   [Exercise 2](https://github.com/dzvoti/TFNC-Training/issues/2) |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Use of HCES Data in Malawi](https://dzvoti.github.io/TFNC-Training/Week-1/20230111_Use_of_HCES_data.pdf)                        |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Motivations and Aspirations](https://dzvoti.github.io/TFNC-Training/Week-0/Motivations_and_aspirations.pdf)                     |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Other Materials](Week-1/Materials/)                                                                                             |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Homework Solutions](Week-1/Solutions/)                                                                                          |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Session video 1](https://drive.google.com/file/d/1hXxtbJh-r5nDvHmAMsuuocEIZ7zjqyBE/view?usp=share_link)                         |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Session video 2](https://drive.google.com/file/d/1FYrgtluVn1A8SJHOmNW3MswKdb_BYv0K/view?usp=share_link)                         |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Session video 3](https://drive.google.com/file/d/1U2M0gf1TJ8UxbBmeut-_y2-MdMzzg23Q/view?usp=share_link)                         |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Session video 4](https://drive.google.com/file/d/1ko5_xQF1VWTCznKKXrZ54SZ1uCc1ucyu/view?usp=share_link)                         |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   [Session video 5](https://drive.google.com/file/d/10dopw59KEgFPV2KNtgi07h1BI_HvB5ED/view?usp=share_link)                         |                                                                    |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
+| 17 Jan 2023  | [Week 2](Week-2) | -   Review last session                                                                                                              |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   Familiarizing R Studio interface                                                                                                 |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   Connecting GitHub with R                                                                                                         |                                                                    |
+|              |                  |                                                                                                                                      |                                                                    |
+|              |                  | -   R basics (creating a variable, reading in data...)                                                                               |                                                                    |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
+|              | Week 3           |                                                                                                                                      |                                                                    |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
+|              | Week 4           |                                                                                                                                      |                                                                    |
++--------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
 
 # Swahilli phrases
-| Swahilli | English |
-|---- | ---- |
-| Ahsante sana |Thank you very much |
-| Karibu | Welcome |
-| Hakuna matata | No problem |
-| Chakula | Food |
-| Poa |Cool |
-| Kwaheri | Bye |
-| Mambo  | Hi/Hello |
+
+| Swahilli      | English             |
+|---------------|---------------------|
+| Ahsante sana  | Thank you very much |
+| Karibu        | Welcome             |
+| Hakuna matata | No problem          |
+| Chakula       | Food                |
+| Poa           | Cool                |
+| Kwaheri       | Bye                 |
+| Mambo         | Hi/Hello            |
 
 # References and Additional Resources
 
@@ -44,17 +74,4 @@
 
 -   [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
 
- -   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
- 
- # Announcement of next session
-
-Data exercise 2
-
-17 January 2023
-12.30-16.00 EAT 9.30-13.00 GMT (including two 15 mins break)
-
-- Review last session
-- Familiarizing R Studio interface 
-- Connecting GitHub with R 
-- R basics (creating a variable, reading in data…) 
- 
+-   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
