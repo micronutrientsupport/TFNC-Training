@@ -17,7 +17,7 @@ format:
         slide-tone: false
         touch: true
         toc: true
-        toc-depth: 1
+        toc-depth: 2
         toc-title: "Contents"
         auto-stretch: true
         #scrollable: true
@@ -26,7 +26,7 @@ format:
 #     wrap: 72
 ---
 
-# R and RStudio
+# R and RStudio (Week 1)
 
 ## R and Rstudio
 
@@ -55,34 +55,34 @@ format:
 
 -   Data security and compliance with [EU -General - - Data Protection Regulation (GDPR)](https://gdpr-info.eu/) ![](data/tools.png){fig-align="center"}
 
-# Git
-
 ## Git
+
+### Git
 
 ::: columns
 ::: {.column width="70%"}
 ::: {.callout-tip icon="false"}
-## Open source
+### Open source
 :::
 
 ::: {.callout-tip icon="false"}
-## Tracks file changes
+### Tracks file changes
 :::
 
 ::: {.callout-tip icon="false"}
-## Branch based non-linear workflows (we can all work at the same time)
+### Branch based non-linear workflows (we can all work at the same time)
 :::
 
 ::: {.callout-tip icon="false"}
-## Rstudio IDE intergration
+### Rstudio IDE intergration
 :::
 
 ::: {.callout-tip icon="false"}
-## Speed of work (for quick homework assistance)
+### Speed of work (for quick homework assistance)
 :::
 
 ::: {.callout-important icon="false"}
-## Local environment
+### Local environment
 :::
 :::
 
@@ -91,52 +91,52 @@ format:
 :::
 :::
 
-# GitHub
+## GitHub
 
 GitHub is a web-based interface that uses Git, to let multiple people work and make changes on a project concurrently
 
-## Fremium Repository based
+### Fremium Repository based
 
 -   Repository based (Projects) [![](data/git-repositories-2.png)](https://github.com/dzvoti)
 
-## Built-in security
+### Built-in security
 
 [![](data/git-repositories-3.png)](https://github.com/dzvoti)
 
-## File History Tracking
+### File History Tracking
 
 [![](data/git-repositories-4.png)](https://github.com/dzvoti)
 
-## Unlimited Public/ Private Repositories
+### Unlimited Public/ Private Repositories
 
 [![](data/git-repositories-5.png)](https://github.com/dzvoti)
 
-## Track issues and task progress
+### Track issues and task progress
 
 [![](data/git-repositories-6.png)](https://github.com/dzvoti)
 
-## Track issues and task progress
+### Track issues and task progress
 
 [![](data/git-repositories-7.png)](https://github.com/dzvoti)
 
-## Lessons learnt {visibility="hidden"}
+### Lessons learnt {visibility="hidden"}
 
 ::: columns
 ::: {.column width="50%"}
 ::: {.callout-tip icon="false"}
-## Cloud storage and collaboration very important and a key focus area
+### Cloud storage and collaboration very important and a key focus area
 :::
 
 ::: {.callout-tip icon="false"}
-## Reproducibility through version tracking is fundamental
+### Reproducibility through version tracking is fundamental
 :::
 
 ::: {.callout-tip icon="false"}
-## Choose tools carefully to avoid security lapses
+### Choose tools carefully to avoid security lapses
 :::
 
 ::: {.callout-important icon="false"}
-## CTRL + ALT + SHIFT+F (Git Urgent)
+### CTRL + ALT + SHIFT+F (Git Urgent)
 :::
 :::
 
@@ -145,22 +145,22 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 :::
 :::
 
-# Practical Demonstration
+## Practical Demonstration
 
-## Practical Assumptions
+### Practical Assumptions
 
 -   Computer (Mac, Windows, Linux, etc..) with administrative privileges
 -   Software download and installation experience
 
-## Practical Requirements
+### Practical Requirements
 
 -   GitHub account
 -   Rstudio
 -   Git
 
-# Exercises
+## Exercises
 
-## Exercises 1
+### Exercises 1
 
 | Activity                              | Description                                           |
 |--------------------------|----------------------------------------------|
@@ -169,7 +169,7 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 | 1.3 Rstudio download and installation | [Rstudio](https://posit.co/download/rstudio-desktop/) |
 | 1.4 Git download and installation     | [Git](https://git-scm.com/downloads)                  |
 
-## Exercises 2 - RStudio and Git connection (optional) {.smaller}
+### Exercises 2 - RStudio and Git connection (optional) {.smaller}
 
 | Action                  | Command                                            |
 |----------------------|--------------------------------------|
@@ -179,6 +179,19 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
 | In Rstudio console      | `paste token`                                      |
 | In Rstudio terminal     | `git config user.name "YourGitHubUsername"`        |
 | In Rstudio terminal     | `git config user.email "YourGitHubEmail@here.com"` |
+
+# Linking GitHub and R (Week 2)
+
+## Week 1 Recap
+-   Last week we introduced Git, GitHub, R and RStudio.
+-   Exercise 1: 
+--  Creating GitHub credential
+--  Downloading and Installing R, RStudio and Git
+-   Exercise 2 (Optional) - Linking GitHub and R
+
+
+## GitHub workflow
+![](data/GitHub-Illustrations.png)
 
 # Additional Resources
 
@@ -210,6 +223,4 @@ GitHub is a web-based interface that uses Git, to let multiple people work and m
     :::
     :::
 
-# Questions?
 
-Thank you!
