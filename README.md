@@ -19,6 +19,7 @@
 |              |                  | -   Familiarizing R Studio interface                                                                                                 |                                                                    |
 |              |                  | -   Connecting GitHub with R                                                                                                         |                                                                    |
 |              |                  | -   R basics (creating a variable, reading in data...)                                                                               |                                                                    |
+|              |                  | -   [Session video 1](https://drive.google.com/file/d/1RZSdeQcjpH9-bik_W3F2dddXKdGv5La2/view?usp=sharing)                                                                               |                                                                    |
 | 24 Jan 2023             | [Week 3](Week-3)          |                                                                                                                                      |                                                                    |
 | 31 Jan 2023             |[Week 4](Week-4)           |                                                                                                                                      |                                                                    |
 
