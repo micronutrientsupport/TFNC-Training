@@ -21,6 +21,7 @@
 |              |                  | -   R basics (creating a variable, reading in data...)                                                                               |                                                                    |
 |              |                  | -   [Session video 1](https://drive.google.com/file/d/1RZSdeQcjpH9-bik_W3F2dddXKdGv5La2/view?usp=sharing)                                                                               |      
 |              |                  | -   [Session video 2](https://drive.google.com/file/d/1gd93-7JBOEFJlKDKn8xnHBaYI2b7t9_w/view?usp=sharing)                                                                               |    
+|              |                  | -   [Learning diary form](https://dzvoti.github.io/TFNC-Training/Week-2/learning_diary.docx)                                                                               |                                                                    |
 | 24 Jan 2023             | [Week 3](Week-3)          |                                                                                                                                      |                                                                    |
 | 31 Jan 2023             |[Week 4](Week-4)           |                                                                                                                                      |                                                                    |
 
