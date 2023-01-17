@@ -7,6 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Liberty Mlambo">
+<meta name="author" content="Chris Chagumaira">
+<meta name="author" content="Rie Goto">
+<meta name="author" content="Edward Joy">
 
 <title>Importing and filtering data</title>
 <style>
@@ -2609,7 +2612,17 @@ vertical-align: -.125em;
    
   <ul class="collapse">
   <li><a href="#house-keeping" id="toc-house-keeping" class="nav-link active" data-scroll-target="#house-keeping">House keeping</a></li>
-  <li><a href="#r-basics-continued" id="toc-r-basics-continued" class="nav-link" data-scroll-target="#r-basics-continued">R Basics Continued</a></li>
+  <li><a href="#exercise-2.1" id="toc-exercise-2.1" class="nav-link" data-scroll-target="#exercise-2.1">Exercise 2.1</a>
+  <ul class="collapse">
+  <li><a href="#arithmetic-with-r" id="toc-arithmetic-with-r" class="nav-link" data-scroll-target="#arithmetic-with-r">Arithmetic with R</a></li>
+  <li><a href="#variable-assignment" id="toc-variable-assignment" class="nav-link" data-scroll-target="#variable-assignment">Variable assignment</a></li>
+  <li><a href="#data-type" id="toc-data-type" class="nav-link" data-scroll-target="#data-type">Data type</a></li>
+  </ul></li>
+  <li><a href="#r-basics-continued" id="toc-r-basics-continued" class="nav-link" data-scroll-target="#r-basics-continued">R Basics Continued</a>
+  <ul class="collapse">
+  <li><a href="#comments-in-r" id="toc-comments-in-r" class="nav-link" data-scroll-target="#comments-in-r">Comments in R</a></li>
+  <li><a href="#dataframe" id="toc-dataframe" class="nav-link" data-scroll-target="#dataframe">Dataframe</a></li>
+  </ul></li>
   <li><a href="#installing-packages" id="toc-installing-packages" class="nav-link" data-scroll-target="#installing-packages">Installing packages</a>
   <ul class="collapse">
   <li><a href="#installing-the-tidyverse" id="toc-installing-the-tidyverse" class="nav-link" data-scroll-target="#installing-the-tidyverse">Installing the tidyverse</a></li>
@@ -2617,14 +2630,13 @@ vertical-align: -.125em;
   </ul></li>
   <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data">Importing data</a>
   <ul class="collapse">
-  <li><a href="#to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-valiable-called" id="toc-to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-valiable-called" class="nav-link" data-scroll-target="#to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-valiable-called">To read a csv called de from the <em>same</em> folder as our script into a valiable called</a></li>
+  <li><a href="#to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-variable-called" id="toc-to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-variable-called" class="nav-link" data-scroll-target="#to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-variable-called">To read a csv called de from the <em>same</em> folder as our script into a variable called</a></li>
   </ul></li>
   <li><a href="#introducing-pipes" id="toc-introducing-pipes" class="nav-link" data-scroll-target="#introducing-pipes">Introducing pipes</a></li>
-  <li><a href="#changing-data-types" id="toc-changing-data-types" class="nav-link" data-scroll-target="#changing-data-types">Changing data types</a></li>
-  <li><a href="#filtering-data" id="toc-filtering-data" class="nav-link" data-scroll-target="#filtering-data">Filtering data</a>
+  <li><a href="#next-topics" id="toc-next-topics" class="nav-link" data-scroll-target="#next-topics">Next Topics</a>
   <ul class="collapse">
-  <li><a href="#filering-columns" id="toc-filering-columns" class="nav-link" data-scroll-target="#filering-columns">Filering columns</a></li>
-  <li><a href="#filtering-rows" id="toc-filtering-rows" class="nav-link" data-scroll-target="#filtering-rows">Filtering rows</a></li>
+  <li><a href="#changing-data-types" id="toc-changing-data-types" class="nav-link" data-scroll-target="#changing-data-types">Changing data types</a></li>
+  <li><a href="#filtering-data" id="toc-filtering-data" class="nav-link" data-scroll-target="#filtering-data">Filtering data</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -2642,9 +2654,12 @@ vertical-align: -.125em;
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p>Liberty Mlambo </p>
+             <p>Chris Chagumaira </p>
+             <p>Rie Goto </p>
+             <p>Edward Joy </p>
           </div>
   </div>
     
@@ -2659,66 +2674,197 @@ vertical-align: -.125em;
 <h1>House keeping</h1>
 <p>There are many ways of doing the same things in R. We will teach mainly the <code>tidyverse</code> way of doing things (I believe this is the easiest way to learn R).</p>
 </section>
+<section id="exercise-2.1" class="level1">
+<h1>Exercise 2.1</h1>
+<p>Introduction to R and RStudio. In this exercise you should type R code to solve the exercises. The first step is getting familiar with operators in R.</p>
+<section id="arithmetic-with-r" class="level2">
+<h2 class="anchored" data-anchor-id="arithmetic-with-r">Arithmetic with R</h2>
+<p>An addition</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="sc">+</span> <span class="dv">5</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10</code></pre>
+</div>
+</div>
+<p>A subtraction</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="sc">-</span> <span class="dv">5</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+<p>A multiplication</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">*</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 15</code></pre>
+</div>
+</div>
+<p>A division</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">5</span> <span class="sc">+</span> <span class="dv">5</span>) <span class="sc">/</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<p>Exponentiation</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">^</span><span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 32</code></pre>
+</div>
+</div>
+<p>Modulo</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span><span class="sc">%%</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="dv">28</span><span class="sc">%%</span><span class="dv">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+</div>
+</section>
+<section id="variable-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="variable-assignment">Variable assignment</h2>
+<p>A basic concept in (statistical) programming is called a variable.A variable allows you to store a value (e.g. 4) or an object (e.g. a function description) in R. You can then later use this variable’s name to easily access the value or the object that is stored within this variable</p>
+<p>Assign the value <code>42</code> to <code>x</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">42</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Print out the value of the variable <code>x</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 42</code></pre>
+</div>
+</div>
+<p>Suppose you have a fruit basket with five apples. As a data analyst in training, you want to store the number of apples in a variable with the name my_apples.</p>
+<p>Assign the value <code>5</code> to the variable <code>my_apples</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>my_apples <span class="ot">&lt;-</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Print out the value of the variable</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>my_apples</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<p>Assign a value <code>6</code> to a variable <code>my_oranges</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>my_oranges <span class="ot">&lt;-</span> <span class="dv">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Add these two variables together</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>my_apples <span class="sc">+</span> my_oranges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11</code></pre>
+</div>
+</div>
+<p>Create the variable my_fruit variable</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>my_fruit <span class="ot">&lt;-</span> my_apples <span class="sc">+</span> my_oranges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="data-type" class="level2">
+<h2 class="anchored" data-anchor-id="data-type">Data type</h2>
+<p>Declare variables of different types</p>
+<p>Creating a numeric vector</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>my_numeric <span class="ot">&lt;-</span> <span class="dv">42</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Creating a character vector</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>my_character <span class="ot">&lt;-</span> <span class="st">&quot;universe&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Creating a logical vector</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>my_logical <span class="ot">&lt;-</span> <span class="cn">FALSE</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Check class of my_numeric</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(my_numeric)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+</div>
+</div>
+<p>Check class of my_character</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(my_character)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;character&quot;</code></pre>
+</div>
+</div>
+<p>Check class of my_logical</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(my_logical)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;logical&quot;</code></pre>
+</div>
+</div>
+</section>
+</section>
 <section id="r-basics-continued" class="level1">
 <h1>R Basics Continued</h1>
+<section id="comments-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="comments-in-r">Comments in R</h2>
+<p>As you have seen earlier in your workflow, some <code>R</code> code was not executed as it had the comment tag <code>#</code> at the start of the line. To prevent any line from being executed you prefix it with <code>x</code>. For example</p>
+<p>This code will NOT be evaluated</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2 + 2 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This code will be evaluated</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">3</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+</div>
 <p>You can create a character vector with one element like below. This code creates a character vector with one element called <code>Bulawayo</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>provinces <span class="ot">&lt;-</span> <span class="st">&quot;Bulawayo&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>provinces <span class="ot">&lt;-</span> <span class="st">&quot;Bulawayo&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>To create a character vector with more than one element we concatenate them together inside a <code>c()</code> separated by commas.</p>
 <p>Question: what does <code>provinces &lt;- c()</code> produce? Try it.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>provinces <span class="ot">&lt;-</span> <span class="fu">c</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>provinces <span class="ot">&lt;-</span> <span class="fu">c</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here i am overwriting the values already assigned to the <code>provinces</code> variable with the elements below:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>provinces <span class="ot">&lt;-</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Bulawayo&quot;</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Harare&quot;</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Manicaland&quot;</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mashonaland Central&quot;</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mashonaland East&quot;</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mashonaland West&quot;</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Masvingo&quot;</span>,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Matabeleland North&quot;</span>,</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Matabeleland South&quot;</span>,</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Midlands&quot;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>provinces <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Bulawayo&quot;</span>,<span class="st">&quot;Harare&quot;</span>,<span class="st">&quot;Manicaland&quot;</span>,<span class="st">&quot;Mashonaland Central&quot;</span>,<span class="st">&quot;Mashonaland East&quot;</span>,<span class="st">&quot;Mashonaland West&quot;</span>,<span class="st">&quot;Masvingo&quot;</span>,<span class="st">&quot;Matabeleland North&quot;</span>,<span class="st">&quot;Matabeleland South&quot;</span>,<span class="st">&quot;Midlands&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="installing-packages" class="level1">
-<h1>Installing packages</h1>
-<p>To install a package we run <code>install.packages(&quot;package name&quot;)</code> in the console. and to run that package we run <code>library(package name)</code>.</p>
-<section id="installing-the-tidyverse" class="level2">
-<h2 class="anchored" data-anchor-id="installing-the-tidyverse">Installing the tidyverse</h2>
-<p>To install the tidyverse run</p>
+<p>We can also create numeric vectors in the same way</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>provinces_population <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">143567</span>, <span class="dv">67840</span>, <span class="dv">78000</span>, <span class="dv">20000</span>, <span class="dv">405893</span>, <span class="dv">984684</span>, <span class="dv">394849</span>, <span class="dv">7689</span>, <span class="dv">743628</span>, <span class="dv">192030</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This is the basic syntax for installing a package. To install a different package e.g. <code>here</code>, run:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;here&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The here package is good for managing environments and relative links. For running the code below will tell you your working directory</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>here<span class="sc">::</span><span class="fu">here</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>If i need to refer to another folder in my working directory using the here package i can use the <code>here</code> package to refer to it as follow</p>
-<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>provinces_population </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;C:/Users/sbzlm3/OneDrive - The University of Nottingham/Documents/HCES Standardising/TFNC-Training-Materials/Week-2/Materials/demo_hces_survey_data_v2.csv&quot;</code></pre>
+<pre><code> [1] 143567  67840  78000  20000 405893 984684 394849   7689 743628 192030</code></pre>
 </div>
-</div>
-<p>This means i can store the <code>csv</code> path in a variable</p>
-<div class="cell">
-
 </div>
 </section>
-<section id="running-tidyverse" class="level2">
-<h2 class="anchored" data-anchor-id="running-tidyverse">Running tidyverse</h2>
-<p>To run a package in R we call the <code>library</code> function as follows:</p>
+<section id="dataframe" class="level2">
+<h2 class="anchored" data-anchor-id="dataframe">Dataframe</h2>
+<ul>
+<li>Data frames are the type of data structure that is used to store data in excel like tabular form</li>
+<li>They are essentially equal-length vectors glued together as columns.</li>
+<li>They are 2-dimensional and consist of <code>rows</code> and <code>columns</code></li>
+</ul>
+<p>Create a dataframe using base R from our <code>provinces</code> and <code>provinces_population</code> we run.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>zw_pop_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(provinces, provinces_population)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Dataframes <em>in my opinion</em> are not ver efficient. The <code>tidyverse</code> has their <code>dataframe</code> equivalent called <code>tibble</code>.</p>
+<blockquote class="blockquote">
+<p>A tibble, or tbl_df, is a modern reimagining of the data.frame, keeping what time has proven to be effective, and throwing out what is not.</p>
+</blockquote>
+<p>Use the <code>tibble</code> function from <code>dplyr</code> package in the <code>tidyverse</code>.</p>
+<p>To use a package not contained in base R we have to load it first by running:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 ✔ ggplot2 3.4.0      ✔ purrr   1.0.1 
@@ -2730,24 +2876,71 @@ vertical-align: -.125em;
 ✖ dplyr::lag()    masks stats::lag()</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>zw_pop_tb <span class="ot">&lt;-</span> <span class="fu">tibble</span>(provinces, provinces_population )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Question: Something went wrong, can someone tell me what?</p>
+</section>
+</section>
+<section id="installing-packages" class="level1">
+<h1>Installing packages</h1>
+<p><code>Base</code> R comes with some packages installed. To see these packages run the code below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(<span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To install a package we run <code>install.packages(&quot;package name&quot;)</code> in the console. and to run that package we run <code>library(package name)</code>.</p>
+<section id="installing-the-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="installing-the-tidyverse">Installing the tidyverse</h2>
+<p>To install the tidyverse suite of packages run</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This is the basic syntax for installing a package. To install a different package e.g. <code>here</code>, run:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;here&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The here package is good for managing environments and relative links. For running the code below will tell you your working directory</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>here<span class="sc">::</span><span class="fu">here</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If i need to refer to another folder in my working directory using the here package i can use the <code>here</code> package to refer to it as follow</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;C:/Users/sbzlm3/OneDrive - The University of Nottingham/Documents/HCES Standardising/TFNC-Training-Materials/Week-2/Materials/demo_hces_survey_data_v2.csv&quot;</code></pre>
+</div>
+</div>
+<p>This means we can store the <code>csv</code> path in a variable</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="running-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="running-tidyverse">Running tidyverse</h2>
+<p>To run a package in R we call the <code>library</code> function as follows:</p>
+<div class="cell">
+
+</div>
 <p>After running the tidyverse library it confirm the packages that it loads and gives warnings of some conflicts (we will revisit these later)</p>
 <p>PS: Note the lack of quotation marks when calling the <code>library</code> function</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>zw_population <span class="ot">&lt;-</span> <span class="fu">tibble</span>(provinces, provinces_population )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 </section>
 <section id="importing-data" class="level1">
 <h1>Importing data</h1>
 <ul>
-<li>Data can be imported in a in a number of ways. We will use Rscripts to ensure reporducibility</li>
+<li>Data can be imported in a in a number of ways. We will use <code>R</code> scripts to ensure reproducibility</li>
 <li>The readr package in R is very good with importing data. one function in `readr is:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>?read_csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>?read_csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>which reads <code>*.csv</code> files.</p>
-<section id="to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-valiable-called" class="level2">
-<h2 class="anchored" data-anchor-id="to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-valiable-called">To read a csv called de from the <em>same</em> folder as our script into a valiable called</h2>
+<section id="to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-variable-called" class="level2">
+<h2 class="anchored" data-anchor-id="to-read-a-csv-called-de-from-the-same-folder-as-our-script-into-a-variable-called">To read a csv called de from the <em>same</em> folder as our script into a variable called</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>hces <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(hces_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>hces <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(hces_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 13769 Columns: 7
 ── Column specification ────────────────────────────────────────────────────────
@@ -2760,14 +2953,14 @@ dbl (1): 101
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(hces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(hces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 13769     7</code></pre>
 </div>
 </div>
-<p>This tells me that my dataset has 13769 rows and 7 colums/variables</p>
+<p>This tells me that my dataset has 13769 rows and 7 columns/variables</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 7
   `FHzD-Ttff-n5GT-GAgF` `101` yes   gifted    Cereals Masvingo Rural
@@ -2781,7 +2974,7 @@ dbl (1): 101
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hces,<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hces,<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 7
   `FHzD-Ttff-n5GT-GAgF` `101` yes   gifted Cereals Masvingo Rural
@@ -2791,11 +2984,11 @@ dbl (1): 101
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(<span class="fu">head</span>(hces,<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(<span class="fu">head</span>(hces,<span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The <code>summary()</code> function returns descriptive statistics of the dataset</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(hces,<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(hces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> FHzD-Ttff-n5GT-GAgF      101           yes               gifted         
  Length:13769        Min.   : 101   Length:13769       Length:13769      
@@ -2817,10 +3010,10 @@ dbl (1): 101
 </section>
 <section id="introducing-pipes" class="level1">
 <h1>Introducing pipes</h1>
-<p>Thanks to pipes we can chain commands together so that we do not store the intermediate steps in a variable. For example, I want to read a <code>csv</code> dataset and see its dimensions without storing anything. I can use a pipe to pass the result of the <code>read_csv</code> function to the <code>dim</code> funstion as shown below.</p>
+<p>Thanks to pipes we can chain commands together so that we do not store the intermediate steps in a variable. For example, I want to read a <code>csv</code> dataset and see its dimensions without storing anything. I can use a pipe to pass the result of the <code>read_csv</code> function to the <code>dim</code> function as shown below.</p>
 <p>NB: There are 2 pipes in r, the base R pipe <code>|&gt;</code> and the magrittr pipe from tidyverse <code>%&gt;%</code>. They both work in a similar way.(Sometimes I use both in the same project)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_csv</span>(hces_path) <span class="sc">|&gt;</span> <span class="fu">dim</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_csv</span>(hces_path) <span class="sc">|&gt;</span> <span class="fu">dim</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 13769 Columns: 7
 ── Column specification ────────────────────────────────────────────────────────
@@ -2836,7 +3029,7 @@ dbl (1): 101
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_csv</span>(hces_path) <span class="sc">%&gt;%</span> <span class="fu">dim</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read_csv</span>(hces_path) <span class="sc">%&gt;%</span> <span class="fu">dim</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 13769 Columns: 7
 ── Column specification ────────────────────────────────────────────────────────
@@ -2852,16 +3045,19 @@ dbl (1): 101
 </div>
 </div>
 </section>
-<section id="changing-data-types" class="level1">
-<h1>Changing data types</h1>
+<section id="next-topics" class="level1">
+<h1>Next Topics</h1>
+<section id="changing-data-types" class="level2">
+<h2 class="anchored" data-anchor-id="changing-data-types">Changing data types</h2>
 </section>
-<section id="filtering-data" class="level1">
-<h1>Filtering data</h1>
-<section id="filering-columns" class="level2">
-<h2 class="anchored" data-anchor-id="filering-columns">Filering columns</h2>
+<section id="filtering-data" class="level2">
+<h2 class="anchored" data-anchor-id="filtering-data">Filtering data</h2>
+<section id="filtering-columns" class="level3">
+<h3 class="anchored" data-anchor-id="filtering-columns">Filtering columns</h3>
 </section>
-<section id="filtering-rows" class="level2">
-<h2 class="anchored" data-anchor-id="filtering-rows">Filtering rows</h2>
+<section id="filtering-rows" class="level3">
+<h3 class="anchored" data-anchor-id="filtering-rows">Filtering rows</h3>
+</section>
 </section>
 </section>
 
