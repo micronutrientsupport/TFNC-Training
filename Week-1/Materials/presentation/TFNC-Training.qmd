@@ -1,0 +1,244 @@
+---
+title: "R, Rstudio and GitHub"
+subtitle: "Tanzanian HCES Analysis and TFNC Training"
+author: "Liberty Mlambo"
+format: 
+      html:
+        # incremental: false
+        # logo: data/Nottingham-logo.png
+        # slide-number: true
+        # institute: "University of Nottingham"
+        # standalone: true
+        embed-resources: true
+        # preview-links: false
+        # footer: "TFNC Training - R, Rstudio and GitHub"
+        number-sections: true
+        number-depth: 3
+        # multiplex: true
+        # slide-tone: false
+        # touch: true
+        toc: true
+        toc-location: left
+        toc-depth: 3
+        toc-title: "Contents"
+        # auto-stretch: true
+        # scrollable: true
+# editor: source
+#   markdown: 
+#     wrap: 72
+---
+
+# Introduction to R, RStudio, Git and GitHub (Week 1)
+
+
+<embed src= "TFNC-Week1.html#toolbar=1" width="800" height="500">
+
+
+<embed src="data/RGitHub.pdf" type="application/pdf" width="800" height="500"> 
+
+
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4#toolbar=1"></video>
+
+
+
+
+## R and Rstudio
+
+-   [R](https://www.r-project.org/) is a **free** software environment for statistical computing and graphics
+-   [Rstudio](https://posit.co/download/rstudio-desktop/) is a integrated development environment (IDE) for R and Python.
+    -   **open source** and commercial editions (Windows, Mac, and Linux)
+
+## Rstudio (cont..)
+-   console for direct code execution
+
+-   syntax-highlighting editor
+
+-   tools for plotting
+
+-   viewing history
+
+-   managing your workspace
+
+## GitHub (and GIT) {visibility="hidden"}
+
+-   Geographically spaced team
+
+-   Speed of integrating changes
+
+-   Different Integrated Development Environment(IDEs) preferences i.e. [RStudio](https://rstudio.com/products/rstudio/download/), [Visual Studio Code](https://code.visualstudio.com/)
+
+-   Data security and compliance with [EU -General - - Data Protection Regulation (GDPR)](https://gdpr-info.eu/) ![](data/tools.png){fig-align="center"}
+
+## Git
+
+### Git
+
+::: columns
+::: {.column width="70%"}
+::: {.callout-tip icon="false"}
+### Open source
+:::
+
+::: {.callout-tip icon="false"}
+### Tracks file changes
+:::
+
+::: {.callout-tip icon="false"}
+### Branch based non-linear workflows (we can all work at the same time)
+:::
+
+::: {.callout-tip icon="false"}
+### Rstudio IDE intergration
+:::
+
+::: {.callout-tip icon="false"}
+### Speed of work (for quick homework assistance)
+:::
+
+::: {.callout-important icon="false"}
+### Local environment
+:::
+:::
+
+::: {.column width="30%"}
+![](data/git-icon-logo.png)
+:::
+:::
+
+## GitHub
+
+GitHub is a web-based interface that uses Git, to let multiple people work and make changes on a project concurrently
+
+### Fremium Repository based
+
+-   Repository based (Projects) [![](data/git-repositories-2.png)](https://github.com/dzvoti)
+
+### Built-in security
+
+[![](data/git-repositories-3.png)](https://github.com/dzvoti)
+
+### File History Tracking
+
+[![](data/git-repositories-4.png)](https://github.com/dzvoti)
+
+### Unlimited Public/ Private Repositories
+
+[![](data/git-repositories-5.png)](https://github.com/dzvoti)
+
+### Track issues and task progress
+
+[![](data/git-repositories-6.png)](https://github.com/dzvoti)
+
+### Track issues and task progress
+
+[![](data/git-repositories-7.png)](https://github.com/dzvoti)
+
+### Lessons learnt {visibility="hidden"}
+
+::: columns
+::: {.column width="50%"}
+::: {.callout-tip icon="false"}
+### Cloud storage and collaboration very important and a key focus area
+:::
+
+::: {.callout-tip icon="false"}
+### Reproducibility through version tracking is fundamental
+:::
+
+::: {.callout-tip icon="false"}
+### Choose tools carefully to avoid security lapses
+:::
+
+::: {.callout-important icon="false"}
+### CTRL + ALT + SHIFT+F (Git Urgent)
+:::
+:::
+
+::: {.column width="50%"}
+[![](data/git-repositories-8.png)](https://github.com/dzvoti)
+:::
+:::
+
+## Practical Demonstration
+
+### Practical Assumptions
+
+-   Computer (Mac, Windows, Linux, etc..) with administrative privileges
+-   Software download and installation experience
+
+### Practical Requirements
+
+-   GitHub account
+-   Rstudio
+-   Git
+
+## Exercises
+
+### Exercises 1
+
+| Activity                              | Description                                           |
+|--------------------------|----------------------------------------------|
+| 1.1 GitHub sign-up                    | [GitHub signup](https://github.com/)                  |
+| 1.2 R download and installation       | [R download](https://cloud.r-project.org/)            |
+| 1.3 Rstudio download and installation | [Rstudio](https://posit.co/download/rstudio-desktop/) |
+| 1.4 Git download and installation     | [Git](https://git-scm.com/downloads)                  |
+
+### Exercises 2 - RStudio and Git connection (optional) {.smaller}
+
+| Action                  | Command                                            |
+|----------------------|--------------------------------------|
+| In Rstudio console type | `usethis::create_github_token()`                   |
+| In your github account  | `generate and copy  token`                         |
+| In Rstudio console type | `gitcreds::gitcreds_set()`                         |
+| In Rstudio console      | `paste token`                                      |
+| In Rstudio terminal     | `git config user.name "YourGitHubUsername"`        |
+| In Rstudio terminal     | `git config user.email "YourGitHubEmail@here.com"` |
+
+# Linking GitHub and R (Week 2)
+
+## Week 1 Recap
+-   Last week we introduced Git, GitHub, R and RStudio.
+-   Exercise 1: 
+--  Creating GitHub credential
+--  Downloading and Installing R, RStudio and Git
+-   Exercise 2 (Optional) - Linking GitHub and R
+
+## Configuring Git from RStduio (Exercise 2)
+First configure Git by telling it who you are. In Rstudio `Terminal` run:
+
+
+
+## GitHub workflow
+![](data/GitHub-Illustrations.png)
+
+# Additional Resources
+
+## Additional Resources
+
+-   ::: columns
+    ::: {.column width="50%"}
+    -   [GitHub Docs](https://docs.github.com/en)
+
+    -   [GitHub glossary](https://docs.github.com/en/get-started/quickstart/github-glossary)
+
+    -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+
+    -   [Git, GitHub, & GitHub Desktop for beginners](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+
+    -   [R package called "swirl" that teaches you R from within the R studio](https://swirlstats.com)
+    :::
+
+    ::: {.column width="50%"}
+    -   [R for Data Science](https://r4ds.had.co.nz/index.html)
+
+    -   [Crash Course in R.](https://kirstenmorehouse.wordpress.com/354-2/topic-1-crash-course-in-r/)
+
+    -   [R Cheat Sheets](https://posit.co/resources/cheatsheets/)
+
+    -   [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+    -   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
+    :::
+    :::
+
+

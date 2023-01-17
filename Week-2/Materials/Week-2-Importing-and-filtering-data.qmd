@@ -1,0 +1,215 @@
+---
+title: "Importing and filtering data"
+subtitle: "Week 2 TFNC Training"
+author: "Liberty Mlambo"
+format: 
+    #   pdf:
+    #     toc: true
+    #     number-sections: true
+    #     number-depth: 2
+    #     toc-depth: 2
+    #     colorlinks: true
+      html:
+        incremental: false
+        # logo: data/Nottingham-logo.png
+        # slide-number: true
+        # # institute: "University of Nottingham"
+        standalone: true
+        embed-resources: true
+        # preview-links: false
+        # footer: "TFNC Training - R, Rstudio and GitHub"
+        # number-sections: false
+        # # number-depth: 3
+        # multiplex: true
+        # slide-tone: false
+        # touch: true
+        toc: true
+        slide-level: 3
+        # smaller: true
+        toc-depth: 2
+        # toc-title: "Presentation structure"
+        # auto-stretch: true
+        # # scrollable: true
+# editor: source
+#   markdown: 
+#     wrap: 72
+---
+
+# House keeping
+
+There are many ways of doing the same things in R. We will teach mainly the `tidyverse` way of doing things (I believe this is the easiest way to learn R).
+
+# R Basics Continued
+
+You can create a character vector with one element like below. This code creates a character vector with one element called `Bulawayo`:
+
+```{r}
+provinces <- "Bulawayo"
+```
+
+To create a character vector with more than one element we concatenate them together inside a `c()` separated by commas.
+
+Question: what does `provinces <- c()` produce? Try it.
+
+```{r}
+provinces <- c()
+```
+
+Here i am overwriting the values already assigned to the `provinces` variable with the elements below:
+
+```{r}
+provinces <-
+  c(
+    "Bulawayo",
+    "Harare",
+    "Manicaland",
+    "Mashonaland Central",
+    "Mashonaland East",
+    "Mashonaland West",
+    "Masvingo",
+    "Matabeleland North",
+    "Matabeleland South",
+    "Midlands"
+  )
+
+
+```
+
+We can also create numeric vectors in the same way
+
+```{r}
+provinces_population <-
+  c(
+    143567,
+    367840,
+    78000,
+    20000,
+    405893,
+    984684,
+    394849,
+    7689,
+    743628,
+    192030
+  )
+```
+
+```{r}
+provinces_population 
+```
+
+```{r}
+zw_population <- tibble(provinces, provinces_population )
+```
+
+# Installing packages
+
+To install a package we run `install.packages("package name")` in the console. and to run that package we run `library(package name)`.
+
+## Installing the tidyverse
+
+To install the tidyverse run
+
+```{r eval=FALSE,echo=TRUE}
+install.packages("tidyverse")
+```
+
+This is the basic syntax for installing a package. To install a different package e.g. `here`, run:
+
+```{r eval=FALSE,echo=TRUE}
+install.packages("here")
+```
+
+The here package is good for managing environments and relative links. For running the code below will tell you your working directory
+
+```{r eval=FALSE,echo=TRUE}
+here::here()
+```
+
+If i need to refer to another folder in my working directory using the here package i can use the `here` package to refer to it as follow
+
+```{r eval=TRUE,echo=FALSE}
+here::here("Week-2","Materials","demo_hces_survey_data_v2.csv")
+```
+
+This means we can store the `csv` path in a variable
+
+```{r eval=TRUE,echo=FALSE}
+hces_path <- here::here("Week-2","Materials","demo_hces_survey_data_v2.csv")
+```
+
+## Running tidyverse
+
+To run a package in R we call the `library` function as follows:
+
+```{r eval=TRUE,echo=FALSE}
+library(tidyverse)
+```
+
+After running the tidyverse library it confirm the packages that it loads and gives warnings of some conflicts (we will revisit these later)
+
+PS: Note the lack of quotation marks when calling the `library` function
+
+# Importing data
+
+-   Data can be imported in a in a number of ways. We will use `R` scripts to ensure reproducibility
+-   The readr package in R is very good with importing data. one function in \`readr is:
+
+```{r eval=FALSE,echo=TRUE}
+?read_csv
+```
+
+which reads `*.csv` files.
+
+## To read a csv called de from the *same* folder as our script into a variable called
+
+```{r eval=TRUE,echo=TRUE}
+hces <- read_csv(hces_path)
+```
+
+```{r eval=TRUE,echo=TRUE}
+dim(hces)
+```
+
+This tells me that my dataset has 13769 rows and 7 columns/variables
+
+```{r eval=TRUE,echo=TRUE}
+head(hces)
+```
+
+```{r eval=TRUE,echo=TRUE}
+head(hces,2)
+```
+
+```{r eval=TRUE,echo=TRUE}
+View(head(hces,10))
+```
+
+The `summary()` function returns descriptive statistics of the dataset
+
+```{r eval=TRUE,echo=TRUE}
+summary(hces)
+```
+
+# Introducing pipes
+
+Thanks to pipes we can chain commands together so that we do not store the intermediate steps in a variable. For example, I want to read a `csv` dataset and see its dimensions without storing anything. I can use a pipe to pass the result of the `read_csv` function to the `dim` function as shown below.
+
+NB: There are 2 pipes in r, the base R pipe `|>` and the magrittr pipe from tidyverse `%>%`. They both work in a similar way.(Sometimes I use both in the same project)
+
+```{r eval=TRUE,echo=TRUE}
+read_csv(hces_path) |> dim()
+
+```
+
+```{r eval=TRUE,echo=TRUE}
+read_csv(hces_path) %>% dim()
+
+```
+
+# Changing data types
+
+# Filtering data
+
+## Filtering columns
+
+## Filtering rows

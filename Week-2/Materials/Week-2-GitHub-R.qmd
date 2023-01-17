@@ -1,0 +1,519 @@
+---
+title: "R, Rstudio and GitHub"
+subtitle: "Week 2 TFNC Training"
+author: "Liberty Mlambo"
+format: 
+    #   pdf:
+    #     toc: true
+    #     number-sections: true
+    #     number-depth: 2
+    #     toc-depth: 2
+    #     colorlinks: true
+      revealjs:
+        incremental: false
+        logo: data/Nottingham-logo.png
+        # slide-number: true
+        # # institute: "University of Nottingham"
+        standalone: true
+        embed-resources: true
+        # preview-links: false
+        footer: "TFNC Training - R, Rstudio and GitHub"
+        # number-sections: false
+        # # number-depth: 3
+        # multiplex: true
+        # slide-tone: false
+        # touch: true
+        toc: true
+        slide-level: 3
+        # smaller: true
+        toc-depth: 2
+        toc-title: "Presentation structure"
+        # auto-stretch: true
+        # # scrollable: true
+# editor: source
+#   markdown: 
+#     wrap: 72
+---
+
+<!-- # Introduction to R, RStudio, Git and GitHub (Week 1) -->
+
+<!-- ## R and Rstudio -->
+
+<!-- -   [R](https://www.r-project.org/) is a **free** software environment for statistical computing and graphics -->
+<!-- -   [Rstudio](https://posit.co/download/rstudio-desktop/) is a integrated development environment (IDE) for R and Python. -->
+<!--     -   **open source** and commercial editions (Windows, Mac, and Linux) -->
+
+<!-- ## Rstudio (cont..) -->
+
+<!-- -   console for direct code execution -->
+
+<!-- -   syntax-highlighting editor -->
+
+<!-- -   tools for plotting -->
+
+<!-- -   viewing history -->
+
+<!-- -   managing your workspace -->
+
+<!-- ## GitHub (and GIT) {visibility="hidden"} -->
+
+<!-- -   Geographically spaced team -->
+
+<!-- -   Speed of integrating changes -->
+
+<!-- -   Different Integrated Development Environment(IDEs) preferences i.e. [RStudio](https://rstudio.com/products/rstudio/download/), [Visual Studio Code](https://code.visualstudio.com/) -->
+
+<!-- -   Data security and compliance with [EU -General - - Data Protection Regulation (GDPR)](https://gdpr-info.eu/) ![](data/tools.png){fig-align="center"} -->
+
+<!-- ## Git -->
+
+
+
+<!-- ### Git -->
+
+<!-- ::: columns -->
+<!-- ::: {.column width="70%"} -->
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Open source -->
+<!-- ::: -->
+
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Tracks file changes -->
+<!-- ::: -->
+
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Branch based non-linear workflows (we can all work at the same time) -->
+<!-- ::: -->
+
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Rstudio IDE intergration -->
+<!-- ::: -->
+
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Speed of work (for quick homework assistance) -->
+<!-- ::: -->
+
+<!-- ::: {.callout-important icon="false"} -->
+<!-- ### Local environment -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ::: {.column width="30%"} -->
+<!-- ![](data/git-icon-logo.png) -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ## GitHub -->
+
+<!-- GitHub is a web-based interface that uses Git, to let multiple people work and make changes on a project concurrently -->
+
+
+
+<!-- ### Fremium Repository based -->
+
+<!-- -   Repository based (Projects) [![](data/git-repositories-2.png)](https://github.com/dzvoti) -->
+
+
+
+<!-- ### Built-in security -->
+
+<!-- [![](data/git-repositories-3.png)](https://github.com/dzvoti) -->
+
+
+
+<!-- ### File History Tracking -->
+
+<!-- [![](data/git-repositories-4.png)](https://github.com/dzvoti) -->
+
+
+
+<!-- ### Unlimited Public/ Private Repositories -->
+
+<!-- [![](data/git-repositories-5.png)](https://github.com/dzvoti) -->
+
+
+
+<!-- ### Track issues and task progress -->
+
+<!-- [![](data/git-repositories-6.png)](https://github.com/dzvoti) -->
+
+
+
+<!-- ### Track issues and task progress -->
+
+<!-- [![](data/git-repositories-7.png)](https://github.com/dzvoti) -->
+
+
+
+<!-- ### Lessons learnt {visibility="hidden"} -->
+
+<!-- ::: columns -->
+<!-- ::: {.column width="50%"} -->
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Cloud storage and collaboration very important and a key focus area -->
+<!-- ::: -->
+
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Reproducibility through version tracking is fundamental -->
+<!-- ::: -->
+
+<!-- ::: {.callout-tip icon="false"} -->
+<!-- ### Choose tools carefully to avoid security lapses -->
+<!-- ::: -->
+
+<!-- ::: {.callout-important icon="false"} -->
+<!-- ### CTRL + ALT + SHIFT+F (Git Urgent) -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- [![](data/git-repositories-8.png)](https://github.com/dzvoti) -->
+<!-- ::: -->
+<!-- ::: -->
+
+<!-- ## Practical Demonstration -->
+
+
+
+<!-- ### Practical Assumptions -->
+
+<!-- -   Computer (Mac, Windows, Linux, etc..) with administrative privileges -->
+<!-- -   Software download and installation experience -->
+
+
+
+<!-- ### Practical Requirements -->
+
+<!-- -   GitHub account -->
+<!-- -   Rstudio -->
+<!-- -   Git -->
+
+<!-- ## Exercises -->
+
+
+
+<!-- ### Exercises 1 -->
+
+<!-- | Activity                              | Description                                           | -->
+<!-- |---------------------------|---------------------------------------------| -->
+<!-- | 1.1 GitHub sign-up                    | [GitHub signup](https://github.com/)                  | -->
+<!-- | 1.2 R download and installation       | [R download](https://cloud.r-project.org/)            | -->
+<!-- | 1.3 Rstudio download and installation | [Rstudio](https://posit.co/download/rstudio-desktop/) | -->
+<!-- | 1.4 Git download and installation     | [Git](https://git-scm.com/downloads)                  | -->
+
+<!-- ### Exercises 2 - RStudio and Git connection (optional) {.smaller} -->
+
+<!-- | Action                  | Command                                            | -->
+<!-- |---------------------------|---------------------------------------------| -->
+<!-- | In Rstudio console type | `usethis::create_github_token()`                   | -->
+<!-- | In your github account  | `generate and copy  token`                         | -->
+<!-- | In Rstudio console type | `gitcreds::gitcreds_set()`                         | -->
+<!-- | In Rstudio console      | `paste token`                                      | -->
+<!-- | In Rstudio terminal     | `git config user.name "YourGitHubUsername"`        | -->
+<!-- | In Rstudio terminal     | `git config user.email "YourGitHubEmail@here.com"` | -->
+
+# Linking GitHub and R (Week 2)
+
+## Week 1 Recap
+
+-   Last week we introduced Git, GitHub, R and RStudio.
+-   Exercise 1: -- Creating GitHub credential -- Downloading and Installing R, RStudio and Git
+-   Exercise 2 (Optional) - Linking GitHub and R
+
+## Configuring Git from RStudio (Exercise 2) 
+
+Configure the **local** Git by telling it who you are. In Rstudio `Terminal`:
+
+### STEP 1 : GitHub account username
+First tell Git your GitHub username e.g. `dzvoti999`
+
+```{r eval=FALSE, echo=TRUE}
+git config --global user "dzvoti99"
+```
+
+![](data/git-user-name.png)
+
+### STEP 2: GitHub account email address
+
+Second tell Git your GitHub email address e.g. `cer*************i@gmail.com`
+
+```{r eval=FALSE, echo=TRUE}
+git config --global user.email "cer*************i@gmail.com"
+```
+![](data/Git-Useremail.png)
+
+
+### STEP 3: Generate SSH Key pairs in Rstudio
+To create access keys for GitHub in RStudio.
+
+1. Go to **Global Options** (from the Tools menu)
+2. Click **Git/SVN**
+3. Check Enable version control interface for RStudio projects
+
+### STEP 3: Generate SSH Key pairs in Rstudio...
+
+4. Click **Create SSH Key**
+
+<hr />
+
+![](data/ssh-keygen.png)
+
+### STEP 3: Generate SSH Key pairs in Rstudio...
+
+5. Click **View public key**
+6. **Copy** public key 
+<hr />
+
+![](data/ssh-key-copy.png)
+
+### STEP 4: Adding the SSH key to your GitHub account
+1. Go to your GitHub account in the browser
+2. Click your GitHub profile photo(right corner) then Click on **settings**. 
+<hr />
+![](data/GitHub-settings.png)
+
+### STEP 4: Adding the SSH key to your GitHub account...
+
+3. Click **SSH and GPG keys** in the **Access** on the left side
+<hr />
+
+![](data/ssh-gpg-keys.png)
+
+### STEP 4: Adding the SSH key to your GitHub account...
+
+4. Click **New SSH key** to add the *SSH key* we copied from Rstudio
+<hr />
+
+![](data/add-key-screen.png)
+
+### STEP 4: Adding the SSH key to your GitHub account...
+
+5. Give your key a **Title** e.g. Rstudio
+6. Leave key type as **Authentification Key**
+7. Paste the *SSH key* copied from Rstudio 
+<hr />
+
+![](data/add-key-screen2.png)
+8. Click **Add Key**
+
+
+## GitHub workflow
+
+![](data/GitHub-Illustrations.png)
+
+<!-- ## Repositories recap
+-   GitHub repositories store a projects e.g. `TFNC-Assignments`
+-   Individual ownership or shared(collaborator access) 
+-   Repository's visibility can be public or private -->
+
+## Important GitHub terms
+
+### git clone
+- `git clone` copies/clones your remote repository(GitHub) to your local Rstudio
+- done to link a GitHub repo to Rstudio 
+- only done once, when you begin working on a new project
+
+### git add
+-  The `git add` command adds new or changed files in your working directory to the Git staging area.
+-  This prepares the files for `commits`
+
+### git commit
+-   `git commit`creates a snapshot of your entire repository at specific times. 
+-    make new `commits` after every script change.
+-    every `commit` should be accomanied by a `commit message`
+
+### Commit message
+-   Commit messages should be short and descriptive of your change. 
+-   should tell a story
+-   When looking through your repository changes/history you'll be guided by the commit messages, 
+
+### Git push
+-   `git push` updates the remote repository on GitHub with local commits.
+-   -   run `git push` regularly in Rstudio to stay in sync with GitHub
+
+### Git pull
+-   `git pull` updates your current local repository branch in Rstudio from the GitHub cloud
+-   run `git pull` regularly in Rstudio to stay in sync with GitHub
+
+## GitHub workflow
+
+![](data/GitHub-Illustrations.png)
+
+## Create new repository 
+
+-   GitHub repositories store a projects e.g. `TFNC-Assignments`
+-   Individual ownership or shared(collaborator access) 
+-   Repository's visibility can be public or private 
+
+**Section adopted from [https://docs.github.com/en/get-started/quickstart/create-a-repo](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+
+<!-- [^1]: Section adopted from [https://docs.github.com/en/get-started/quickstart/create-a-repo](https://docs.github.com/en/get-started/quickstart/create-a-repo) -->
+
+### 
+
+1. In the upper-right corner of any page, use the  drop-down menu, and select New repository.
+<hr />
+
+![](data/new-repo.png)
+
+###
+
+2. Type a short, memorable name for your repository. e.g., `TFNC-Assignments`
+3. Write a short description
+4. Select private visibility (to make your repo private)
+<hr />
+
+![](data/repo-name.png)
+
+###
+
+5. Check `Add a ReadMe file`
+6. Select the `R` `gitignore` template
+<hr />
+
+![](data/gitignore.png)
+
+###
+
+7. Select a licence
+<hr />
+
+![](data/licence.png)
+
+###
+
+8. Create repo
+<hr />
+
+![](data/finish-repo.png)
+
+###
+
+8. Repository landing page
+<hr />
+
+![](data/repo-landing.png)
+
+## Clone GitHub repo to Rstudio
+
+### In GitHub
+-   On your repository(TFNC-Assignments) page
+-   Click `code`
+-   Click `SSH`
+-   Copy the link e.g. `git@github.com:dzvoti/TFNC-Assignments.git`
+<hr />
+
+![](data/ssh-repo.png)
+
+### In Rstudio
+-   Click `New Project`
+<hr />
+
+![](data/newprojectR.png)
+
+### 
+-   Select `Version Control`
+<hr />
+
+![](data/VC-GIt.png)
+
+### 
+-   Select `Git`
+<hr />
+
+![](data/VC-Git2.png)
+
+### 
+-   Paste the repository url you copies from GitHub `e.g. `git@github.com:dzvoti/TFNC-Assignments.git`
+-   Git your project directory(folder) a name (Best to use same name as repo)
+-   Tell git where to place the folder
+<hr />
+
+![](data/VC-Git3.png)
+
+###
+
+Rstudio is now synced with GitHub and you can see your files in Rstudio
+<hr />
+
+![](data/VC-Git4.png)
+
+## GitHub workflow
+
+![](data/GitHub-Illustrations.png)
+
+## Add files in Rstudio
+
+### Add files
+Create a new file called `First-script.R` with the code below
+
+```{r eval=FALSE,echo=TRUE}
+library(tidyverse)
+```
+
+### Stage files
+-   File will appear in the Git tab
+<hr />
+
+![](data/first-script.png)
+
+###
+
+-   Check the box next to a file (stages) `adds` it to the stagging area
+<hr />
+
+![](data/first-script2.png)
+
+### Write commit message
+- Write a suitable commit message and click `commit`
+<hr />
+
+![](data/commit-message.png)
+
+### Commits confirmed
+-   Confirm commits and click `close`
+<hr />
+
+![](data/confirmed-commits.png)
+
+## Git status
+-  After commits git will check the remote repo and tell you that `Your branch is ahead of origin/main by 1 commit`
+<hr />
+
+![](data/ahead.png)
+
+## Git push
+-   Click the green arrow to `push` changes back to github
+-   Check github and you will see your files there
+<hr />
+
+![](data/push.png)
+
+# Exercises
+
+## Exercise 1
+Clone the [dzvoti/TFNC-Training](https://github.com/dzvoti/TFNC-Training) repo to your local Rstudio.
+
+
+# Additional Resources
+
+## Additional Resources
+
+::: columns
+::: {.column width="50%"}
+-   [GitHub Docs](https://docs.github.com/en)
+-   [GitHub glossary](https://docs.github.com/en/get-started/quickstart/github-glossary)
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+-   [Git, GitHub, & GitHub Desktop for beginners](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+-   [R package called "swirl" that teaches you R from within the R studio](https://swirlstats.com)
+:::
+::: {.column width="50%"}
+-   [R for Data Science](https://r4ds.had.co.nz/index.html)
+
+-   [Crash Course in R.](https://kirstenmorehouse.wordpress.com/354-2/topic-1-crash-course-in-r/)
+
+-   [R Cheat Sheets](https://posit.co/resources/cheatsheets/)
+-   [YaRrr! The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+-   [R for Social Scientists](https://datacarpentry.org/r-socialsci/)
+:::
+:::
