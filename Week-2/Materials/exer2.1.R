@@ -1,6 +1,7 @@
-# Introduction to R and RStudio. In this script you should type R code 
-# to solve the exercises. The first step is getting familiar with operators 
-# in R. 
+# Introduction to R and RStudio. In this exercise you’ll familiarise with 
+# basic arithmetic and variable assignment operations in R. When you are done save this in your github 
+# repository you created 
+# 
 # 
 
 ###############################
