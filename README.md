@@ -60,3 +60,4 @@
 ||Kwaheri      |Bye                 |
 ||Mambo        |Hi/Hello            |
 ||Subiri/Ngoja        |Wait            |
+||Tupo pamoja     |We are together    |
