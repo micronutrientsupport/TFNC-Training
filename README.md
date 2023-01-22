@@ -59,3 +59,4 @@
 ||Poa          |Cool                |
 ||Kwaheri      |Bye                 |
 ||Mambo        |Hi/Hello            |
+||Subiri/Ngoja        |Wait            |
