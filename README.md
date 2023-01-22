@@ -61,3 +61,9 @@
 ||Mambo        |Hi/Hello            |
 ||Subiri/Ngoja        |Wait            |
 ||Tupo pamoja     |We are together    |
+||Kuna swali lolote?  |Any questions?   |
+||Swali?       |Question?           |
+||Umeelewa?     |Understand? (singular)   |
+||Meelewa?      |Understand? (plural)     |
+||Elewa         |Understand               |
+||Tumeelewa     |We understand            |
