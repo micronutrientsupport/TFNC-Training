@@ -67,3 +67,4 @@
 ||Meelewa?      |Understand? (plural)     |
 ||Elewa         |Understand               |
 ||Tumeelewa     |We understand            |
+|Shona|Maita Basa|Thank You|
