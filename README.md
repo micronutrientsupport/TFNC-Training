@@ -17,15 +17,6 @@
 | [Week 4](Week-4) / 1 Feb 2023  |                                                                                                                                               | [Watch session 1](https://drive.google.com/file/d/1bt6XV3PLouC6Gy-Zf9wcX0TSZwHoquiN/view?usp=share_link)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                            |
 |                                 |                                                                                                                                               | [Watch session 2](https://drive.google.com/file/d/1Ww5uF3y9-a3jIwXx5VmtnUCjwQZdDqsr/view?usp=share_link)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                            |
 
-```{=html}
-<!-- # Recommended Packages
-
-|Package Name|Installation procedure|Description|
-|---|----------|------|
-|The tidyverse|`install.packages("tidyverse")`||
-|here|`install.packages("here")` | |
-|||| -->
-```
 # References and Additional Resources
 
 -   [GitHub Docs](https://docs.github.com/en)
