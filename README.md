@@ -20,6 +20,12 @@
 | Week 6 / 14 Feb 2023  | Reading in data, exploring and visualising
   |
     |
+|                       | Reshaping and merging data
+   |
+   |
+|                       | Functions, piping, packages
+   |
+   |
 
 
 # References and Additional Resources
