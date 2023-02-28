@@ -45,3 +45,7 @@ Week-1/Materials/presentation/TFNC-Week1-speaker.html
 Week-1/Materials/presentation/TFNC-Week1-speaker.html
 Week-1/Materials/presentation/TFNC-Week1.qmd
 *.qmd
+
+# Sensitive files
+data/*
+!data/put-data-here
