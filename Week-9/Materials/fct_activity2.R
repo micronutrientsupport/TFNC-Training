@@ -56,34 +56,33 @@ n_HH <- length(unique(dataJ1$sdd_hhid))
 
 # 2.1 Loading the data
 
-tzfct <- read.csv(here::here( "data", "TZ08_tidied_FCT_v2"))
+tzfct <- read.csv(here::here( "data", "TZ08_tidied_FCT_v2.csv"))
 
 # check the data
-
-head(tzfct)
-names(tzfct)
-str(tzfct)
-dim(tzfct)
 
 # 2.2 Exploring FCT for food matching
 
 # Filtering of FCT, for food groups and food items.
 
 # Checking food categories
-tzfct %>% filter(foodcategory == "Cereals and others") %>% 
-  select(fcd_id, fooditem, EDIBLE, WATERg, VITA_RAEmcg )
+tzfct %>% filter(Food_Group == "Cereal and Cereal products") 
 
 # Exploring composition of the foods
-tzfct %>% filter(fooditem == "Cereals and others") %>% 
-  select(fcd_id, fooditem, EDIBLE, WATERg, VITA_RAEmcg )
+tzfct %>% filter(Food_Group == "Cereal and Cereal products") %>% 
+  select(fdc_id, food_description, EDIBLE, WATERg, VITA_RAEmcg)
+
+# what components are missing? 
+tzfct %>% filter(Food_Group == "Cereal and Cereal products") %>% 
+  select(fdc_id, food_description, VITA_RAEmcg)
 
 # Finding food items
-tzfct %>% filter(grepl("tomato", fooditem, case.ignore = TRUE))
+tzfct %>% filter(grepl("tomato", food_description, ignore.case = TRUE))
 
 # Exploring composition of filtered foods
-tzfct %>% filter(grepl("tomato", fooditem, case.ignore = TRUE)) %>% 
-  select(fcd_id, fooditem, EDIBLE, WATERg, VITA_RAEmcg )
+tzfct %>% filter(grepl("tomato", food_description, ignore.case = TRUE)) %>% 
+  select(fdc_id, food_description,  VITA_RAEmcg )
 
+# What do you think about the results? How they compared with other FCTs? 
 
 
 # Thinking about food matches between HCES food list and food composition.
