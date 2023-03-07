@@ -46,6 +46,9 @@ Week-1/Materials/presentation/TFNC-Week1-speaker.html
 Week-1/Materials/presentation/TFNC-Week1.qmd
 *.qmd
 
+# Solutions - temporary hidden
+Week-9/Materials/fct_activity2_solutions.R
+
 # Sensitive files
 hces-data/*
 !hces-data/put-data-here
