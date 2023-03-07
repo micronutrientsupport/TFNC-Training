@@ -35,7 +35,7 @@
 
 
 
-## 3) Changing variable names. Please rename the variable t the FAO Tagnames - fdc_id, PROCNTg, FAT_g, FASATg, CHOCDFg, food_description, FIB_g, PHYTACmg,
+## 3) Changing variable names. Please rename the variable to the FAO Tagnames - fdc_id, PROCNTg, FAT_g, FASATg, CHOCDFg, food_description, FIB_g, PHYTACmg,
 # CAmg, CUmg, MNmg, MGmg, Food_Group, Kmg, ENERCkcal, NAmg, FEmg, ZNmg, Pmg
 
 
