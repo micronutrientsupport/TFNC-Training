@@ -50,7 +50,8 @@ df <- df %>% slice(c(1:378)) #This selects only the rows 1:10 to keep.
 
 
 
-## 3) Changing variable names. Please select logical names for the columns, and keep the format regular across the entire dataset - e.g. [Variable]_[unit] (NA_mg)
+## 3) Changing variable names. Please rename the variable to the FAO INFOODS Tagnames - fdc_id, PROCNTg, FAT_g, FASATg, CHOCDFg, food_description, FIB_g, PHYTACmg,
+# CAmg, CUmg, MNmg, MGmg, Food_Group, Kmg, ENERCkcal, NAmg, FEmg, ZNmg, Pmg
 
 
 
