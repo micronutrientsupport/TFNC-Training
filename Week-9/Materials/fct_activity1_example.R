@@ -2,8 +2,6 @@
 # Loading libraries
 library(tidyverse)
 
-
-
 # Loading the data
 df <- read.csv("data/example_data.csv")
 
