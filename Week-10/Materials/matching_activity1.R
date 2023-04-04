@@ -1,10 +1,12 @@
+install.packages("here")
 
 # Loading library
 library(tidyverse)
+library(here)
 
 # 1.1 Loading the apparent food consumption data 
 
-dataJ1 <- read.csv(here::here("..", "tz_2020", "data", "HH_SEC_J1.csv"))
+dataJ1 <- read.csv(here::here("hces-data", "HH_SEC_J1.csv"))
 item_code <- read.csv(here::here("Week-10", "Materials",  "data", "food-id.csv"), header = TRUE)
 
 # check the data
@@ -34,7 +36,7 @@ names(item_code)
 
 # 2.1 Loading the food composition data
 
-tzfct <- read.csv(here::here("..",  "data", "TZ08_tidied_FCT_v2.CSV"))
+tzfct <- read.csv(here::here("Week-9", "Materials", "data", "TZ08_tidied_FCT_v2.CSV"))
 
 # check the data
 
@@ -69,6 +71,7 @@ tzfct %>%
 
 # Checking missing values for all variables
 
+install.packages("naniar")
 tzfct %>% naniar::vis_miss()
 
 # Can we visualise it only for vitamins?
