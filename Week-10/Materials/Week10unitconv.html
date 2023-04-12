@@ -2609,8 +2609,9 @@ vertical-align: -.125em;
   <ul>
   <li><a href="#the-food-weight-conversion-factor" id="toc-the-food-weight-conversion-factor" class="nav-link active" data-scroll-target="#the-food-weight-conversion-factor">The food weight conversion factor</a>
   <ul class="collapse">
-  <li><a href="#liquid-food-conversion" id="toc-liquid-food-conversion" class="nav-link" data-scroll-target="#liquid-food-conversion">Liquid food conversion</a></li>
-  <li><a href="#non-standard-unit-conversion" id="toc-non-standard-unit-conversion" class="nav-link" data-scroll-target="#non-standard-unit-conversion">Non-standard unit conversion</a></li>
+  <li><a href="#liquid-food-conversion" id="toc-liquid-food-conversion" class="nav-link" data-scroll-target="#liquid-food-conversion">1. Liquid food conversion</a></li>
+  <li><a href="#non-standard-unit-conversion" id="toc-non-standard-unit-conversion" class="nav-link" data-scroll-target="#non-standard-unit-conversion">2. Non-standard unit conversion</a></li>
+  <li><a href="#edible-portion" id="toc-edible-portion" class="nav-link" data-scroll-target="#edible-portion">3. Edible portion</a></li>
   </ul></li>
   <li><a href="#r-scripts---listing-up-the-food-items" id="toc-r-scripts---listing-up-the-food-items" class="nav-link" data-scroll-target="#r-scripts---listing-up-the-food-items">R scripts - Listing up the food items</a></li>
   </ul>
@@ -2640,7 +2641,7 @@ vertical-align: -.125em;
 <p>The household recorded the amount of food items consumed in the last 7 days using various units such as KILOGRAMS, GRAMS, LITRES, MILLILITRES, and PIECES. It is generally recommended to use metric units such as grams (g), milligrams (mg), or micrograms (µg). Since food is typically consumed on a fresh weight basis and only the edible portion is eaten, food composition data is usually reported as ‘per 100 g edible portion on a fresh weight basis’.</p>
 <p>To convert KILOGRAMS to GRAMS, the conversion factor of 1000 was used, as 1 KILOGRAM equals 1000 GRAMS.</p>
 <section id="liquid-food-conversion" class="level3">
-<h3 class="anchored" data-anchor-id="liquid-food-conversion">Liquid food conversion</h3>
+<h3 class="anchored" data-anchor-id="liquid-food-conversion">1. Liquid food conversion</h3>
 <p>For liquid food items, MILLILITRES and LITRES were used. To convert MILLILITRES to GRAMS, the density of the liquid (in g/ml) was taken into account, and the conversion was done using the following formula (see also Table 3.5-4 in FAO/INFOODS Guidelines for Converting Units, Denominators and Expressions, Version 1.0. (2012), <a href="https://www.fao.org/3/i3089e/i3089e.pdf" class="uri">https://www.fao.org/3/i3089e/i3089e.pdf</a> )</p>
 <p>Weight of food (g) = volume of food (mL) * density factor (g/mL)</p>
 <p>To convert LITRES to GRAMS, the density was multiplied by the volume in MILLILITRES as follows:</p>
@@ -2727,7 +2728,7 @@ vertical-align: -.125em;
 <p>(To get the list - see the R script below.)</p>
 </section>
 <section id="non-standard-unit-conversion" class="level3">
-<h3 class="anchored" data-anchor-id="non-standard-unit-conversion">Non-standard unit conversion</h3>
+<h3 class="anchored" data-anchor-id="non-standard-unit-conversion">2. Non-standard unit conversion</h3>
 <p>To convert food items reported in PIECES into weight, you can follow these steps:</p>
 <ol type="1">
 <li><p>Use the Tanzania Food Consumption Table (2008) Section 3 Food Portion Size Databases (pages 229-256), which are also available in an Excel format at the following link: <a href="https://www.hsph.harvard.edu/nutritionsource/food-tables/" class="uri">https://www.hsph.harvard.edu/nutritionsource/food-tables/</a></p></li>
@@ -2808,6 +2809,13 @@ vertical-align: -.125em;
 </tbody>
 </table>
 <p>(To get the list - see the R script below.)</p>
+</section>
+<section id="edible-portion" class="level3">
+<h3 class="anchored" data-anchor-id="edible-portion">3. Edible portion</h3>
+<p>Since food is typically consumed on a fresh weight basis and only the edible portion is eaten. The amount of edible portion is specified in the food composition table. For instance, mangoes have an edible portion of 0.72, indicating that 72% is edible while 28% is non-edible (comprising of seed and skin). On the other hand, oil has an edible portion of 1.0, as the entire portion is edible.</p>
+<p>Unfortunately, the Tanzania Food Composition Table does not provide information on the edible portion. Therefore, we rely on tables from neighbouring countries like Kenya or regions such as the West African Food Composition Table. These tables can be accessed through the FAO/International Network of Food Data Systems (INFOODS) in Africa <a href="https://www.fao.org/infoods/infoods/tables-and-databases/africa/en/" class="uri">https://www.fao.org/infoods/infoods/tables-and-databases/africa/en/</a>, please find the Kenya Food Composition Tables 2018 <a href="https://www.fao.org/3/I8897EN/i8897en.pdf" class="uri">https://www.fao.org/3/I8897EN/i8897en.pdf</a> and the FAO/INFOODS Food Composition Table for Western Africa 2019 <a href="https://www.fao.org/infoods/infoods/tables-and-databases/faoinfoods-databases/en/" class="uri">https://www.fao.org/infoods/infoods/tables-and-databases/faoinfoods-databases/en/</a>.</p>
+<p>We will focus on the foods listed for the food matching process (see <a href="https://github.com/dzvoti/TFNC-Training/blob/main/Week-10/Materials/data/tz_food-matches_v.1.0.0.csv">here</a>). The information on the edible portions of these foods will be obtained from the Kenya food composition table. If this information is not available, please refer to the West Africa food composition tables.</p>
+<p>You can find the table that contains information on the edible portions of the listed food items <a href="https://github.com/dzvoti/TFNC-Training/blob/main/Week-10/Materials/TNPS_foodmatching_EPlist.csv">here</a>. The factors for calculating the edible portion of the 60 food items (using mean values) can be found <a href="https://github.com/dzvoti/TFNC-Training/blob/main/Week-10/Materials/TNPS_foodmatching_meanEP.csv">here</a>.</p>
 </section>
 </section>
 <section id="r-scripts---listing-up-the-food-items" class="level2">

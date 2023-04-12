@@ -15,7 +15,7 @@ The household recorded the amount of food items consumed in the last 7 days usin
 
 To convert KILOGRAMS to GRAMS, the conversion factor of 1000 was used, as 1 KILOGRAM equals 1000 GRAMS.
 
-### Liquid food conversion
+### 1. Liquid food conversion
 
 For liquid food items, MILLILITRES and LITRES were used. To convert MILLILITRES to GRAMS, the density of the liquid (in g/ml) was taken into account, and the conversion was done using the following formula (see also Table 3.5-4 in FAO/INFOODS Guidelines for Converting Units, Denominators and Expressions, Version 1.0. (2012), <https://www.fao.org/3/i3089e/i3089e.pdf> )
 
@@ -49,7 +49,7 @@ Food items that reported by LITRE and MILLILITRE
 
 (To get the list - see the R script below.)
 
-### Non-standard unit conversion
+### 2. Non-standard unit conversion
 
 To convert food items reported in PIECES into weight, you can follow these steps:
 
@@ -74,6 +74,18 @@ Food items that reported by PIECES
 | WILD BIRDS AND INSECTS                           | 1   | ?                                                                                          |                                  |
 
 (To get the list - see the R script below.)
+
+
+### 3. Edible portion
+
+Since food is typically consumed on a fresh weight basis and only the edible portion is eaten. The amount of edible portion is specified in the food composition table. For instance, mangoes have an edible portion of 0.72, indicating that 72% is edible while 28% is non-edible (comprising of seed and skin). On the other hand, oil has an edible portion of 1.0, as the entire portion is edible.
+
+Unfortunately, the Tanzania Food Composition Table does not provide information on the edible portion. Therefore, we rely on tables from neighbouring countries like Kenya or regions such as the West African Food Composition Table. These tables can be accessed through the FAO/International Network of Food Data Systems (INFOODS) in Africa <https://www.fao.org/infoods/infoods/tables-and-databases/africa/en/>, please find the Kenya Food Composition Tables 2018 <https://www.fao.org/3/I8897EN/i8897en.pdf> and the FAO/INFOODS Food Composition Table for Western Africa 2019 <https://www.fao.org/infoods/infoods/tables-and-databases/faoinfoods-databases/en/>.
+
+We will focus on the foods listed for the food matching process (see [here](https://github.com/dzvoti/TFNC-Training/blob/main/Week-10/Materials/data/tz_food-matches_v.1.0.0.csv)). The information on the edible portions of these foods will be obtained from the Kenya food composition table. If this information is not available, please refer to the West Africa food composition tables.
+
+You can find the table that contains information on the edible portions of the listed food items [here](https://github.com/dzvoti/TFNC-Training/blob/main/Week-10/Materials/TNPS_foodmatching_EPlist.csv). The factors for calculating the edible portion of the 60 food items (using mean values) can be found [here](https://github.com/dzvoti/TFNC-Training/blob/main/Week-10/Materials/TNPS_foodmatching_meanEP.csv).
+
 
 ## R scripts - Listing up the food items
 
