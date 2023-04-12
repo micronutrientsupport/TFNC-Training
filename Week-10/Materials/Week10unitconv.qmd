@@ -1,0 +1,228 @@
+---
+title: "The food weight conversion factor in NPS-DSS 2019-2020, NPS Wave 5"
+format:
+  html:
+    embed-resources: true
+toc: true
+toc-depth: 3
+editor: visual
+---
+
+## The food weight conversion factor
+
+The household recorded the amount of food items consumed in the last 7 days using various units such as KILOGRAMS, GRAMS, LITRES, MILLILITRES, and PIECES. It is generally recommended to use metric units such as grams (g), milligrams (mg), or micrograms (µg). Since food is typically consumed on a fresh weight basis and only the edible portion is eaten, food composition data is usually reported as 'per 100 g edible portion on a fresh weight basis'.
+
+To convert KILOGRAMS to GRAMS, the conversion factor of 1000 was used, as 1 KILOGRAM equals 1000 GRAMS.
+
+### Liquid food conversion
+
+For liquid food items, MILLILITRES and LITRES were used. To convert MILLILITRES to GRAMS, the density of the liquid (in g/ml) was taken into account, and the conversion was done using the following formula (see also Table 3.5-4 in FAO/INFOODS Guidelines for Converting Units, Denominators and Expressions, Version 1.0. (2012), <https://www.fao.org/3/i3089e/i3089e.pdf> )
+
+Weight of food (g) = volume of food (mL) \* density factor (g/mL)
+
+To convert LITRES to GRAMS, the density was multiplied by the volume in MILLILITRES as follows:
+
+Weight of food (g) = volume of food (L) \* 1000 \* density factor (g/mL)
+
+To convert liquid volumes to weight, the following steps should be followed:
+
+1.  Use the FAO/INFOODS Density Database - Version 2, which is an Excel file that provides density values for various food items. The database is available for download at <https://www.fao.org/infoods/infoods/tables-and-databases/faoinfoods-databases/en/>.
+
+2.  Calculate the mean values of liquid density using food items listed in the FAO/INFOOD Density Database that are commonly consumed in Tanzania. It is important to select food items that are representative of the local diet to obtain accurate conversion factors.
+
+\*Honey, syrups, jams, marmalade, jellies, canned fruits Honey is not listed in the FAO/INFOOD Density Database. Therefore, the liquid density of honey needs to be calculated separately. Use other references, for example, The "Weights, Measures, and Conversion Factors for Agricultural Commodities and Their Products" produced by the U.S. Department of Agriculture <https://www.ers.usda.gov/webdocs/publications/41880/33132_ah697_002.pdf> provides the necessary information; see page 13 - using this information, the liquid density of honey can be calculated (1 gallon = 3.785 litres) and included in the calculation of the mean liquid density value of the other food items.
+
+Food items that reported by LITRE and MILLILITRE
+
+| itemcode                                               | N   | Food item in FAO/INFOODS                                                                 | Calculate mean liquid density |
+|---------------------|:----------------|-----------------|:----------------:|
+| COOKING OIL                                            | 978 | Oils and fats                                                                            |                               |
+| HONEY, SYRUPS, JAMS, MARMALADE, JELLIES, CANNED FRUITS | 277 | Sweets (No honey in the table - add honey's liquid density calculated from US reference) |                               |
+| FRESH MILK                                             | 262 | Milk and dairy products                                                                  |                               |
+| BOTTLED/CANNED SOFT DRINKS (SODA, JUICE, WATER)        | 211 | Beverages, non alcoholic (including soft drinks and juices)                              |                               |
+| MILK PRODUCTS (LIKE CREAM, CHEESE, YOGHURT ETC)        | 107 | Dairy products                                                                           |                               |
+| LOCAL BREWS                                            | 39  | Spirits and liqueurs                                                                     |                               |
+| BOTTLED BEER                                           | 23  | Beer                                                                                     |                               |
+| WINE AND SPIRITS                                       | 5   | Wine and cider                                                                           |                               |
+| PREPARED TEA, COFFEE                                   | 1   | Tea, cacao, coffee and drinking powders                                                  |                               |
+
+(To get the list - see the R script below.)
+
+### Non-standard unit conversion
+
+To convert food items reported in PIECES into weight, you can follow these steps:
+
+1.  Use the Tanzania Food Consumption Table (2008) Section 3 Food Portion Size Databases (pages 229-256), which are also available in an Excel format at the following link: <https://www.hsph.harvard.edu/nutritionsource/food-tables/>
+
+2.  Determine the weight of the food item based on its size in pieces. You can either use the mean value or the median size of the food item (e.g. using the weight of a standard or medium-sized piece if it is commonly used).
+
+\*COCONUTS - There is no available reference value for the weight of whole coconuts. Do you know any reference value in weight in Tanzania?
+
+Food items that reported by PIECES
+
+| itemcode                                         | N   | Food item in Tanzania Food Composition Tables                                              | Calculate mean conversion factor |
+|--------------------|:----------------|------------------|:---------------:|
+| EGGS                                             | 206 | #307 (Std 70)                                                                              |                                  |
+| COCONUTS (MATURE/IMMATURE)                       | 32  | No whole coconuts - any reference?                                                         |                                  |
+| CHICKEN AND OTHER POULTRY                        | 28  | #554 (S 50, M 100, L 200; A 200)                                                           |                                  |
+| SWEETS                                           | 16  | e.g. #532 African donuts?                                                                  |                                  |
+| MAIZE (GREEN, COB)                               | 1   | #13, 14 (S 100, M 350)                                                                     |                                  |
+| RIPE BANANAS                                     | 1   | #102 (S 50, M 115, L 175)                                                                  |                                  |
+| CITRUS FRUITS (ORANGES, LEMON, TANGERINES, ETC.) | 1   | #114 Orange (S 120, M 170, L 200), #109 Lemon (Std 70), #124 Tangerine (S 40, M 70, L 100) |                                  |
+| MANGOES, AVOCADOES AND OTHER FRUITS              | 1   | #112 Mango (S 120, M 155, L 270), #101 Avocado (S 150, M 200, L 500), Other fruits?        |                                  |
+| WILD BIRDS AND INSECTS                           | 1   | ?                                                                                          |                                  |
+
+(To get the list - see the R script below.)
+
+## R scripts - Listing up the food items
+
+open dataJ1
+
+```{r}
+library(tidyverse)
+
+dataJ1 <- read_csv("HH_SEC_J1.csv")
+```
+
+change variable names
+
+```{r}
+dataJ1 <- dataJ1 %>%
+  rename(
+    cons_yn = hh_j01,
+    cons_unit = hh_j02_1,
+    cons_quant = hh_j02_2,
+    pur_unit = hh_j03_1,
+    pur_quant = hh_j03_2,
+    pur_THS = hh_j04,
+    prod_unit = hh_j05_1,
+    prod_quant = hh_j05_2,
+    gift_unit = hh_j06_1,
+    gift_quant = hh_j06_2
+  )
+```
+
+change NONE to NA in quantity of food items (pur_quant, prod_quant, gift_quant)
+
+```{r}
+dataJ1 <- dataJ1 %>% 
+  mutate(
+    pur_quant = na_if(pur_quant, "NONE"), 
+    prod_quant = na_if(prod_quant, "NONE"), 
+    gift_quant = na_if(gift_quant, "NONE")
+    )
+```
+
+change variable types
+
+```{r}
+dataJ1 <- dataJ1 %>%
+  mutate(
+    itemcode = as.factor(itemcode),
+    cons_yn = as.factor(cons_yn),
+    cons_unit = as.factor(cons_unit),
+    cons_quant = as.numeric(cons_quant),
+    pur_unit = as.factor(pur_quant),
+    pur_quant = as.numeric(pur_quant),
+    prod_unit = as.factor(prod_unit),
+    prod_quant = as.numeric(prod_quant),
+    gift_unit = as.factor(gift_unit),
+    gift_quant = as.numeric(gift_quant)
+  )
+```
+
+add item_id for 60 food items
+
+```{r}
+dataJ1 <- dataJ1 %>%
+  mutate(item_id = case_when(
+    (itemcode == 'RICE (PADDY)') ~ 101,
+    (itemcode == 'RICE (HUSKED)') ~ 102,
+    (itemcode == 'MAIZE (GREEN, COB)') ~ 103,
+    (itemcode == 'MAIZE (GRAIN)') ~ 104,
+    (itemcode == 'MAIZE (FLOUR)') ~ 105,
+    (itemcode == 'MILLET AND SORGHUM (GRAIN)') ~ 106,
+    (itemcode == 'MILLET AND SORGHUM (FLOUR)') ~ 107,
+    (itemcode == 'BREAD') ~ 109,
+    (itemcode == 'BUNS, CAKES AND BISCUITS') ~ 110,
+    (itemcode == 'MACARONI, SPAGHETTI') ~ 111,
+    (itemcode == 'OTHER CEREAL PRODUCTS') ~ 112,
+    (itemcode == 'CASSAVA FRESH') ~ 201,
+    (itemcode == 'CASSAVA DRY/FLOUR') ~ 202,
+    (itemcode == 'SWEET POTATOES') ~ 203,
+    (itemcode == 'YAMS/COCOYAMS') ~ 204,
+    (itemcode == 'IRISH POTATOES') ~ 205,
+    (itemcode == 'COOKING BANANAS, PLANTAINS') ~ 206,
+    (itemcode == 'OTHER STARCHES') ~ 207,
+    (itemcode == 'SUGAR') ~ 301,
+    (itemcode == 'SWEETS') ~ 302,
+    (itemcode == 'HONEY, SYRUPS, JAMS, MARMALADE, JELLIES, CANNED FRUITS') ~ 303,
+    (itemcode == 'PEAS, BEANS, LENTILS AND OTHER PULSES') ~ 401,
+    (itemcode == 'GROUNDNUTS IN SHELL/SHELLED') ~ 501,
+    (itemcode == 'COCONUTS (MATURE/IMMATURE)') ~ 502,
+    (itemcode == 'CASHEW, ALMONDS AND OTHER NUTS') ~ 503,
+    (itemcode == 'SEEDS AND PRODUCTS FROM NUTS/SEEDS (EXCL. COOKING OIL)') ~ 504,
+    (itemcode == 'ONIONS, TOMATOES, CARROTS AND GREEN PEPPER, OTHER VIUNGO') ~ 601,
+    (itemcode == 'SPINACH, CABBAGE AND OTHER GREEN VEGETABLES') ~ 602,
+    (itemcode == 'CANNED, DRIED AND WILD VEGETABLES') ~ 603,
+    (itemcode == 'RIPE BANANAS') ~ 701,
+    (itemcode == 'CITRUS FRUITS (ORANGES, LEMON, TANGERINES, ETC.)') ~ 702,
+    (itemcode == 'MANGOES, AVOCADOES AND OTHER FRUITS') ~ 703,
+    (itemcode == 'SUGARCANE') ~ 704,
+    (itemcode == 'GOAT MEAT') ~ 801,
+    (itemcode == 'BEEF INCLUDING MINCED SAUSAGE') ~ 802,
+    (itemcode == 'PORK INCLUDING SAUSAGES AND BACON') ~ 803,
+    (itemcode == 'CHICKEN AND OTHER POULTRY') ~ 804,
+    (itemcode == 'WILD BIRDS AND INSECTS') ~ 805,
+    (itemcode == 'OTHER DOMESTIC/WILD MEAT PRODUCTS') ~ 806,
+    (itemcode == 'EGGS') ~ 807,
+    (itemcode == 'FRESH FISH AND SEAFOOD (INCLUDING DAGAA)') ~ 808,
+    (itemcode == 'DRIED/SALTED/CANNED FISH AND SEAFOOD (INCL. DAGAA)') ~ 809,
+    (itemcode == 'PACKAGE FISH') ~ 810,
+    (itemcode == 'FRESH MILK') ~ 901,
+    (itemcode == 'MILK PRODUCTS (LIKE CREAM, CHEESE, YOGHURT ETC)') ~ 902,
+    (itemcode == 'CANNED MILK/MILK POWDER') ~ 903,
+    (itemcode == 'COOKING OIL') ~ 1001,
+    (itemcode == 'BUTTER, MARGARINE, GHEE AND OTHER FAT PRODUCTS') ~ 1002,
+    (itemcode == 'SALT') ~ 1003,
+    (itemcode == 'OTHER SPICES') ~ 1004,
+    (itemcode == 'WHEAT FLOUR') ~ 1081,
+    (itemcode == 'WHEAT, BARLEY GRAIN AND OTHER CEREALS') ~ 1082,
+    (itemcode == 'TEA DRY') ~ 1101,
+    (itemcode == 'COFFEE AND COCOA') ~ 1102,
+    (itemcode == 'OTHER RAW MATERIALS FOR DRINKS') ~ 1103,
+    (itemcode == 'BOTTLED/CANNED SOFT DRINKS (SODA, JUICE, WATER)') ~ 1104,
+    (itemcode == 'PREPARED TEA, COFFEE') ~ 1105,
+    (itemcode == 'BOTTLED BEER') ~ 1106,
+    (itemcode == 'LOCAL BREWS') ~ 1107,
+    (itemcode == 'WINE AND SPIRITS') ~ 1108
+  ))
+```
+
+list up the food items reported by PIECES, or LITRE and MILLILITRE
+
+```{r}
+# list PIECES
+food_unit_P <-
+  count(dataJ1, item_id, itemcode, cons_unit) %>%
+  filter(cons_unit == "PIECES") %>%
+  arrange(desc(n))
+
+# list LITRE
+food_unit_L <-
+  count(dataJ1, item_id, itemcode, cons_unit) %>%
+  filter(cons_unit == "LITRE") %>% 
+  arrange(desc(n))
+
+# list MILLILITRE
+food_unit_mL <-
+  count(dataJ1, item_id, itemcode, cons_unit) %>%
+  filter(cons_unit == "MILLILITRE") %>% 
+  arrange(desc(n))
+
+# list both LITRE and MILLILITRE 
+food_unit_LmL <-
+  count(dataJ1, item_id, itemcode, cons_unit) %>%
+  filter(cons_unit == "LITRE" | cons_unit == "MILLILITRE") %>% 
+    arrange(desc(n))
+```
