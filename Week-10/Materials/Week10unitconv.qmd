@@ -3,6 +3,7 @@ title: "The food weight conversion factor in NPS-DSS 2019-2020, NPS Wave 5"
 format:
   html:
     embed-resources: true
+    code-overflow: wrap
 toc: true
 toc-depth: 3
 editor: visual
