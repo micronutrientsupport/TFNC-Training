@@ -35,7 +35,7 @@ To convert liquid volumes to weight, the following steps should be followed:
 Food items that reported by LITRE and MILLILITRE
 
 | itemcode                                               | N   | Food item in FAO/INFOODS                                                                 | Calculate mean liquid density |
-|---------------------|:----------------|-----------------|:----------------:|
+|--------------------|:-----------------|------------------|:----------------:|
 | COOKING OIL                                            | 978 | Oils and fats                                                                            |                               |
 | HONEY, SYRUPS, JAMS, MARMALADE, JELLIES, CANNED FRUITS | 277 | Sweets (No honey in the table - add honey's liquid density calculated from US reference) |                               |
 | FRESH MILK                                             | 262 | Milk and dairy products                                                                  |                               |
@@ -61,7 +61,7 @@ To convert food items reported in PIECES into weight, you can follow these steps
 Food items that reported by PIECES
 
 | itemcode                                         | N   | Food item in Tanzania Food Composition Tables                                              | Calculate mean conversion factor |
-|--------------------|:----------------|------------------|:---------------:|
+|--------------------|:-----------------|------------------|:----------------:|
 | EGGS                                             | 206 | #307 (Std 70)                                                                              |                                  |
 | COCONUTS (MATURE/IMMATURE)                       | 32  | No whole coconuts - any reference?                                                         |                                  |
 | CHICKEN AND OTHER POULTRY                        | 28  | #554 (S 50, M 100, L 200; A 200)                                                           |                                  |
@@ -80,8 +80,8 @@ open dataJ1
 
 ```{r}
 library(tidyverse)
-
-dataJ1 <- read_csv("HH_SEC_J1.csv")
+library(here)
+dataJ1 <- read.csv(here::here("hces-data", "HH_SEC_J1.csv"))
 ```
 
 change variable names
@@ -131,72 +131,14 @@ dataJ1 <- dataJ1 %>%
   )
 ```
 
-add item_id for 60 food items
+add item_id with 60 food items - loading files including food items and id numbers ("item_code"), and these id numbers are merged by food items in dataJ1 (and move the id number before itemcode)
 
 ```{r}
-dataJ1 <- dataJ1 %>%
-  mutate(item_id = case_when(
-    (itemcode == 'RICE (PADDY)') ~ 101,
-    (itemcode == 'RICE (HUSKED)') ~ 102,
-    (itemcode == 'MAIZE (GREEN, COB)') ~ 103,
-    (itemcode == 'MAIZE (GRAIN)') ~ 104,
-    (itemcode == 'MAIZE (FLOUR)') ~ 105,
-    (itemcode == 'MILLET AND SORGHUM (GRAIN)') ~ 106,
-    (itemcode == 'MILLET AND SORGHUM (FLOUR)') ~ 107,
-    (itemcode == 'BREAD') ~ 109,
-    (itemcode == 'BUNS, CAKES AND BISCUITS') ~ 110,
-    (itemcode == 'MACARONI, SPAGHETTI') ~ 111,
-    (itemcode == 'OTHER CEREAL PRODUCTS') ~ 112,
-    (itemcode == 'CASSAVA FRESH') ~ 201,
-    (itemcode == 'CASSAVA DRY/FLOUR') ~ 202,
-    (itemcode == 'SWEET POTATOES') ~ 203,
-    (itemcode == 'YAMS/COCOYAMS') ~ 204,
-    (itemcode == 'IRISH POTATOES') ~ 205,
-    (itemcode == 'COOKING BANANAS, PLANTAINS') ~ 206,
-    (itemcode == 'OTHER STARCHES') ~ 207,
-    (itemcode == 'SUGAR') ~ 301,
-    (itemcode == 'SWEETS') ~ 302,
-    (itemcode == 'HONEY, SYRUPS, JAMS, MARMALADE, JELLIES, CANNED FRUITS') ~ 303,
-    (itemcode == 'PEAS, BEANS, LENTILS AND OTHER PULSES') ~ 401,
-    (itemcode == 'GROUNDNUTS IN SHELL/SHELLED') ~ 501,
-    (itemcode == 'COCONUTS (MATURE/IMMATURE)') ~ 502,
-    (itemcode == 'CASHEW, ALMONDS AND OTHER NUTS') ~ 503,
-    (itemcode == 'SEEDS AND PRODUCTS FROM NUTS/SEEDS (EXCL. COOKING OIL)') ~ 504,
-    (itemcode == 'ONIONS, TOMATOES, CARROTS AND GREEN PEPPER, OTHER VIUNGO') ~ 601,
-    (itemcode == 'SPINACH, CABBAGE AND OTHER GREEN VEGETABLES') ~ 602,
-    (itemcode == 'CANNED, DRIED AND WILD VEGETABLES') ~ 603,
-    (itemcode == 'RIPE BANANAS') ~ 701,
-    (itemcode == 'CITRUS FRUITS (ORANGES, LEMON, TANGERINES, ETC.)') ~ 702,
-    (itemcode == 'MANGOES, AVOCADOES AND OTHER FRUITS') ~ 703,
-    (itemcode == 'SUGARCANE') ~ 704,
-    (itemcode == 'GOAT MEAT') ~ 801,
-    (itemcode == 'BEEF INCLUDING MINCED SAUSAGE') ~ 802,
-    (itemcode == 'PORK INCLUDING SAUSAGES AND BACON') ~ 803,
-    (itemcode == 'CHICKEN AND OTHER POULTRY') ~ 804,
-    (itemcode == 'WILD BIRDS AND INSECTS') ~ 805,
-    (itemcode == 'OTHER DOMESTIC/WILD MEAT PRODUCTS') ~ 806,
-    (itemcode == 'EGGS') ~ 807,
-    (itemcode == 'FRESH FISH AND SEAFOOD (INCLUDING DAGAA)') ~ 808,
-    (itemcode == 'DRIED/SALTED/CANNED FISH AND SEAFOOD (INCL. DAGAA)') ~ 809,
-    (itemcode == 'PACKAGE FISH') ~ 810,
-    (itemcode == 'FRESH MILK') ~ 901,
-    (itemcode == 'MILK PRODUCTS (LIKE CREAM, CHEESE, YOGHURT ETC)') ~ 902,
-    (itemcode == 'CANNED MILK/MILK POWDER') ~ 903,
-    (itemcode == 'COOKING OIL') ~ 1001,
-    (itemcode == 'BUTTER, MARGARINE, GHEE AND OTHER FAT PRODUCTS') ~ 1002,
-    (itemcode == 'SALT') ~ 1003,
-    (itemcode == 'OTHER SPICES') ~ 1004,
-    (itemcode == 'WHEAT FLOUR') ~ 1081,
-    (itemcode == 'WHEAT, BARLEY GRAIN AND OTHER CEREALS') ~ 1082,
-    (itemcode == 'TEA DRY') ~ 1101,
-    (itemcode == 'COFFEE AND COCOA') ~ 1102,
-    (itemcode == 'OTHER RAW MATERIALS FOR DRINKS') ~ 1103,
-    (itemcode == 'BOTTLED/CANNED SOFT DRINKS (SODA, JUICE, WATER)') ~ 1104,
-    (itemcode == 'PREPARED TEA, COFFEE') ~ 1105,
-    (itemcode == 'BOTTLED BEER') ~ 1106,
-    (itemcode == 'LOCAL BREWS') ~ 1107,
-    (itemcode == 'WINE AND SPIRITS') ~ 1108
-  ))
+item_code <- read.csv(here::here("Week-10", "Materials", "data", "food-id.csv"), header = TRUE)
+
+dataJ1 <- dataJ1 %>% 
+  left_join(., item_code) %>%  
+  relocate(item_id, .before = itemcode) 
 ```
 
 list up the food items reported by PIECES, or LITRE and MILLILITRE
@@ -220,7 +162,7 @@ food_unit_mL <-
   filter(cons_unit == "MILLILITRE") %>% 
   arrange(desc(n))
 
-# list both LITRE and MILLILITRE 
+# .. or list up both LITRE and MILLILITRE 
 food_unit_LmL <-
   count(dataJ1, item_id, itemcode, cons_unit) %>%
   filter(cons_unit == "LITRE" | cons_unit == "MILLILITRE") %>% 
