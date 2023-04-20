@@ -39,10 +39,11 @@ First, let's focus on HH_SEC_J1
 
 ```{r}
 library(tidyverse)
+library(here)
 ```
 
 ```{r}
-dataJ1 <- read_csv("HH_SEC_J1.csv")
+dataJ1 <- read_csv(here("hces-data", "HH_SEC_J1.csv"))
 ```
 
 ### 2.2. change variable names
