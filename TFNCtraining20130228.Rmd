@@ -367,7 +367,41 @@ keep ID, males and femeles count
 ```{r}
 hh_MF <- select(hh_MF, sdd_hhid, hh_M, hh_F)
 ```
+# Loading libraries
+library(tidyverse)
 
+
+# Loading the data
+df <- read.csv("Week-9/Materials/data/TZ08_FCT_Partial.csv")
+
+# Checking the loaded data
+## How many rows has the data?
+
+nrow(df)
+
+message(paste0("This dataset has ", nrow(df), " rows of data"))
+
+## How many columns has the data?
+
+length(df)
+
+ncol(df)
+
+message(paste0("This dataset has ", ncol(df), " rows of data"))
+
+
+## What are the variables names? 
+
+names(df)
+
+colnames(df)
+
+# Tidying the data
+
+## Visually checking the data
+head(df)
+tail(df)
+View(df)
 
 
 
