@@ -4,14 +4,13 @@
 
 # 1.1. Loading libraries and importing the data
 
-
-# Loading library
-
-
-# Loading the data
+# Loading library 
 
 
-# check the data
+# Loading the NPS-SDD – apparent food consumption in Tanzania data
+
+
+# check the data 
 
 
 ### 1.2. Cleaning the data
@@ -56,7 +55,7 @@ n_HH <- length(unique(dataJ1$sdd_hhid))
 
 # 2.1 Loading the data
 
-tzfct <- read.csv(here::here( "data", "TZ08_tidied_FCT_v2.csv"))
+tzfct <- read.csv(here::here( "Week-9", "Materials", "data", "TZ08_tidied_FCT_v2.csv"))
 
 # check the data
 

@@ -1,0 +1,379 @@
+"","food_ID","Food_Name","Food_Group","ENERCkcal","PROCNTg","FAT_g","FASATg","CHOCDFg","FIB_g","PHYTACmg","CAmg","CUmg","MNmg","MGmg","Kmg","NAmg","ZNmg","Pmg","FEmg"
+"1","1","Biscuit","Cereal and Cereal products",434,9.2,"11.8",2.1,"71.5",2.7,180,119,0.2,0.7,27,128,1302,"0.8",105,1.2
+"2","2","Bread roll","Cereal and Cereal products",274,8.8,"3",0.6,"51.9",2.8,30,120,0.2,0.5,27,113,609,"0.9",105,7.8
+"3","3","Bread, white","Cereal and Cereal products",274,8.8,"3",0.6,"51.9",2.8,30,10,0.2,0.5,27,113,609,"0.9",105,0.5
+"4","6","Cake","Cereal and Cereal products",320,4.7,"12.3",3.5,"48.6",0.6,68,38,0,0.2,9,75,182,"0.4",68,0.4
+"5","7","Cookie","Cereal and Cereal products",478,5.1,"21.1",5.4,"67.900000000000006",0.5,116,21,0.1,0.3,12,63,357,"0.4",80,0.7
+"6","8","Donut","Cereal and Cereal products",478,5.1,"21.1",5.4,"67.900000000000006",0.5,116,21,0.1,0.3,12,63,357,"0.4",80,0.7
+"7","9","Infant cereal, Cerelac","Cereal and Cereal products",387,14,"1",0.5,"78.099999999999994",0.7,290,315,0.1,0.9,58,482,130,"1.9",338,0.5
+"8","33","Macaroni or spaghetti","Cereal and Cereal products",371,10.5,"1",0.2,"77.8",2.8,288,15,0.1,0,22,109,2,"0.1",110,1.2
+"9","10","Maize, cracked, cooked","Cereal and Cereal products",119,2.7,"1.2",0.2,"25.4",2.4,264,2,0.1,0.2,42,95,12,"0.6",80,1.2
+"10","11","Maize, dried, raw","Cereal and Cereal products",362,8.1,"3.6",0.5,"76.900000000000006",7.3,800,6,0.2,5,127,287,35,"1.8",241,3.5
+"11","12","Maize, flour, dry","Cereal and Cereal products",362,8.1,"3.6",0.5,"76.900000000000006",7.3,800,6,0.2,0.5,127,287,35,"1.8",241,3.5
+"12","13","Maize, green, cooked","Cereal and Cereal products",246,7.5,"3",0.5,"57.2",6.4,71,5,0.1,0.4,73,568,39,"1.1000000000000001",235,1.4
+"13","14","Maize, on the cob, immature","Cereal and Cereal products",59,1.8,"0.7",0.1,"13.8",1.5,17,1,0,0.1,18,137,9,"0.3",57,0.3
+"14","15","Maize, yellow, flour","Cereal and Cereal products",362,8.1,"3.6",0.5,"76.900000000000006",7.3,800,6,0.2,0.5,127,287,35,"1.8",241,3.5
+"15","16","Millet, bulrush","Cereal and Cereal products",361,11.6,"5",0.9,"68.7",24.7,870,42,1.1,1.2,137,307,11,"3.1",296,8
+"16","17","Millet, finger, grain or flour","Cereal and Cereal products",328,6.6,"1.3",0.3,"76.2",13.4,520,275,0.5,5.5,27,408,11,"1.2",283,2.7
+"17","34","Mixed porridge flour (maize and oil)","Cereal and Cereal products",414.4,16.9,"15.6",2.2,"56.1",7,1037.2,78,0.6,3.1,147.6,63.1,18.2,"2.6",333.4,5.6
+"18","19","Mixed porridge flour (no maize)","Cereal and Cereal products",332.2,10.1,"7",1,"62.1",9,694,55,0.4,1.6,60.5,263.5,8.2,"1.4",235.3,3.3
+"19","18","Mixed porridge flour (with maize)","Cereal and Cereal products",382.2,13.8,"10.199999999999999",1.5,"63.5",8.6,699,11.9,0.6,2.3,103.2,513.1,15,"2",306.8,4.6
+"20","20","Porridge, fermented","Cereal and Cereal products",43,1,"0.4",0.1,"9.1999999999999993",0.9,96,1,0,0.1,15,34,4,"0.2",29,0.4
+"21","22","Rice, flour, local","Cereal and Cereal products",366,5.9,"1.4",0.4,"80.099999999999994",2.4,353,8,0.1,1.1,36,81,0,"1.1000000000000001",104,0.6
+"22","21","Rice, fried and boiled","Cereal and Cereal products",174,2.6,"7.4",1.1,"24.6",1.3,94,7,0.1,0.4,20,242,9,"0.4",50,0.6
+"23","23","Rice, white, grain, raw","Cereal and Cereal products",358,6.5,"0.5",0.1,"79.8",0.8,352,8,0.1,1.1,36,81,0,"1.1000000000000001",103,0.6
+"24","35","Semolina","Cereal and Cereal products",364,10.3,"1",0.2,"76.3",2.7,282,15,0.1,0.7,22,107,2,"0.7",108,1.2
+"25","24","Sorghum","Cereal and Cereal products",339,11.3,"3.3",0.5,"74.599999999999994",9,439,15,0.3,0.9,34,131,7,"0.8",222,4.1
+"26","26","Sorghum, flour","Cereal and Cereal products",339,11.3,"3.3",0.5,"73.7",12.7,618,25,0.5,0.8,171,131,7,"1.6",222,4.1
+"27","27","Vermicelli, uncooked","Cereal and Cereal products",395,13.4,"2",0.3,"79.2",4.8,227,20,0.3,0.8,50,87,3,"1.4",151,1.4
+"28","29","Wheat, flour, whole grain","Cereal and Cereal products",339,13.7,"1.9",0.3,"72.599999999999994",12.2,282,15,0.1,0.7,22,107,2,"0.7",108,1.2
+"29","28","Wheat,dough, deep fried","Cereal and Cereal products",317,7.2,"7.7",1.1,"53.4",1.9,197,11,0.1,0.5,15,75,1,"0.5",76,0.8
+"30","30","Wheat, flour, 0.72 extract","Cereal and Cereal products",364,10.3,"1",0.2,"76.3",2.7,282,15,0.1,0.7,22,107,2,"0.7",108,1.2
+"31","31","Wheat, flour, maida","Cereal and Cereal products",349,12.3,"1.5",0.3,"74.099999999999994",8.4,620,26,0.3,2.6,92,286,4,"2",251,2.8
+"32","534","Cake (home made)","Cereal-based local dishes",375.6,4.6,"21.3",12.9,"42.4",0.7,67.7,12.8,0,0.2,7,46.7,72.4,"0.3",63.6,0.5
+"33","513","Chapati, dry, Indian","Cereal-based local dishes",207.9,5.2,"3.5",2.7,"38.200000000000003",1.3,141,8,0.1,0.3,11,53.5,1,"0.4",54,0.6
+"34","512","Chapati with oil","Cereal-based local dishes",372.6,5.9,"19.5",16.5,"43.9",1.6,162.2,9.9,0.9,0.4,16.6,70.6,1.3,"0.4",71.3,0.7
+"35","532","Donut-African","Cereal-based local dishes",316.6,5.2,"10.5",8.7,"50.6",1.4,141,7.6,0.1,0.3,11,53.8,1.1,"0.4",54.3,0.6
+"36","525","Maize and kidney bean dish","Cereal-based local dishes",156.5,3.6,"7",5.5,"21.4",2.8,311.2,7.5,0.1,0.3,38.7,166.1,74.9,"0.7",88.3,1.5
+"37","523","Maize and sorgum ugali (stiff porridge)","Cereal-based local dishes",110.3,3,"0.9",0,"24.7",4.3,197.8,29.3,0.2,0.7,45,66.7,2.6,"0.5",79,1.3
+"38","531","Maize porirdge with margarine and sugar","Cereal-based local dishes",100.2,1.1,"0.8",0.1,"23.1",1,104.3,0.9,0,0.1,16.6,37.6,4.6,"0.2",31.6,0.4
+"39","505","Maize porridge without sugar and milk","Cereal-based local dishes",36.2,0.8,"0.4",0.1,"7.7",0.7,80,3.5,0,0.1,12.7,28.7,3.5,"0.2",24.1,0.4
+"40","506","Maize porridge with sugar","Cereal-based local dishes",94,0.8,"0.4",0.1,"22.7",0.7,80,3.7,0,0.1,12.7,29,3.7,"0.2",24.4,0.4
+"41","502","Maize porridge with sugar and egg","Cereal-based local dishes",106.6,4.4,"3.6",1.3,"14.4",0.7,80,43.2,0,0.1,18.2,98.8,55.9,"0.6",99.9,0.7
+"42","507","Maize porridge with sugar and milk","Cereal-based local dishes",129.8,1.2,"1",0.5,"30",0.3,0,61.2,0,0.1,18.2,99,31.2,"0.4",70.4,0.4
+"43","519","Maize ugali (stiff porridge)","Cereal-based local dishes",123.8,2.7,"1.2",0.2,"25.6",2.4,273,2,0.1,0.2,43.4,98.1,11.9,"0.6",81.2,1.2
+"44","508","Millet prridge with sugar","Cereal-based local dishes",91,0.7,"0.1",0.3,"22.6",1.3,61,27.7,0.1,0.6,2.7,41.1,1.3,"0.1",28.6,0.3
+"45","509","Mix flour porridge with sugar","Cereal-based local dishes",130.3,2.2,"6.7",1.4,"16.399999999999999",1.9,157.7,32.5,0.1,0.6,12.9,80.2,2,"0.3",52.4,0.5
+"46","514","Pancake","Cereal-based local dishes",291.4,7,"12.1",9.2,"383",1.4,188,20.2,0.1,0.4,16.7,96.6,155.2,"0.7",106.4,1
+"47","543","Rice biriyani","Cereal-based local dishes",208.3,9.9,"10",5.3,"19.5",0.7,69,22.9,0.1,0.3,19.2,179.6,346.3,"0.8",92.9,0.7
+"48","516","Rice boiled without Oil","Cereal-based local dishes",159.1,2.6,"0.6",0.2,"34.799999999999997",1,166,3.6,0.1,0.5,16.2,36.5,0,"0.5",46.9,0.2
+"49","517","Rice boiled with Oil","Cereal-based local dishes",199.1,2.9,"3",2.4,"39.200000000000003",1.2,179.9,4.1,0.1,0.5,18.6,41.7,0,"0.5",47.8,0.3
+"50","530","Rice bread","Cereal-based local dishes",239.1,2.2,"7.5",6.3,"41.1",1,134.7,3.4,0.1,0.5,13.7,44.3,1.1,"0.5",40.8,0.3
+"51","524","Rice bun","Cereal-based local dishes",416.2,4.7,"11.1",8.9,"73.7",1.9,282.4,6.5,0.1,0.8,28.8,65,1,"0.9",83.3,0.5
+"52","515","Rice and meat pillau","Cereal-based local dishes",177,7.1,"5.6",3.1,"23.6",0.9,95.9,6.3,0.1,0.3,16.8,128.8,98.9,"1.2",76.9,0.6
+"53","544","Rice and mung dish with coconut milk","Cereal-based local dishes",262.8,5,"11.4",10,"36.200000000000003",4.7,304.1,12.7,0.2,1,34.3,206.9,136.7,"1",106.3,1.6
+"54","545","Rice and mung dish without coconut milk","Cereal-based local dishes",124.1,3.3,"0.2",0.1,"26.7",1.5,168.1,6.9,0.1,0.4,20.3,75.6,111.4,"0.6",58.9,0.6
+"55","533","Rice poridge with coconut without sugar","Cereal-based local dishes",152.9,2,"8.1999999999999993",7.1,"18.5",1.2,182,6.3,0.2,0.7,18.2,135.5,6.7,"0.6",59.3,0.9
+"56","528","Rice porridge with sugar","Cereal-based local dishes",94.6,0.6,"0.1",0,"23",0.2,35.3,1,0,0.1,3.6,8.4,0.2,"0.1",10.7,0.1
+"57","521","Rice ugali (stiff porridge)","Cereal-based local dishes",149,2.7,"0.2",0.1,"32.799999999999997",0.3,144.7,3.3,0,0.4,14.8,33.2,0,"0.5",42.6,0.2
+"58","518","Rice with coconut milk","Cereal-based local dishes",170,2.9,"1.5",1.2,"35.5",0.7,166,8.7,0.2,1,29.4,152,6,"0.9",91.1,1
+"59","540","Rice with ground meat","Cereal-based local dishes",288.4,8.5,"14.7",8.2,"30.7",1.7,252.7,13.6,0.2,0.6,30.3,162.8,294,"1.4",101.6,0.9
+"60","522","Sorgum and millet ugali (stiff porridge)","Cereal-based local dishes",112.1,3.4,"0.9",0.1,"24.7",4.3,197.8,29.3,0.2,0.7,45,66.7,2.6,"0.5",79,1.3
+"61","511","Sorgum porridge with sugar","Cereal-based local dishes",91,1,"0.3",0.1,"22",1.3,44,2.7,0.1,0.1,17.1,13.4,0.9,"0.2",22.5,0.4
+"62","527","Vermicelli - cooked","Cereal-based local dishes",209,6.7,"2.2999999999999998",1.3,"39.6",2.4,114,10.1,0.1,0.4,25,43.5,87.6,"0.7",75.5,0.7
+"63","535","Vermicelli with coconut milk and sugar","Cereal-based local dishes",227.6,7,"3.6",2.5,"41.5",2.6,142.3,11.3,0.2,0.5,27.8,75.2,3.3,"0.8",85.6,0.9
+"64","536","Vermicell with oil and sugar","Cereal-based local dishes",228.2,6.7,"3.7",2.5,"41.6",2.4,114,10,0.1,0.4,25,43.5,1.5,"0.7",75.5,0.7
+"65","537","Vermicelli with coconut milk and salt","Cereal-based local dishes",260.4,7.7,"6.2",4.8,"43.3",2.9,179,13.4,0.2,0.7,32.4,109.7,177.3,"0.9",100.6,1.2
+"66","529","Wheat fritter, sweet","Cereal-based local dishes",318,1.9,"14.2",2,"46.7",0.5,51,3,0,0.1,4,20,0,"0.1",20,0.2
+"67","542","Wheat porridge","Cereal-based local dishes",91.9,1.4,"0.2",0,"22.2",1.2,28.2,1.6,0,0.1,2.2,10.9,0.3,"0.1",11,0.1
+"68","352","Banana, cooked","Roots, Tubers and Banana",116,0.8,"0.2",0.1,"31.2",2.3,0,2,0.1,0.2,32,465,5,"0.1",28,0.6
+"69","365","Breadfruit, raw","Roots, Tubers and Banana",103,1.1,"0.2",0,"27.1",4.9,0,17,0.1,0.1,25,490,2,"0.1",30,0.5
+"70","362","Cassava, dried","Roots, Tubers and Banana",314,2.6,"0.7",0.2,"76.599999999999994",3.6,130,46,0.1,0.3,24,583,5,"0.7",168,1.9
+"71","359","Cassava, dried, flour","Roots, Tubers and Banana",314,2.6,"0.7",0.2,"76.599999999999994",3.6,130,46,0.1,0.3,24,583,5,"0.7",168,1.9
+"72","358","Cassava, raw","Roots, Tubers and Banana",160,1.4,"0.3",0.1,"38.1",1.8,54,16,0.1,0.1,21,271,14,"0.3",27,0.3
+"73","364","Cassava, spicy crisps or chips","Roots, Tubers and Banana",288,2.4,"0.7",0.2,"70.2",3.3,119,42,0.1,0.2,22,535,4,"0.7",154,1.8
+"74","367","Edible starch, tapioca or corn","Roots, Tubers and Banana",381,0.3,"0.1",0,"91.3",0.9,0,2,0.1,0.1,3,3,9,"0.1",13,0.5
+"75","354","Potato, crisps, plain, salted","Roots, Tubers and Banana",547,6.6,"37.5",11,"49.7",4.4,147,19,0.1,0.2,34,732,216,"0.4",93,0.8
+"76","353","Potato, English, cooked","Roots, Tubers and Banana",93,2,"0.1",0,"21.6",1.5,81,5,0.2,0.2,25,391,5,"0.3",50,0.4
+"77","355","Potato, raw, with skin","Roots, Tubers and Banana",58,2.6,"0.1",0,"12.4",2.5,147,30,0.4,0.6,23,413,10,"0.4",38,3.2
+"78","357","Squash, fresh-AP","Roots, Tubers and Banana",16,0.7,"0.2",0.1,"3.4",1.1,0,22,0.1,0.2,19,154,1,"0.3",31,0.3
+"79","366","Squash, fresh-EP","Roots, Tubers and Banana",20,0.9,"0.3",0.1,"4.3",1.4,0,27,0.1,0.2,24,192,1,"0.4",39,0.4
+"80","360","Sweet potato, fresh-AP","Roots, Tubers and Banana",74,1.2,"0.1",0,"17.5",2.2,7,20,0.2,4,14,251,7,"0.2",40,0.4
+"81","361","Sweet potato, fresh-EP","Roots, Tubers and Banana",103,1.7,"0.1",0,"24.3",3,10,28,0.2,0.6,20,348,10,"0.3",55,0.5
+"82","369","Sweet potato, orange","Roots, Tubers and Banana",103,1.7,"0.1",0,"24.3",3,10,28,0.21,0.56,20,348,10,"0.3",55,0.5
+"83","356","Taro, raw","Roots, Tubers and Banana",112,1.5,"0.2",0,"26.5",4.1,78,43,0.2,0.4,33,591,11,"0.2",84,0.1
+"84","368","Yam, raw","Roots, Tubers and Banana",97,2.1,"0.1",0,"22.9",1.2,50,8,0.17,0.24,26,303,3,"0.5",39,0.8
+"85","974","Banana porridge, plain","Roots, Tubers and Banana-based local dishes",105.3,0.6,"3.2",2.7,"21.3",1.6,0.3,2.2,0.1,0.1,22.2,326.1,68.5,"0.1",20.8,0.4
+"86","975","Banana porridge with meat","Roots, Tubers and Banana-based local dishes",280.5,7,"16",98.9,"29.5",98.1,190.6,6.1,0.1,0.2,30.7,455.1,50,"1",74.4,1
+"87","976","Banana porridge with fish","Roots, Tubers and Banana-based local dishes",118.7,2.5,"5.9",4.9,"15.8",2.1,5.4,10.6,0.2,0.5,41.5,588.1,123.7,"1.3",96.6,1.5
+"88","977","Banana porridge with meat and spinach","Roots, Tubers and Banana-based local dishes",212,8.6,"13.3",8.5,"16.5",1.6,0.3,20.5,0.1,0.2,34.6,405.5,127.1,"1.4",82.8,1.3
+"89","954","Banana with cashewnut","Roots, Tubers and Banana-based local dishes",108,2,"2.8",0.3,"22.2",2.1,1.8,15.1,0.1,0.2,36.7,355.6,4.1,"0.2",45.9,0.6
+"90","955","Banana with coconut milk","Roots, Tubers and Banana-based local dishes",191.2,1.5,"10.7",9.4,"26.1",4.4,14.6,6.7,0,0.1,34.3,149.9,2.3,"0.1",62.7,0.2
+"91","968","Banana with kidney beans","Roots, Tubers and Banana-based local dishes",93.4,3,"1.2",0.9,"19.5",3.2,64.9,15.1,0.1,0.2,27.2,324.2,434.7,"0.4",55.7,1.1
+"92","953","Banana with meat","Roots, Tubers and Banana-based local dishes",77.4,2.7,"3.6",2.3,"9.4",0.7,0,1.6,0,0.1,11.4,168.9,118.8,"0.3",226,0.3
+"93","952","Banana with meat and coconut milk","Roots, Tubers and Banana-based local dishes",130.3,1.5,"2.4",1.8,"2.9",2.5,0,3,0.1,0.2,31,449.8,7,"0.2",36.1,0.7
+"94","973","Banana with meat, oil and vegetable","Roots, Tubers and Banana-based local dishes",121.8,4,"8",5.9,"9.8000000000000007",1.7,0,2.5,0.1,0.1,25.3,374.6,4.7,"0.1",24.2,0.5
+"95","951","Banana with oil (no meat )","Roots, Tubers and Banana-based local dishes",112,0.7,"2.7",2.3,"24",1.9,129.1,3.8,0.1,0.2,15.7,216.7,104.4,"0.7",48.6,0.7
+"96","969","Banana, boiled","Roots, Tubers and Banana-based local dishes",110,0.7,"0.2",0.1,"29.6",2.2,121.8,2,0.1,0.2,32,465,5,"0.1",28,0.6
+"97","964","Banana, fried","Roots, Tubers and Banana-based local dishes",159.1,0.8,"5.2",4.4,"31.2",2.3,0,2,0.1,0.2,32,465,5,"0.1",28,0.6
+"98","971","Banana, roast","Roots, Tubers and Banana-based local dishes",116,0,"0",31.2,"0.2",0,40.4,2,0.1,0.2,32,465,5,"0.1",28,0.6
+"99","541","Cassava porridge with sugar","Roots, Tubers and Banana-based local dishes",85.8,0.4,"0.1",0,"21.5",0.5,85.6,7,0,0,3.6,87.7,0.9,"0.1",25.4,0.3
+"100","526","Cassava stiff porridge","Roots, Tubers and Banana-based local dishes",140,2.7,"1.2",0.2,"30.7",2.6,253,6.4,0.1,0.2,40.5,144.4,11,"0.6",89.1,1.2
+"101","956","Cassava with coconut milk","Roots, Tubers and Banana-based local dishes",216.3,1.9,"11.9",10.3,"12.9",5.5,151.1,18.2,0.2,0.6,18.8,297.2,8.4,"0.6",89.3,1.4
+"102","965","Cassava, boiled","Roots, Tubers and Banana-based local dishes",131,1.1,"0.3",0.1,"31.9",1.5,54,19,0.1,0.1,10,243,2,"0.3",70,0.8
+"103","957","Cassava, fried","Roots, Tubers and Banana-based local dishes",346.5,1.1,"25.2",21.6,"10.5",3.3,54,19,0.1,0.1,10,243,2,"0.3",70,0.8
+"104","978","Kachori (spicy potato balls)","Roots, Tubers and Banana-based local dishes",237.6,6.1,"11.4",8.8,"28.8",3.4,248.4,39.7,0.4,0.8,50.4,492.7,86,"1.2",148.8,2.2
+"105","960","Potato chips, fried","Roots, Tubers and Banana-based local dishes",249,1.7,"20.100000000000001",17.3,"18",1.2,67.5,4.2,0.2,0.2,20.8,325.8,4.2,"0.2",41.7,0.3
+"106","959","Potato relish with beef","Roots, Tubers and Banana-based local dishes",128.8,2.8,"5.8",4.9,"17.100000000000001",2.1,17.5,15,0.3,0.3,35,574,11,"0.4",75,0.8
+"107","972","Potato relish with coconut milk","Roots, Tubers and Banana-based local dishes",388,4.7,"28",24.7,"34.200000000000003",9,81,16.7,0.6,1.4,51.7,687.7,21.7,"1.2",144,2.4
+"108","958","Potato relish with oil","Roots, Tubers and Banana-based local dishes",75,1.3,"1.7",0,"14.2",1,391.5,3.5,0.1,0.1,16.8,266.5,3.8,"0.2",3.4,0.2
+"109","961","Potato, boiled","Roots, Tubers and Banana-based local dishes",93,2,"0.1",0,"21.6",1.5,52.6,5,0.2,0.2,25,391,5,"0.3",50,0.4
+"110","963","Roots and tubers mixed","Roots, Tubers and Banana-based local dishes",93.5,0.8,"0.2",0.1,"23.2",1.7,93.8,13.1,0,0.1,10,202.8,4,"0.2",27.6,0.4
+"111","967","Sweet potato, boiled","Roots, Tubers and Banana-based local dishes",97,2.1,"0.1",0,"22.9",1.2,50,8,0.2,0.2,26,303,3,"0.5",39,0.8
+"112","966","Sweet potato, fried","Roots, Tubers and Banana-based local dishes",146.1,1.7,"5.0999999999999996",4.3,"24.3",3,10,28,0.2,0.6,20,348,10,"0.3",55,0.5
+"113","970","Taro, cooked, without salt","Roots, Tubers and Banana-based local dishes",142,0.5,"0.1",0,"34.6",5.1,78,18,0.2,0.4,30,484,15,"0.3",76,0.7
+"114","179","Almonds","Pulses, Nuts and Seeds",578,21.2,"50.6",3.9,"19.7",11.8,2580,248,1.1,2.5,275,7.3,1,"3.4",4.7,4.3
+"115","151","Bambara groundnut, fresh","Pulses, Nuts and Seeds",141,12.4,"6.4",0.7,"11.1",4.2,270,145,0.1,0.5,60,539,14,"0.9",158,2.5
+"116","154","Bean, kidney, green, cooked","Pulses, Nuts and Seeds",166,11.4,"0.7",0.1,"29.9",8.4,808,37,0.3,0.6,59,528,3,"1.4",186,3.8
+"117","155","Bean, mung, dry","Pulses, Nuts and Seeds",116,7.7,"0.5",0.1,"20.8",6.5,358,24,0.3,0.5,53,278,4,"1.3",156,2.5
+"118","156","Bean, mung, raw","Pulses, Nuts and Seeds",306,20.3,"1.3",0.3,"54.9",17.2,945,63,0.7,1.3,140,734,11,"3.4",412,6.6
+"119","153","Beans, kidney, mature, boiled without salt","Pulses, Nuts and Seeds",127,8.7,"0.5",0.1,"22.8",6.4,617,28,0.2,0.5,45,403,2,"1.1000000000000001",142,2.9
+"120","170","Beans, kidney, mature seeds, raw","Pulses, Nuts and Seeds",333,23.6,"0.8",0.1,"60",24.9,1586,72,0.6,1.2,116,1036,5,"2.8",365,7.5
+"121","157","Cashewnut","Pulses, Nuts and Seeds",589,20,"52.2",4.9,"20.399999999999999",10.9,2580,266,0.9,2.3,296,732,11,"2.9",520,3.7
+"122","158","Chickpea","Pulses, Nuts and Seeds",164,8.9,"2.6",0.3,"27.4",7.5,293,49,0.4,1,48,291,7,"1.5",168,2.9
+"123","159","Chickpea flour (besan)","Pulses, Nuts and Seeds",387,22.4,"6.7",0.7,"57.8",10.8,938,157,1.1,3.3,154,931,22,"4.8",538,9.3
+"124","162","Cowpea, green, uncooked","Pulses, Nuts and Seeds",116,7.7,"0.5",0.1,"20.8",6.5,358,24,0.3,0.5,53,278,4,"1.3",156,2.5
+"125","163","Cowpea, uncooked","Pulses, Nuts and Seeds",336,23.5,"1.3",0.3,"60",10.6,945,63,0.7,1.3,140,734,11,"3.4",412,6.6
+"126","173","Hyancinth beans (dried)","Pulses, Nuts and Seeds",306,20.3,"1.3",0.3,"54.9",17.2,945,50,0.7,1.3,140,734,11,"3.4",412,6.6
+"127","174","Hyacinth-beans, immature, raw","Pulses, Nuts and Seeds",46,2.1,"0.2",0.1,"9.1999999999999993",7.8,20,50,0,0.2,40,252,2,"0.4",49,0.7
+"128","176","Hyacinth-beans, immature, boiled without salt","Pulses, Nuts and Seeds",50,3,"0.3",0.1,"9.1999999999999993",3.9,20,41,0,0.2,42,262,2,"0.4",49,0.8
+"129","177","Lentil, cooked","Pulses, Nuts and Seeds",116,9,"0.4",0.1,"20.100000000000001",7.9,358,51,0.67,1.31,96,989,5,"3.5",482,8.8
+"130","180","Lentil, whole","Pulses, Nuts and Seeds",311,24.1,"1.1000000000000001",0.3,"53.9",21.2,959,8,0.17,0.24,26,303,3,"0.5",39,0.8
+"131","175","Palm seed","Pulses, Nuts and Seeds",203,0.6,"20.2",16.3,"6.7",1.7,8,3,0.1,0.2,12,61,0,"0.1",14,0.2
+"132","164","Groundnuts","Pulses, Nuts and Seeds",567,25.8,"49.2",6.8,"16.100000000000001",8.5,1760,92,1.1,1.9,168,705,18,"3.3",376,4.6
+"133","178","Peanut butter, smooth","Pulses, Nuts and Seeds",520,25.9,"34",7.4,"35.700000000000003",5.2,1600,35,0.6,0.1,170,669,540,"2.8",369,1.9
+"134","165","Pigeon peas, cooked","Pulses, Nuts and Seeds",121,6.7,"0.4",0.1,"19.7",5.4,398,36,0.3,0.4,43,268,5,"1",125,1.5
+"135","166","Pigeon peas, green","Pulses, Nuts and Seeds",148,9.5,"0.4",0,"27.5",9.7,49,48,0.3,0.9,69,477,5,"2.1",206,2.6
+"136","171","Pigeon peas, raw","Pulses, Nuts and Seeds",343,21.7,"1.5",0.3,"62.8",15,1154,104,0.8,1.2,125,777,15,"2.9",363,4.4
+"137","172","Pumpkin seed","Pulses, Nuts and Seeds",435,19.5,"40.6",5.7,"7",7.5,3818,97,1.1,1.1,257,301,30,"7.6",574,5.8
+"138","167","Sesame seed","Pulses, Nuts and Seeds",573,17.7,"49.7",7,"23.5",16.9,4710,975,4.1,2.5,351,468,11,"7.8",629,14.6
+"139","168","Soybean, yellow","Pulses, Nuts and Seeds",415,36.5,"20",3,"30.3",9.3,1473,278,1.7,2.5,280,1798,3,"5",705,15.8
+"140","169","Sunflower seed","Pulses, Nuts and Seeds",588,26.4,"54.8",7.7,"9.4",10.1,5160,131,1.5,1.4,347,407,40,"10.3",776,7.8
+"141","663","Bambara nut relish with coconut milk","Pulses, Nuts and Seeds-based local dishes",127,4.2,"10.199999999999999",7.5,"6.7",2.9,130.1,44.2,0.1,0.4,24.3,254.3,116.6,"0.5",68,1.2
+"142","32","Bhajia (chickpea flour fritters)","Pulses, Nuts and Seeds-based local dishes",356,19.2,"5.6",0.68,"59.7",16.3,628,107.6,0.7,2.2,104.6,649,15.2,"3.2",363.8,6.3
+"143","664","Chick pea relish with coconut milk","Pulses, Nuts and Seeds-based local dishes",144.2,4,"8.9",7.2,"13.7",4.9,181.8,21.6,0.2,0.7,25.1,193.7,99.6,"0.8",88,1.6
+"144","653","Cow pea (dry) relish without oil","Pulses, Nuts and Seeds-based local dishes",59.5,0.5,"5.85",5,"2.2000000000000002",0.9,358,24,0.3,0.5,53,278,4,"1.3",156,2.5
+"145","654","Cow pea (dry) relish with oil","Pulses, Nuts and Seeds-based local dishes",154.7,7.3,"6.3",5.2,"18.899999999999999",3.5,264.3,20.1,0,0.1,275.3,364.4,2,"0.2",122.7,0
+"146","651","Cow pea (fresh) relish without oil","Pulses, Nuts and Seeds-based local dishes",71.5,4.6,"0.4",0.1,"13",4,208.8,14.9,0.2,0.3,32.9,205.6,4.1,"0.8",95.3,1.6
+"147","652","Cow pea relish with coconut milk","Pulses, Nuts and Seeds-based local dishes",120.4,7.4,"1.8",1.3,"19.7",3.5,335.3,22,0.3,0.6,47.5,283.1,53.1,"1.2",143,2.4
+"148","657","Kidney bean relish without oil","Pulses, Nuts and Seeds-based local dishes",117.2,6.4,"2.9",2.2,"17.100000000000001",4.8,352,18.7,0.1,0.3,28.7,261.2,1.4,"0.7",90.8,1.8
+"149","656","Kidney bean relish with oil","Pulses, Nuts and Seeds-based local dishes",130.6,4.9,"6.9",5.8,"13.3",3.6,385.6,20.9,0.2,0.3,33.4,314.2,2.2,"0.8",104.2,2.1
+"150","655","Kidney bean relish with coconut milk","Pulses, Nuts and Seeds-based local dishes",83.2,2.8,"4.8",4.2,"8.1",2.2,184.9,14.5,0.7,1.1,23.5,275.5,117.2,"1.1000000000000001",71.8,2.1
+"151","662","Mung bean (dry) relish with cocount milk","Pulses, Nuts and Seeds-based local dishes",87.2,2.4,"5.3",4.6,"8.6999999999999993",2.9,119.4,10,0.1,0.2,19.5,107.9,278.2,"0.5",57.5,0.9
+"152","658","Mung bean (dry, boiled)","Pulses, Nuts and Seeds-based local dishes",43.7,2.8,"0.2",0,"8",2.4,108.7,6,0.1,0.1,13,70,1,"0.3",39,0.6
+"153","659","Pigeon pea (fresh, cooked)","Pulses, Nuts and Seeds-based local dishes",131,6.1,"5.0999999999999996",4.2,"16.100000000000001",4.4,318.4,29.7,0.2,0.3,34.8,220.4,81.6,"0.8",101.3,1.2
+"154","660","Pigeon pea relish with coconut milk","Pulses, Nuts and Seeds-based local dishes",114,3.4,"7.2",6.3,"10.4",3.8,211.3,16.1,0.2,0.5,22.3,172.7,6,"0.6",69.1,1
+"155","661","Pigeon pea relish with oil","Pulses, Nuts and Seeds-based local dishes",245,13.8,"5.8",4.5,"36.299999999999997",9.9,721,66.3,0.5,0.8,78.8,494.9,9.6,"1.8",228.9,2.8
+"156","205","Beef liver, raw","Meat, poultry and fish",135,20.4,"3.6",1.2,"3.9",0,0,5,0.8,0.3,18,313,69,"4",387,4.9
+"157","204","Beef, boneless","Meat, poultry and fish",267,16.9,"21.6",10.4,"0",0,0,3,0.1,0,15,230,36,"2.7",132,1.1
+"158","201","Beef, liver, cooked","Meat, poultry and fish",191,29.1,"5.3",1.7,"5.0999999999999996",0,0,6,14.6,0.4,23,351,77,"5.2",485,6.2
+"159","202","Beef, medium fat, cooked","Meat, poultry and fish",323,24.9,"24",11.4,"0",0,0,4,0.1,0,23,340,53,"4.0999999999999996",194,1.7
+"160","203","Beef, tripe","Meat, poultry and fish",83,14.5,"2.4",0.9,"0",0,0,3,0.1,0,14,198,31,"2.4",113,1
+"161","206","Chicken liver","Meat, poultry and fish",167,24.5,"6.5",2.1,"0.9",0,0,14,0.4,0.3,21,140,51,"4.3",312,8.5
+"162","208","Chicken, raw","Meat, poultry and fish",200,18.8,"13.2",3.6,"0",0,0,9,0.1,0,14,127,51,"1.3",126,1
+"163","306","Egg yolk","Meat, poultry and fish",278,19.2,"20.7",5.6,"2.2999999999999998",0,0,96,0.1,0.1,26,333,219,"2.1",330,5.9
+"164","307","Egg, chicken","Meat, poultry and fish",155,12.6,"10.6",3.3,"1.1000000000000001",0,0,50,0,0,10,126,124,"1.1000000000000001",172,1.2
+"165","308","Fish, dried, cod","Meat, poultry and fish",368,79.8,"3.2",0.7,"0",0,0,49,0.1,0.1,147,854,273,"2.1",483,1.8
+"166","309","Fish, dried, fresh water","Meat, poultry and fish",335,58.6,"9.4",2,"0",0,0,1700,0.5,2.1,140,953,312,"5.2",1300,2.5
+"167","220","Fish, fresh","Meat, poultry and fish",98,18.1,"2.4",0.5,"0",0,0,7,0,0,21,122,39,"0.3",69,0.3
+"168","310","Fish, high fat","Meat, poultry and fish",103,10.6,"6.8",1.9,"0",0,0,17,0.1,0,17,192,88,"0.3",125,0.5
+"169","311","Fish, raw","Meat, poultry and fish",112,21.4,"2.2999999999999998",0.3,"0",0,0,48,0,0,86,461,55,"0.4",228,0.9
+"170","312","Fish, sardines","Meat, poultry and fish",112,21.4,"2.2999999999999998",0.3,"0",0,0,48,0,0,86,461,55,"0.4",228,0.9
+"171","313","Fish, small, dried, fresh water","Meat, poultry and fish",335,58.6,"9.4",2,"0",0,0,1700,0.5,2.1,140,953,312,"5.2",1300,2.5
+"172","314","Fish, small, fresh, fresh water","Meat, poultry and fish",84,14.8,"2.2999999999999998",0.6,"0",0,0,9,0,0,22,335,40,"0.5",243,0.3
+"173","319","Fish, smoked, dried-AP","Meat, poultry and fish",177,38.5,"1.5",0.3,"0",0,0,24,0.1,0,71,412,132,"1",233,0.8
+"174","320","Fish, smoked, dried-EP","Meat, poultry and fish",306,66.4,"2.5",0.5,"0",0,0,41,0.1,0,122,710,227,"1.7",402,1.4
+"175","315","Goat meat","Meat, poultry and fish",269,24.9,"18",8.4,"0",0,0,4,0.1,0,23,340,53,"4.0999999999999996",194,1.7
+"176","316","Mutton, meat","Meat, poultry and fish",269,24.9,"18",8.4,"0",0,0,4,0.1,0,23,340,53,"4.0999999999999996",194,1.7
+"177","317","Pork, medium fat, cooked","Meat, poultry and fish",537,19.6,"50.2",19.3,"0",0,0,18,0.1,0,17,251,44,"2.1",165,0.8
+"178","318","Sausage","Meat, poultry and fish",369,19.7,"31.2",10.8,"1",0,0,32,0.1,0.1,17,361,1294,"2.5",184,1.3
+"179","552","Beef relish with coconut milk","Meat, poultry and fish-based local dishes",143,10.2,"10.199999999999999",5.1,"2",0.2,14.1,1.9,0.1,0.1,12.5,186.8,100.1,"1.7",85.6,0.8
+"180","578","Beef relish without oil","Meat, poultry and fish-based local dishes",168.6,12.6,"11.9",5.6,"2.2000000000000002",0.4,1,5.8,0.1,0,14.6,225.7,28,"2.1",104.3,0.9
+"181","551","Beef relish with oil","Meat, poultry and fish-based local dishes",210.7,12.4,"17",10.1,"1,9",0.3,1,5.7,0.4,0.4,10.7,170.8,19.8,"1.4",75.5,0.6
+"182","577","Beef, fried","Meat, poultry and fish-based local dishes",813.2,25.1,"80",59.9,"2.2000000000000002",0.5,0,15.3,0.1,0.1,26.7,396.7,828.6,"4.2",205,1.9
+"183","576","Beef, ground, relish","Meat, poultry and fish-based local dishes",247.8,12.8,"21.1",13.5,"1.9",0.4,2,4.6,0.1,0,15.6,251.5,107.1,"2.1",106.4,1
+"184","574","Chicken, boiled or roasted","Meat, poultry and fish-based local dishes",285,26.9,"18.899999999999999",5.1,"0",0,0,13,0.1,0,20,182,73,"1.8",180,1.4
+"185","554","Chicken relish without oil","Meat, poultry and fish-based local dishes",202.3,18.5,"12.8",3.5,"2.1",0.4,0.9,13.9,0.1,0.1,19.6,204.2,63,"1.5",158.5,1.2
+"186","573","Chicken relish with coconut milk","Meat, poultry and fish-based local dishes",137.2,6.1,"11.8",8,"2.2999999999999998",0.6,29.9,6.9,0.1,0.2,10.8,146.9,249.7,"0.5",55.2,0.7
+"187","556","Chicken relish with oil","Meat, poultry and fish-based local dishes",188.9,6.2,"13.3",9.5,"13.3",2.1,3,7.3,0.1,0.1,10.4,155.6,20.5,"0.5",54.2,0.5
+"188","207","Chicken, fried","Meat, poultry and fish-based local dishes",314.9,18.8,"26.5",15.1,"0",0,0,9.6,0.1,0,14,127.1,567.3,"1.3",126,1
+"189","571","Egg boiled","Meat, poultry and fish-based local dishes",155,12.6,"10.6",3.3,"1.1000000000000001",0,0,50,0,0,10,126,124,"1.1000000000000001",172,1.2
+"190","561","Egg, fried","Meat, poultry and fish-based local dishes",245.2,11.8,"21.6",13.2,"1",0,0,47.3,0,0,9.4,117.7,632.1,"1",160.5,1.1
+"191","565","Fish, fresh, stew","Meat, poultry and fish-based local dishes",85,5.4,"6.6",5.1,"1.4",0.3,1.9,3.6,0,0,9.5,105.3,14,"0.1",27.4,0.3
+"192","566","Fish relish without oil","Meat, poultry and fish-based local dishes",76.5,8.2,"4.5",2.9,"2.4",0.9,1.5,59.9,0,0.1,15.7,185.2,26.6,"0.4",111.7,0.3
+"193","567","Fish relish with coconut milk","Meat, poultry and fish-based local dishes",138.4,11.7,"9.3000000000000007",7.1,"2.5",0.9,54.9,272.7,0.2,0.6,31.5,273.2,58.8,"1.1000000000000001",254.3,0.9
+"194","564","Fish relish with oil","Meat, poultry and fish-based local dishes",253.6,21.2,"17.899999999999999",13.2,"2.2000000000000002",0.5,1.6,500,0.2,0.7,46.3,374.5,96.6,"1.6",406.1,0.9
+"195","569","Fish, fried","Meat, poultry and fish-based local dishes",230.1,17.8,"17.8",13.7,"0",0,0,10.8,0,0,26.4,402,48,"0.6",291.6,0.4
+"196","563","Fish, fried, relish","Meat, poultry and fish-based local dishes",183.5,6.5,"17.5",14.5,"1.3",0.7,15.6,6.5,0,0.1,13.2,203,19.4,"0.3",113.2,0.4
+"197","579","Liver relish","Meat, poultry and fish-based local dishes",103.5,13.7,"69.400000000000006",1.3,"2.8",24.4,2.2,6.5,2.5,0.3,12.9,156.4,43.1,"3.4",228.2,3.8
+"198","580","Liver, fried","Meat, poultry and fish-based local dishes",175,26.5,"4.7",1.5,"5.2",0,113,6,14.6,6.3,22,351,77,"5.2",485,6.1
+"199","570","Meat samosa","Meat, poultry and fish-based local dishes",280,11.6,"11.8",3.5,"30.5",1.1,0,7,0.1,0.3,16,145,17,"1.5",101,1
+"200","572","Meat, barbecued","Meat, poultry and fish-based local dishes",343,24,"26.7",10.6,"0",0,5.2,3,0.1,0,14,214,33,"2.6",122,1.1
+"201","562","Omelet, spanish","Meat, poultry and fish-based local dishes",274.7,8,"26.6",19.7,"1.7",0.2,38.8,33.8,0,0,8.7,120.1,423.2,"0.7",113,0.8
+"202","575","Omelet, spanish with potato","Meat, poultry and fish-based local dishes",185.5,5.3,"14.2",10.5,"9.6999999999999993",0.8,234.2,22.1,0.1,0.1,15.1,224.7,50.1,"0.5",83.9,0.7
+"203","558","Small dried fish relish with coconut milk","Meat, poultry and fish-based local dishes",258.4,12,"14.6",16.9,"9.4",5.2,15.4,235.8,0.1,0.3,23.5,187.8,42.4,"0.7",182,0.5
+"204","560","Small dried fish relish with okra","Meat, poultry and fish-based local dishes",98.7,7.8,"6.8",5.1,"1.9",0.7,2.3,233.9,0.3,1,41.5,382.3,58.9,"1.3",263.6,1.6
+"205","557","Small dried fish with tomatoes and oil","Meat, poultry and fish-based local dishes",100.1,7.7,"6.9",5.1,"2.2000000000000002",0.5,0.1,1139.1,0.3,1.4,100.5,771.6,213,"3.5",884,1.9
+"206","559","Small dried fish, fried","Meat, poultry and fish-based local dishes",449.9,58.6,"13.5",4.4,"0",0,0,1700.4,0.5,2.1,140,953.1,656.2,"5.2",1300,2.5
+"207","261","Cheese, chedder","Milk and milk products",403,24.9,"33.1",21.1,"1.3",0,0,721,0,0,28,98,621,"3.1",512,0.7
+"208","258","Cheese, cream","Milk and milk products",349,7.6,"34.9",21.9,"2.7",0,0,80,0,0,6,119,296,"0.5",104,1.2
+"209","259","Cheese, mozarella","Milk and milk products",300,22.2,"22.3",13.2,"2.2000000000000002",0,0,505,0,0,20,76,627,"2.9",354,0.4
+"210","251","Ice cream","Milk and milk products",126,4.9,"2.5",1.6,"21.8",0,0,124,0,0,12,151,59,"0.4",99,0.1
+"211","252","Infant formula, Lactogen","Milk and milk products",464,21.6,"19",11.7,"51.6",0,0,770,0.3,33,70,970,320,"3.5",600,8
+"212","253","Milk, condensed, sweetened","Milk and milk products",320,7.8,"8.6999999999999993",5.3,"54.5",0,0,300,0,0,28,349,122,"0.9",234,0.2
+"213","257","Milk, condensed, evaported, without vitamin A","Milk and milk products",134,6.8,"7.6",4.6,"10",0,0,261,0,0,24,303,106,"0.8",203,0.2
+"214","260","Milk powder, non-fat, without vitamin A","Milk and milk products",362,36.2,"0.7",0.5,"52",0,0,1257,0,0,110,1794,535,"4.0999999999999996",968,0.3
+"215","254","Milk powder, full-cream","Milk and milk products",496,26.3,"26.7",16.7,"38.4",0,0,851,0,0,81,1036,407,"3",681,0.7
+"216","255","Milk whole, 0.0325 milk fat","Milk and milk products",60,3.2,"3.3",1.9,"4.5",0,0,115,0,0,11,140,55,"0.4",92,0.1
+"217","256","Yogurt, plain, whole milk","Milk and milk products",61,3.5,"3.3",2.1,"4.7",0,0,121,0,0,12,155,0,"0",95,0
+"218","1102","Butter refined-ghee","Oils and fats",876,0.3,"99.5",61.9,"0",0,0,8,0,0,1,9,273,"0",8,0.1
+"219","1101","Butter with salt","Oils and fats",717,0.9,"81.099999999999994",51.4,"0",0,0,17,0,0,2,24,576,"0.1",24,0
+"220","1105","Coconut cream","Oils and fats",330,3.6,"34.700000000000003",30.7,"6.7",2.2,324,11,0.4,1.3,28,325,4,"1",122,2.3
+"221","1114","Coconut meat, raw","Oils and fats",354,3.3,"33.5",29.7,"15.2",9,324,14,0.4,1.5,32,356,20,"1.1000000000000001",113,2.4
+"222","1104","Coconut milk and water","Oils and fats",106,1,"10.1",8.9,"4.5999999999999996",2.7,97,4,0.1,0.5,10,107,6,"0.3",34,0.7
+"223","1103","Coconut oil","Oils and fats",862,0,"100",86.9,"0",0,0,0,0,0,0,0,0,"0",0,0
+"224","1115","Coconut water","Oils and fats",19,0.7,"0.2",0.2,"3.7",1.1,0,24,0,0.1,25,250,105,"0.1",20,0.3
+"225","1107","Margarine","Oils and fats",716,0,"81",20.3,"0",0,0,0,0,0,0,0,0,"0",0,0
+"226","1108","Palm oil","Oils and fats",862,0,"100",81.5,"0",0,0,6,0,0,0,0,0,"0",7,0
+"227","1109","Sesame oil","Oils and fats",884,0,"100",16.9,"0",0,0,0,0,0,0,0,0,"0",0,0
+"228","1110","Vegetable fat","Oils and fats",884,0,"100",25,"0",0,0,0,0,0,0,0,0,"0",0,0
+"229","1111","Vegetable fat, Cowboy","Oils and fats",884,0,"100",25,"0",0,0,0,0,0,0,0,0,"0",0,0
+"230","1112","Vegetable fat, Kimbo","Oils and fats",884,0,"100",25,"0",0,0,0,0,0,0,0,0,"0",0,0
+"231","1113","Vegetable oil","Oils and fats",862,0,"100",86.5,"0",0,0,0,0,0,0,0,0,"0",0,0
+"232","129","Apples, raw, with skin","Fruits and Fruit Juice",52,0.2,"0.2",0,"13.8",2.4,55,6,0,0,5,107,1,"0",11,0.1
+"233","101","Avocado, raw, all common variety","Fruits and Fruit Juice",160,2,"14.7",2.1,"8.5",6.7,0,12,0.2,0.1,29,599,7,"0.6",52,0.6
+"234","102","Banana, ripe","Fruits and Fruit Juice",89,1.1,"0.3",0.1,"22.8",2.6,0,5,0.1,0.3,27,358,1,"0.2",22,0.3
+"235","103","Baobab, pulp","Fruits and Fruit Juice",305,4.2,"1.3",0.4,"77.8",5.1,0,36,0.7,0.3,46,1221,3,"0.3",199,1.9
+"236","365","Breadfruit, raw","Fruits and Fruit Juice",103,1.1,"0.2",0,"27.1",4.9,0,17,0.1,0.1,25,490,2,"0.1",30,0.5
+"237","131","Custard-apple (bullock’s heart), raw","Fruits and Fruit Juice",101,1.7,"0.6",0,"25.2",2.4,20,23,2.4,0.3,60,414,9,"1.4.",23.4,0.7
+"238","133","Date, red, dried","Fruits and Fruit Juice",240,2.6,"0.4",0.2,"63.3",3.2,0,39,0.3,0.3,26,601,10,"0.2",78,1.7
+"239","134","Date, yellow","Fruits and Fruit Juice",84,0.3,"0.6",0.1,"21.7",3.8,89,10,0.1,0.1,7,163,0,"0",10,0.3
+"240","130","Durian","Fruits and Fruit Juice",147,1.5,"5.3",0,"27.1",3.8,0,6,0.2,0.3,30,436,2,"0.3",39,0.4
+"241","104","Grape","Fruits and Fruit Juice",55,0.2,"0.4",0.1,"14.2",2.5,59,7,0,0.1,5,107,0,"0",7,0.2
+"242","135","Grapefruit","Fruits and Fruit Juice",33,0.7,"0.1",0,"8.4",1.1,0,12,0.05,0.01,9,148,0,"7.0000000000000007E-2",8,0.06
+"243","105","Grapes, pale green","Fruits and Fruit Juice",59,0.2,"0.4",0.1,"15.3",2.7,63,7,0,0.1,5,115,0,"0",7,0.2
+"244","106","Guavas, common, raw","Fruits and Fruit Juice",68,2.6,"1",0.3,"14.3",5.4,0,18,0.2,0.2,22,417,2,"0.2",40,0.3
+"245","107","Jackfruit, raw","Fruits and Fruit Juice",94,1.5,"0.3",0.1,"24",1.6,0,34,0.2,0.2,37,303,3,"0.4",36,0.6
+"246","109","Lemon, raw, without peel","Fruits and Fruit Juice",29,1.1,"0.3",0,"9.3000000000000007",2.8,0,26,0,0,8,138,2,"0.1",16,0.6
+"247","110","Limes, raw","Fruits and Fruit Juice",30,0.7,"0.2",0,"10.5",2.8,0,26,0,0,8,138,2,"0.1",16,0.6
+"248","111","Mango juice","Fruits and Fruit Juice",54,0.2,"0.1",0,"14.1",0.8,8,4,0.1,0,4,66,1,"0",5,0
+"249","112","Mango, ripe, fresh-EP","Fruits and Fruit Juice",65,0.5,"0.3",0.1,"17",1.8,20,10,0.1,0,9,156,2,"0",11,0.1
+"250","113","Mango, unripe","Fruits and Fruit Juice",65,0.5,"0.3",0.1,"17",1.8,20,10,0.1,0,9,156,2,"0",11,0.1
+"251","108","Orange juice, concentrated, unsweetened","Fruits and Fruit Juice",42,0.6,"0.1",0,"9.9",0.2,0,40,0.1,0,10,181,0,"0.1",14,0.1
+"252","114","Orange, raw-AP","Fruits and Fruit Juice",47,0.9,"0.1",0,"11.8",2.4,0,40,0.1,0,10,181,0,"0.1",14,0.1
+"253","115","Papaya, ripe","Fruits and Fruit Juice",39,0.6,"0.1",0,"9.8000000000000007",1.8,0,24,0,0,10,257,3,"0.1",5,0.1
+"254","116","Papaya, unripe","Fruits and Fruit Juice",39,0.6,"0.1",0,"9.8000000000000007",1.8,0,24,0,0,10,257,3,"0.1",5,0.1
+"255","117","Passion, fruit","Fruits and Fruit Juice",43,0.7,"0.1",0,"11.1",2,0,5,0.1,0.1,7,197,0,"0.1",12,0.1
+"256","127","Peach","Fruits and Fruit Juice",39,0.6,"0.1",0,"10",1.8,0,6,0.1,0.1,9,190,0,"0.2",20,0.2
+"257","118","Pears, raw","Fruits and Fruit Juice",58,0.4,"0.1",0,"15.5",3.1,55,9,0.1,0,0.2,119,1,"0.1",11,0.2
+"258","120","Pineapple juice","Fruits and Fruit Juice",49,0.4,"0.4",0,"12.4",1.2,0,7,0.1,1.7,14,113,1,"0.1",7,0.4
+"259","119","Pineapple, raw, all variety","Fruits and Fruit Juice",48,0.5,"0.1",0,"12.6",1.4,0,7,0.1,1.7,14,113,1,"0.1",7,0.4
+"260","121","Plums, raw","Fruits and Fruit Juice",46,0.7,"0.3",0,"11.4",1.4,63,6,0.1,0.1,7,157,0,"0",16,0.2
+"261","128","Raspberry","Fruits and Fruit Juice",52,0.7,"0.4",0,"12.8",5,0,25,0.1,0.7,22,151,1,"0.4",29,0.7
+"262","132","Soursop, raw","Fruits and Fruit Juice",66,1,"0.3",0.1,"16.8",3.3,20,14,0.1,0.1,21,278,14,"0.1",27,0.6
+"263","122","Tamarind","Fruits and Fruit Juice",270,2.9,"0.5",0.2,"71.2",3.6,0,44,0.3,0.3,30,676,11,"0.3",87,1.9
+"264","123","Tamarind, fruit, fresh","Fruits and Fruit Juice",59,0.2,"0.4",0.1,"15.3",2.7,63,7,0,0.1,5,115,0,"0",7,0.2
+"265","124","Tangerines, raw","Fruits and Fruit Juice",53,0.8,"0.3",0,"13.3",1.8,0,40,0.1,0,10,181,0,"0.1",14,0.1
+"266","125","Watermelon, raw","Fruits and Fruit Juice",30,0.6,"0.2",0,"7.6",0.4,0,7,0,0,10,112,1,"0.1",11,0.2
+"267","603","Apple juice","Fruit Based Local Dishes",53,0.1,"0",0,"13.3",0.1,55,2,0,0.2,5,90,2,"0.2",7,0.5
+"268","604","Avocado juice","Fruit Based Local Dishes",104.5,0.6,"5",0.8,"15.9",1.9,0,3.7,0.1,0.1,12.6,194.5,3.4,"0.1",13.6,0.3
+"269","601","Grape juice","Fruit Based Local Dishes",69.9,0.1,"0.1",0,"18.100000000000001",0.8,19.7,2.5,0,0,1.7,35.9,0.1,"0",2.6,0.1
+"270","610","Mixed fruit jam","Fruit Based Local Dishes",261,0.4,"0",0,"69.3",0.8,0,24,0.2,0.1,6,85,15,"0.2",16,1
+"271","602","Mixed fruit juice","Fruit Based Local Dishes",45,0.7,"2.2000000000000002",0.3,"6.6",1.9,0,16.6,0.1,0,10.4,190.1,1.9,"0.1",11.2,0.2
+"272","607","Papaya juice","Fruit Based Local Dishes",58.3,0.4,"0.1",0,"14.9",1.2,0,16.1,0,0,6.7,172,2.1,"0.1",3.5,0.1
+"273","126","Passion juice","Fruit Based Local Dishes",110.1,0.3,"0",0,"28.4",0.8,0,2.2,0,0,2.8,79.3,0.2,"0",5.3,0.1
+"274","606","Watermelon juice","Fruit Based Local Dishes",111.8,1.3,"0.9",0.4,"16.2",1.1,0,18,0.1,0.1,24.7,260.4,4.5,"0.2",20.2,0.4
+"275","401","Amaranth, leaves, raw","Vegetables",23,8.5,"0.5",0.1,"8.5",4.2,42,96.9,0.2,0.9,55,380.9,6.6,"0.6",50,2.3
+"276","424","Bean, cluster","Vegetables",42,2.7,"0.1",0,"7.8",2.8,14,14,0.1,0.3,20,136,2,"0.6",59,0.8
+"277","425","Bean, french","Vegetables",35,1.9,"0.3",0.1,"7.9",3.2,91,46,0.1,0.3,25,299,3,"0.4",39,1.3
+"278","431","Cabbage, chinese, raw","Vegetables",15,2.3,"0.2",0,"2.1",2,42,74,0.1,0.3,15,202,16,"0.2",41,1.1
+"279","402","Cabbage, cooked","Vegetables",14,0.6,"0.3",0.1,"2.8",1.8,0,20,0,0.1,5,61,5,"0.1",9,0.1
+"280","403","Cabbage, raw, green, white","Vegetables",25,1.3,"0.1",0,"5.8",2.5,0,40,0,0.2,12,170,18,"0.2",26,0.5
+"281","430","Carrot, juice","Vegetables",45,1.1,"0.2",0,"10.5",3.3,9,31,0.1,0.8,13,227,66,"0.3",30,0.6
+"282","404","Carrots, raw","Vegetables",41,0.9,"0.2",0,"9.6",2.8,9,33,0,0.1,12,320,69,"0.2",35,0.3
+"283","409","Cassava leaf","Vegetables",37,3.7,"0.2",0,"7.3",0.6,42,211,0.2,0.1,62,550,11,"0.4",72,3.1
+"284","405","Cauliflower, cooked without salt","Vegetables",12,0.7,"0.1",0,"2.6",1.1,0,23,0,0.1,7,121,9,"0.1",11,0.3
+"285","406","Cauliflower, raw","Vegetables",25,2,"0.1",0,"5.3",2.5,0,22,0,0.2,15,303,30,"0.3",44,0.4
+"286","427","Chili, green","Vegetables",21,0.9,"0.1",0,"5.0999999999999996",1.3,35,12,0.1,0.1,11,150,12,"0.2",27,0.6
+"287","410","Cowpea leaf","Vegetables",37,9.3,"0.8",0,"7.3",3.3,42,49.7,0.2,0.1,62,248,5.7,"1.4",72,0.8
+"288","407","Cucumber, with peel, raw","Vegetables",15,0.7,"0.1",0,"3.6",0.5,0,16,0,0.1,13,147,2,"0.2",21,0.3
+"289","408","Egg plant, raw","Vegetables",24,1,"0.2",0,"5.7",3.4,0,9,0.1,0.3,14,230,2,"0.1",25,0.4
+"290","411","Green medium, leaf","Vegetables",15,2.3,"0.2",0,"2.1",2,42,74,0.1,0.3,15,202,16,"0.2",41,1.1
+"291","429","Green pepper (capsicum)","Vegetables",19,0,"0",4.5,"0.3",0,70,10,0,0.1,10,131,10,"0.2",23,0.5
+"292","426","Hare lettuce, (mchunga)","Vegetables",10.7,1,"0.3",0,"1",0.4,42,66.7,0.1,0.3,44.8,21.3,14.5,"0.2",2.8,1.7
+"293","414","Lettuce","Vegetables",13,1,"0.2",0,"2.1",1.4,0,19,0,0.2,9,158,9,"0.2",20,0.5
+"294","415","Mushroom","Vegetables",27,2.2,"0.5",0.1,"5.0999999999999996",2.2,0,3,0.3,0,9,318,5,"0.5",86,0.5
+"295","416","Okra, raw","Vegetables",31,2,"0.1",0,"7",3.2,77,81,0.1,1,57,303,0.6,"0.6",63,0.8
+"296","417","Onion, raw","Vegetables",40,1.3,"0.2",0,"9.1999999999999993",1.3,0,23,0,0.1,10,146,4,"0.2",29,0.2
+"297","418","Pea, green, fresh","Vegetables",84,5.4,"0.2",0,"15.6",5.5,28,27,0.2,0.5,39,271,3,"1.2",117,1.5
+"298","433","Pepper dried or fresh, hot","Vegetables",27,1,"0.3",0.1,"5.8",1.7,35,9,0.4,0.1,11,141,15,"0.1",19,0.4
+"299","412","Pumpkin leaf, raw","Vegetables",19,7,"0.7",0.2,"9",4.4,42,114.5,0.3,0.3,28.4,203,29,"1.1000000000000001",29,0.6
+"300","419","Pumpkin, cooked","Vegetables",20,0.5,"0.3",0.1,"4.4000000000000004",1.4,0,7,0.1,0.1,4,219,1,"0.2",10,0.2
+"301","432","Salad, green","Vegetables",36,3.5,"0.9",0.1,"7.1",4.4,47,94,0.1,0.4,352,22,1.8,"0.1",17,0
+"302","420","Spinach, cooked","Vegetables",23,3,"0.3",0,"3.8",2.4,0,136,0.2,0.9,87,466,70,"0.8",56,3.6
+"303","428","Sweet potato leaf","Vegetables",35,4.8,"0.3",0,"6.4",2,42,59.2,0.1,0.3,44.8,315.2,10.6,"0.2",41,0.5
+"304","434","Swiss chard, raw","Vegetables",19,1.8,"0.2",0,"3.7",1.6,42,51,0.9,1.6,81,379,213,"2.8",46,1.8
+"305","413","Taro leaf, raw","Vegetables",42,5,"0.7",0.2,"6.7",3.7,0,137,0.3,0.3,22,203,29,"0.1",29,0.8
+"306","421","Tomato, bitter (African egg plant)","Vegetables",22,1,"0.4",0.1,"4.5",2.8,6,31,0,0.1,8,97,8,"0.1",15,0.2
+"307","422","Tomato, green","Vegetables",21,0.9,"0.3",0,"4.5999999999999996",1.1,6,5,0.1,0.1,11,222,9,"0.1",24,0.5
+"308","423","Tomato, ripe","Vegetables",21,0.9,"0.3",0,"4.5999999999999996",1.1,6,5,0.1,0.1,11,222,9,"0.1",24,0.5
+"309","755","Cabbage relish with oil","Vegetables Based",34.1,0.7,"2.1",1.8,"3.5",1.4,5.2,14.3,0,0.1,7,89.2,130.7,"0.1",16.5,0.2
+"310","754","Cabbage, onion salad","Vegetables Based",27.8,1.2,"0.3",0.1,"6.2",2.2,0.3,26.7,0,0.1,11.1,151.8,6,"0.2",24.2,0.3
+"311","756","Cassava leaf relish with groundnuts","Vegetables Based",113.1,6.4,"6.8",0.9,"9.9",2,263.7,159.4,0.3,0.4,67.9,531.8,270.3,"0.8",108.9,2.8
+"312","757","Cassava leaf relish with coconut milk","Vegetables Based",70.9,2.8,"4.7",4,"6.7",1.6,70,136.2,0.2,0.3,44,398.1,9.7,"0.4",61.1,2.3
+"313","759","Cow pea leaf relish with coconut milk","Vegetables Based",80.3,2.5,"6",5.2,"6.4",1.9,77.5,107.8,0.2,0.3,36.8,337.4,9,"0.4",55.8,2
+"314","779","Cow pea leaf relish with groundnuts","Vegetables Based",79.3,4.8,"4.2",0.5,"8.3000000000000007",1.6,168.4,133,0.2,0.1,43.4,442.9,10.7,"0.3",57.3,2.1
+"315","784","Egg plant relish","Vegetables Based",77.3,1.2,"4.7",2,"7.9",2.2,16.5,9.4,0.1,0.2,13.7,247.2,28.2,"0.2",28.8,0.4
+"316","763","Green leaf, medium, relish with coconut milk","Vegetables Based",107.7,2.8,"9.1999999999999993",8,"5.8",4.1,121.5,63.7,0.2,0.6,20.8,259.7,18.4,"0.5",63.7,1.5
+"317","762","Green leaf, medium relish with groundnuts","Vegetables Based",15,1,"0.6",0.1,"2",0.8,27.8,17.2,0,0,8,114.7,16,"0.1",19.2,0.3
+"318","760","Green leaf, medium, relish without oil","Vegetables Based",5.3,0.8,"7",0,"0.7",0.7,7,26,0,0.1,5.3,71.1,5.6,"0.1",14.4,0.4
+"319","761","Green leaf, medium, relish with oil","Vegetables Based",86.1,1,"14.5",7.9,"1",0.9,22.2,35,0,6.1,7,96,7.5,"0.1",19.5,23.5
+"320","766","Green peas relish without oil","Vegetables Based",63.5,3.9,"0.2",0,"12",4.1,20.9,20.8,0.1,0.4,30.1,246.4,111.9,"0.9",88.2,1.2
+"321","782","Green peas relish with oil","Vegetables Based",82.5,3.8,"2.6",2,"11.8",3.9,19.8,20,0.2,0.6,34.2,250,99,"1",94,1.4
+"322","767","Green peas relish with oil and coconut milk","Vegetables Based",125.6,3.6,"7,8",6.7,"11.9",4.6,79.1,20.1,0.1,0.4,28.7,236.4,106.1,"0.8",84.1,1.1
+"323","778","Green peas relish with coconut milk","Vegetables Based",120.2,3.7,"6.6",5.7,"12.7",5.1,69.8,18,0.2,0.7,28,247.9,83.8,"0.9",85.7,1.3
+"324","786","Hare lettuce (mchunga)","Vegetables Based",169.6,1,"17.399999999999999",14.8,"4.5",0.9,14.7,26.6,0.1,0.1,7.3,141,9.2,"0.1",18.4,0.8
+"325","783","Okra relish without oil","Vegetables Based",16.7,0.9,"0.2",0.1,"3.7",1.9,39.7,59.4,0.1,0.2,14.4,152.5,656.1,"0.1",20.7,0.6
+"326","775","Okra relish with oil","Vegetables Based",74.3,0.8,"6.2",5.6,"4.7",1.3,24.2,15.1,0.1,0.2,10.9,171.6,107.2,"0.2",22.5,0.5
+"327","765","Okra relish with coconut milk","Vegetables Based",51,1.2,"3.2",2.7,"5.7",0,54,17,0.1,0.3,13,190,6,"0.2",30,0.7
+"328","781","Okra, fried","Vegetables Based",106.2,1,"10.199999999999999",8.7,"4.5",1.5,38.5,22.3,0.1,0.1,11.8,145.7,292.3,"0.2",20.5,0.6
+"329","780","Sweet potato leaf relish with coconut milk","Vegetables Based",166.1,3.7,"13.7",11.9,"10.6",7.1,188.4,109.7,0.3,1,33.8,425.3,417.6,"0.7",102.6,2.5
+"330","777","Potato leaf relish with milk","Vegetables Based",67.7,6.5,"2.6",1.4,"6.9",4,53.4,213.7,0.1,0.5,36.3,484,63.4,"0.5",134.5,2.2
+"331","764","Potato leaf relish with oil","Vegetables Based",131,3.4,"11",9.4,"7.4",0.7,84,96,0.1,0.4,20,270.5,20.6,"0.3",55,1.4
+"332","772","Potato samosa","Vegetables Based",194,3,"9.1999999999999993",1.3,"24.4",1.1,91,5,0.1,0.2,13,150,2,"0.3",41,0.4
+"333","769","Pumpkin leaf relish without oil","Vegetables Based",16.8,0.8,"0.2",0,"3.7",1.8,21.2,67.6,0.1,0.2,13.4,152.4,131.7,"0.1",20.7,0.5
+"334","768","Pumpkin leaf relish with oil","Vegetables Based",63.8,0.7,"5.7",4.9,"3.5",1.7,20,63.8,0.2,0.3,12.6,143.9,124.4,"0.7",19.6,0.5
+"335","770","Spinach relish with groundnut and oil","Vegetables Based",149,1.7,"15.2",12.5,"3.7",0.5,0.6,63.2,0.1,0.1,19.3,182.2,3.7,"0.1",25.5,0.9
+"336","752","Spinach relish without oil","Vegetables Based",43.5,3.3,"0.5",0,"8.8000000000000007",1.2,35.1,170.9,0.1,0.1,53.8,525.6,12,"0.3",68.5,2.6
+"337","753","Spinach relish with oil","Vegetables Based",108,2.7,"9",7.8,"6.1",0.6,30,152.9,0.1,0.1,45.7,68.7,306.4,"0.3",55.2,2.2
+"338","771","Spinach relish with sesame seeds","Vegetables Based",61.8,3.2,"3.8",0.5,"5.5",1.6,398.2,185.4,0.4,0.3,59.6,317.4,6.5,"0.8",87,2.7
+"339","785","Tomato relish","Vegetables Based",34,1.1,"0.3",0.1,"5.2",1.7,20.9,10,0.1,0.3,13,250,9,"0.1",32,0.5
+"340","451","Beer, commercial","Miscellaneous",41,0.3,"0",0,"3.7",0.2,0,5,0,0,6,25,5,"0",12,0
+"341","452","Beer, local, grain","Miscellaneous",41,0.3,"0",0,"3.7",0.2,0,5,0,0,6,25,5,"0",12,0
+"342","453","Beer, local, non-specific","Miscellaneous",41,0.3,"0",0,"3.7",0.2,0,5,0,0,6,25,5,"0",12,0
+"343","454","Blackcurrant, syrup, ribena","Miscellaneous",338,1.1,"2.2999999999999998",0.6,"87.7",15.5,361,40,0.2,0.3,29,659,0,"0",40,1.1
+"344","455","Candy, choclate","Miscellaneous",479,4.2,"30",17.8,"63.1",5.9,84,32,0.7,0.8,115,365,11,"1.6",132,3.1
+"345","458","Carbonated, beverage, coca cola","Miscellaneous",37,0.1,"0",0,"9.6",0,0,3,0,0,1,1,4,"0",12,0
+"346","471","Chili powder, red","Miscellaneous",318,12,"17.3",3.3,"56.6",25,403,148,0.4,2,152,2014,30,"2.5",293,7.8
+"347","481","Chili sauce","Miscellaneous",169.9,0.5,"0.1",0.4,"38.299999999999997",0.6,4.6,6.9,0,0.1,8.4,129,283.8,"0.1",17.5,0.4
+"348","160","Coconut immature, meat and water","Miscellaneous",70,0.5,"3.4",3,"10",0.9,32,126,0.1,0.2,3,66,5,"0.1",48,0.4
+"349","459","Cod liver oil","Miscellaneous",884,0,"100",14.4,"0",0,0,0,0,0,0,0,0,"0",0,0
+"350","472","Coffee, instant","Miscellaneous",200,10,"0",0,"40",0,600,300,1,2,400,3600,300,"0",300,10
+"351","460","Cricket","Miscellaneous",274,18.2,"21.5",7.5,"2",0,0,90,3,1.5,62,545,55,"8.4",424,2.5
+"352","476","Fruit flavored drink, concentrated","Miscellaneous",27,0,"0",0,"6.8",0,0,51,0,0,0,0,0,"0",0,0
+"353","477","Garlic, fresh-AP","Miscellaneous",149,6.4,"0.5",0.9,"33.1",2.1,0,181,0.3,1.7,25,401,17,"1.2",143,1.7
+"354","490","Ginger","Miscellaneous",66,2.1,"0.3",0,"15.3",2.1,0,33,0.1,0.2,17,249,5,"0.3",53,0.3
+"355","461","Honey","Miscellaneous",304,0.3,"0",0,"82.4",0,0,6,0,0.1,2,52,4,"0.2",4,0.4
+"356","491","Ice sherbet","Miscellaneous",77.4,0,"0",0,"19.899999999999999",0,0,0,0,0,0,0,0,"0",0,0
+"357","462","Orange drink, concentrated","Miscellaneous",158,0.5,"1.1000000000000001",0.3,"41",7.2,169,19,0.1,0.1,13,308,0,"0",19,0.5
+"358","463","Salt, iodized","Miscellaneous",0,0,"0",0,"0",0,0,45,0,0,2,8,38724,"0",0,0.1
+"359","464","Salt, non-iodized","Miscellaneous",0,0,"0",0,"0",0,0,45,0,0,2,8,38724,"0",0,0.1
+"360","474","Soy sauce","Miscellaneous",60,10.5,"0.1",0,"5.6",0.8,122,20,0.1,0.5,40,212,5586,"0.4",130,2.4
+"361","475","Soybean milk, dried","Miscellaneous",380,40.5,"24",3.5,"9.5",6,1870,525,1,3.1,515,605,35,"4",485,27
+"362","465","Sugar","Miscellaneous",387,0,"0",0,"99.9",0,0,1,0,0,0,2,1,"0",2,0.1
+"363","466","Sugarcane","Miscellaneous",26,0,"0",0,"6.8",0,0,6,0,0,2,24,3,"0",2,0.1
+"364","467","Sugarcane juice","Miscellaneous",56,0,"0",0,"14.6",0,0,13,0.1,0.1,4,52,6,"0",3,0.3
+"365","468","Tea leaves","Miscellaneous",1,0,"0",0,"0.2",0,0,2,0,0.2,2,20,3,"0",1,0
+"366","469","Termite","Miscellaneous",369,19.7,"31.2",10.8,"1",0,0,32,0.1,0.1,17,361,1294,"2.5",184,1.3
+"367","489","Tomato juice","Miscellaneous",26,0.8,"0.1",0,"5.7",1.1,7,5,0.6,0.2,11,235,26,"0.7",1,0.9
+"368","470","Tomato ketchup","Miscellaneous",101,1,"0.3",0,"25.3",1.3,7,456,0.4,0.1,33,335,387250,"0.1",28,1.6
+"369","478","Tomato paste","Miscellaneous",63,0,"0",13.8,"0.9",0,18,15,0.2,0.3,33,666,27,"0.3",72,1.5
+"370","480","Vinegar, wine","Miscellaneous",19,0,"0",0,"0.3",0,0,8,0,0.2,10,89,8,"0.1",14,0.4
+"371","1006","Coffee with milk, without sugar","Miscellaneous-local dishes",11.5,1.3,"1.6",1,"0.2",0,1.7,0.1,0,0,0,0.1,0.1,"0",0.1,0
+"372","1004","Coffee without milk, with sugar,","Miscellaneous-local dishes",35.4,0,"0",0,"9.1",0,0,0.2,0,0,0,0.3,1.8,"0",0.2,0
+"373","1005","Coffee with milk and sugar","Miscellaneous-local dishes",31.5,1.3,"1.6",1,"3.1",0,1.7,48.1,0,0,5.6,67.6,23.5,"0.2",38.7,0.1
+"374","1008","Groundnut cluster","Miscellaneous-local dishes",616.6,17.3,"30.7",4.3,"76",5.6,1129.6,59.6,0.7,1.3,107.2,452.9,12,"2.1",248.3,3.1
+"375","1007","Halwa","Miscellaneous-local dishes",511.7,1.7,"30.7",16.9,"59.9",1.1,206.4,24.2,0.1,0.2,24.5,62.4,75.9,"0.1",47.1,0.5
+"376","1003","Tea with milk, without sugar","Miscellaneous-local dishes",11,1.3,"1.6",1,"0.2",0,0,0.2,0,0,0,0.3,1.8,"0",0.2,0
+"377","1001","Tea without milk, with sugar","Miscellaneous-local dishes",35.4,0,"0",0,"9.1",0,0,0.1,0,0,0,0.1,0.1,"0",0.1,0
+"378","1002","Tea with milk and sugar","Miscellaneous-local dishes",31,1.3,"1.6",1,"3",0,0,47.3,0,0,4.5,57.6,22.6,"0.2",37.9,0
