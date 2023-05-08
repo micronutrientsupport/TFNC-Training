@@ -3,7 +3,7 @@ install.packages("here")
 # Loading library
 library(tidyverse)
 library(here)
-
+# this is a change
 # 1.1 Loading the apparent food consumption data 
 
 dataJ1 <- read.csv(here::here("hces-data", "HH_SEC_J1.csv"))
