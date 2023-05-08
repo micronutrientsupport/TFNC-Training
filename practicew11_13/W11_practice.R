@@ -4,9 +4,6 @@
 # UNIT CONVERSION in GRAMS
 
 ## 1) PREPARATION
-*installed.packages(tidyverse)
-install.packages("tidyverse")
-
 
 # Ready for 'tidyverse' and 'here' function
 library(tidyverse)
@@ -15,7 +12,8 @@ library(here)
 # Open HH_SEC_J1.csv (located in 'hces-data' folder) as 'dataJ1'
 # from your RStudio after 'pulling' from GitHub.
 
-dataJ1 <-read_csv(here("hces-data", "HH_SEC_J1.csv"))
+dataJ1 <- read.csv(here("hces-data", "HH_SEC_J1.csv"))
+dataJ1 <- read.csv("HH_SEC_J1.csv")
 
 # Download new package - summarytools
 install.packages("summarytools")
@@ -31,7 +29,7 @@ view(dfSummary(dataJ1))
 # Change variable names - which function in XXXXXX?
 
 dataJ1 <- dataJ1 %>%
-  XXXXXX(
+  mutate(
     cons_yn = hh_j01,
     cons_unit = hh_j02_1,
     cons_quant = hh_j02_2,
@@ -47,16 +45,19 @@ dataJ1 <- dataJ1 %>%
 # There are NONE in pur_quant, prod_quant and gift_quant. Change NONE to NA
 
 dataJ1 <- dataJ1 %>%
-  XXXXXX(
-    pur_quant = XXXXX(pur_quant, "NONE"),
-    prod_quant = XXXXX(prod_quant, "NONE"),
-    gift_quant = XXXXX(gift_quant, "NONE"),
+  mutate(
+    pur_quant = na_if(pur_quant, "NONE"),
+    prod_quant = na_if(prod_quant, "NONE"),
+    gift_quant = na_if(gift_quant, "NONE"),
   )
+
+view(dfSummary(dataJ1))
+
 
 # Change variable types
 # Try here to change itemcode as factor
 dataJ1 <- dataJ1 %>% 
-  XXXXXX(itemcode = XXXXXXXX(itemcode))
+  mutate(itemcode = as.factor(itemcode))
 
 # then repeat for all variables
 
@@ -94,16 +95,22 @@ dataJ1 <- dataJ1 %>%
   )
 
 # check your work - see structure
-XXX(dataJ1)
+str(dataJ1)
 
 
 # add food ID in dataJ1 - merge item_id in a prepared file 'food-id.csv'
 # open food-id.csv as foodid
 foodid <- read_csv(here("Week-10", "Materials", "data", "food-id.csv"))
 
+foodid <- read_csv("food-id.csv")
+view(foodid)
+
 # merge item_id in foodid with dataJ1, and locate item_id before itemcode
 dataJ1 <- left_join(dataJ1, foodid, by = 'itemcode') %>% 
   relocate(item_id, .before = itemcode)
+
+dataJ1 <- left_join(dataJ1, foodid, by = 'itemcode') 
+dataJ1 <- relocate(dataJ1, item_id, .before = itemcode)
 
 # check your data
 View(dataJ1)
@@ -223,8 +230,10 @@ kable(food_unit_P)
 # write script to pick up food items using LITRE and MILLILITRE
 # hint - use | as OR
     
-    
-    
+food_unit_LmL <-
+  count(dataJ1, item_id, itemcode, cons_unit) %>%
+  filter(cons_unit == "MILLILITRE" | cons_unit == "LITRE") %>%
+  arrange(desc(n))
     
     
     
@@ -288,7 +297,7 @@ dataJ1 <- dataJ1 %>%
     (cons_unit == 'MILLILITRE' & item_id == 901) ~ 1.03, # Fresh milk
     (cons_unit == 'LITRE' & item_id == 901) ~ 1030,
     (cons_unit == 'MILLILITRE' & item_id == 902) ~ 0.81, # Milk products
-    (cons_unit == 'LITRE' & item_id == 902) ~ 820,
+    (cons_unit == 'LITRE' & item_id == 902) ~ 810,
     (cons_unit == 'MILLILITRE' & item_id == 303) ~ 1.32, # Honey, syrups, etc.
     (cons_unit == 'LITRE' & item_id == 303) ~ 1320,     
     (cons_unit == 'MILLILITRE' & item_id == 1107) ~ 0.95, # Local brews
@@ -316,7 +325,7 @@ view(dfSummary(dataJ1))
 # get amount of food consumed in hh in grams! (cons_g = cons_quant x unit_conv)
 
 dataJ1 <- dataJ1 %>%
-  mutate(cons_g = XXXXXXXXXXXXX)
+  mutate(cons_g = cons_quant*unit_conv)
 
 view(dfSummary(dataJ1))
 
@@ -331,14 +340,14 @@ view(dfSummary(df_cons_g))
 # get edible portion
 # organise edible function in TNPS_EP.csv
 
-df_EP <- read_csv(here("Week-11", "TNPS_EP.csv")
+df_EP <- read_csv("TNPS_EP.csv")
                   
 # omit itemcode - use 'minus sign' before itemcode
 df_EP <- df_EP %>%
   select(-itemcode)
                   
 # merge edible portion by 60 food items
-dataJ1 <- XXXXXXXX(dataJ1, df_EP, XX = 'item_id')
+dataJ1 <- left_join(dataJ1, df_EP, by = 'item_id')
 View(dataJ1)
 view(dfSummary(dataJ1))
                   
@@ -346,7 +355,7 @@ view(dfSummary(dataJ1))
                   
 # calculate estimate amount of food consumed in the HH (cons_g_hh)
 dataJ1 <- dataJ1 %>% 
-  XXXXXX(cons_g_hh = XXXXXXXXXXX)
+  mutate(cons_g_hh = cons_g*mean_EP)
 
 # check your work
 View(dataJ1)
