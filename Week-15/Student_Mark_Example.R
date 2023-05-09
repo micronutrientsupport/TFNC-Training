@@ -31,6 +31,6 @@ summary(sr)
 
 hist(sr$Mark)
 
-sr <- mutate(sr,MarkR = 0.8*CW+(0.2*UE)
+
 
              
