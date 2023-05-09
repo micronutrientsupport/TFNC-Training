@@ -28,7 +28,7 @@
 | [Week 13](Week-13)/ 2 May 2023            | Outliers                                                                          | [Watch session 1](https://drive.google.com/file/d/1hNug0l7m5zqZU0lUKkJixizUztuUhrxz/view?usp=share_link)  | [Week 13 Materials](https://github.com/dzvoti/TFNC-Training/blob/main/Week-13/W13_practice.R)                    |  
 | Week 14/ 8 May 2023            | Face-to-face session at TFNC - 1 (Review GitHub and GitHub Desktop)                                                                        |                                  | Week 14 Materials                   |  
 | Week 15/ 9 May 2023            | Face-to-face session at TFNC - 2                                                                         |                                  | Week 15 Materials                   |  
-| Week 16/ 10 May 2023            | Face-to-face session at TFNC - 3                                                                        |                                  | Week 15 Materials                   |  
+| Week 16/ 10 May 2023            | Face-to-face session at TFNC - 3                                                                        |                                  | Week 16 Materials                   |  
 
 # References and Additional Resources
 
