@@ -48,3 +48,43 @@ df_3 <- mutate(cons_data,kg_to_gram = case_when(
   total_cons_unit == "KILOGRAMS" ~ total_cons_qnty*1000,
   TRUE ~ total_cons_qnty))
 View(df_3)
+
+
+hh_roster <- read_csv("hces-data/HH_SEC_B.csv") 
+
+
+# Count household members
+hh_roster <- group_by(hh_roster,sdd_hhid)
+
+hh_roster
+
+# Summarise household data
+hh_summary <- summarise(hh_roster,hh_members = n())
+
+# Change sdd_hhid column name to HH
+
+hh_summary <- rename(hh_summary,HH = sdd_hhid)
+
+# Enriched data
+enriched_cons_data <- left_join(cons_data,hh_summary,by = join_by(HH))
+  
+enriched_cons_data <- mutate(enriched_cons_data,
+                             food_source=case_when(
+  purc_qnty != "NONE" ~ "Purchased ",
+  ownProd_qnty != "NONE" ~ "OwnProduced ",
+  giftOth_qnty != "NONE" ~ "Gifted"))
+  
+## Create summaries
+enriched_cons_data <- ungroup(enriched_cons_data)
+
+enriched_cons_data <- group_by(enriched_cons_data,food_item,food_source)
+
+
+enriched_cons_data <- summarise(enriched_cons_data,n = n())
+
+example <- mutate(enriched_cons_data,country = "TZA-TFNC")
+
+
+str(cons_data)
+
+cons_data <- mutate(cons_data,purc_qnty = as.numeric(purc_qnty))
