@@ -7,7 +7,7 @@ library(readxl) # for reading Excel files
 library(writexl) # for writing Excel files
 
 # Read the Excel file and skip the first row
-sr <- read_excel("hces-data/Student Results.xlsx",skip = 1)
+sr <- read_excel("Week-15/Student Results.xlsx")
 
 # View the data in a new window
 View(sr)
@@ -17,7 +17,6 @@ sr <- rename(sr,StudentName = Name,
              Mark= "TOTAL (100)",
              UE = "UE (60)",
              CW = "CW (40)")
-
 
 # Create a new column 'Grade' based on the 'Mark' column
 sr <- mutate(sr,Grade=case_when(
