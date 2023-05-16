@@ -39,3 +39,6 @@ Week-9/Materials/fct_activity2_solutions.R
 # Sensitive files
 hces-data/*
 !hces-data/put-data-here
+Week-15/Student_Records.csv
+Week-15/Student_Records.xls
+Week-15/Student_Records.xlsx
