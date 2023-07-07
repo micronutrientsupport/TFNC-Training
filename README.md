@@ -29,6 +29,8 @@
 | Week 14/ 8 May 2023            | Face-to-face session at TFNC - 1 (Review GitHub and GitHub Desktop)                                                                        |                                  | Week 14 Materials                   |  
 | Week 15/ 9 May 2023            | Face-to-face session at TFNC - 2                                                                         |                                  | Week 15 Materials                   |  
 | Week 16/ 10 May 2023            | Face-to-face session at TFNC - 3                                                                        |                                  | Week 16 Materials                   |  
+| Week 17/ 5 July 2023            | Face-to-face session at TFNC - 4                                                                       |                                  | Week 17 Materials                   |  
+
 
 # References and Additional Resources
 
