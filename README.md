@@ -31,6 +31,7 @@
 | Week 20/ 12 July 2023            | Follow-up training 1                                                                      |      [Watch session 1](https://drive.google.com/file/d/1FPTM7P7-zIA1RvgjmB0CcJdlBwAwxacg/view?usp=sharing)                            | Week 20 Materials                   |  
 | Week 21/ 14 July 2023            | Follow-up training 2                                                                       |        [Watch session 1](https://drive.google.com/file/d/1rA1dFoeH2dXzklqbosB2Il_hg8Lt2KAG/view?usp=drive_link)                          | Week 21 Materials                   |  
 | Week 22/ 18 July 2023            | Follow-up training 3                                                                       |        [Watch session 1](https://drive.google.com/file/d/11lhqTX5KweNjHixaEOc-dsbKQjJRefdK/view?usp=drive_link)                          | Week 22 Materials                   |  
+| Week 23/ 11 August 2023            | Follow-up training 4                                                                       |        [Watch session 1]([https://drive.google.com/file/d/1nJZr6Z-lFq88h31qhCvqITxWZV-rpTDw/view?usp=sharing]                          | Week 23 Materials                   |  
 
 # References and Additional Resources
 
